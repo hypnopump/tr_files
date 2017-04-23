@@ -1,10 +1,10 @@
-# tf_useful_codes
-This repository is plenty of useful codes in written in Python - TensorFlow
+# Files the school project
+This repository is plenty of useful codes about (Atyificial Intelligence / Machine Learning) written in Python - TensorFlow
 
 # Installation
 ```
 git clone ...
 pip install tensorflow
-cd tf_useful_codes/
+cd tr_files/
 python *document_name*.py
 ```
