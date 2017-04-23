@@ -17,7 +17,7 @@ Reinforcement Learning used against different games to prove learning and adapta
 Tools for optimization. Evolutionary algorithms.
 
 ## GA/NN
-Combines the evolution of populations with their learning to select the better individuals (learn faster, better accuracy...).
+Combines the evolution of populations with their learning to create better individuals (learn faster, better accuracy...).
 
 # Installation
 ```
