@@ -1,5 +1,5 @@
 # Files the school project
-This repository is plenty of useful codes about (Atyificial Intelligence / Machine Learning) written in Python - TensorFlow
+This repository is plenty of useful codes about (Artificial Intelligence / Machine Learning) written in Python - TensorFlow
 
 # Installation
 ```
