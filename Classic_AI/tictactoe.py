@@ -9,7 +9,7 @@ from copy import deepcopy
 
 # Create TicTacToe Class (OOP)
 class TicTacToe():
-	dims = {"x":3, "y":3}
+	dims = 3
 	ends = [-1, 0, 1] 			# -1 if User wins, 0 if Draw, +1 if Computer wins
 	exchange = {-1: "You Win! Coungratulations!", 0: "Draw!", 1: "I win... sorry"}
 	grid = []
@@ -29,8 +29,8 @@ class TicTacToe():
 
 	# Create the grid
 	def createGrid(self):
-		for i in range(self.dims["x"]):
-			row = [ " " for j in range(self.dims["y"]) ]
+		for i in range(self.dims):
+			row = [ " " for j in range(self.dims) ]
 			self.grid.append(row)
 
 	# Display the grid
@@ -46,15 +46,17 @@ class TicTacToe():
 	# Returns +1 if Computer wins, -1 if User wins, 0 if Draw
 	def whoWins(self, grid):
 		# Check horizontal matches
-		for i in range(self.dims["x"]):
-			if grid[i][0] == grid[i][1] == grid[i][2] and grid[i][0] != " ":
+		for i in range(self.dims):
+			if all(grid[i][earlier] == grid[i][later] for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
 				return -1 if grid[i][1] == "X" else 1
 		# Check vertical matches
-		for i in range(self.dims["y"]):
-			if grid[0][i] == grid[1][i] == grid[2][i] and grid[0][i] != " ":
-				return -1 if grid[1][i] == "X" else 1
+		for i in range(self.dims):
+			if all(grid[earlier][i] == grid[later][i] for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
+				return -1 if grid[i][1] == "X" else 1
 		# Check Diagonals
-		if grid[0][0] == grid[1][1] == grid[2][2] or grid[0][2] == grid[1][1] == grid[2][0] and grid[1][1] != " ":
+		if all(grid[earlier][earlier] == grid[later][later] and grid[earlier][earlier] == "X" for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
+			return -1
+		if all(grid[earlier][earlier] == grid[later][later] and grid[earlier][earlier] == "X" for earlier, later in zip(range(self.dims), reversed(range(self.dims)[1:])))):
 			return -1 if grid[1][1] == "X" else 1
 		# Draw!
 		if len(self.movements(grid)) == 0:
@@ -114,8 +116,7 @@ class TicTacToe():
 		return min_child, min_utility
 
 	def decision(self, grid): 	# Modifies the grid w/ the decision made by Max
-		alpha = -100
-		beta = +100
+		(alpha,beta) = (-100,+100)
 		print()
 		print("My turn: ")
 		print()
@@ -130,8 +131,7 @@ class TicTacToe():
 		if move == "stop":
 			print(99+"hello"+['hi', 9])
 		if len(move) == 3:
-			x = int(move[0])-1
-			y = int(move[2])-1
+			(x,y) = (int(move[0])-1, int(move[2])-1)
 			if x >= 0 and x <= 2 and y >= 0 and y <= 2:
 				if self.grid[x][y] == " ":
 					self.grid[x][y] = "X"
@@ -157,7 +157,8 @@ def main():
 		tictactoe.requestMove()
 		tictactoe.showGrid()
 		if tictactoe.whoWins(tictactoe.grid) != 5:
-			print()
+			print(tictactoe.grid)
+			print(tictactoe.whoWins(tictactoe.grid))
 			print(tictactoe.exchange[tictactoe.whoWins(tictactoe.grid)])
 			break
 		# Computer moves
