@@ -46,17 +46,15 @@ class TicTacToe():
 	# Returns +1 if Computer wins, -1 if User wins, 0 if Draw
 	def whoWins(self, grid):
 		# Check horizontal matches
-		for i in range(self.dims):
-			if all(grid[i][earlier] == grid[i][later] for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
+		for i in range(3):
+			if grid[i][0] == grid[i][1] == grid[i][2] and grid[i][0] != " ":
 				return -1 if grid[i][1] == "X" else 1
 		# Check vertical matches
-		for i in range(self.dims):
-			if all(grid[earlier][i] == grid[later][i] for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
-				return -1 if grid[i][1] == "X" else 1
+		for i in range(3):
+			if grid[0][i] == grid[1][i] == grid[2][i] and grid[0][i] != " ":
+				return -1 if grid[1][i] == "X" else 1
 		# Check Diagonals
-		if all(grid[earlier][earlier] == grid[later][later] and grid[earlier][earlier] == "X" for earlier, later in zip(range(self.dims), range(self.dims)[1:])):
-			return -1
-		if all(grid[earlier][earlier] == grid[later][later] and grid[earlier][earlier] == "X" for earlier, later in zip(range(self.dims), reversed(range(self.dims)[1:])))):
+		if (grid[0][0] == grid[1][1] == grid[2][2] or grid[2][0] == grid[1][1] == grid[0][2]) and grid[1][1] != " ":
 			return -1 if grid[1][1] == "X" else 1
 		# Draw!
 		if len(self.movements(grid)) == 0:
@@ -67,8 +65,8 @@ class TicTacToe():
 	# Returns possible movements
 	def movements(self, grid):
 		children = []
-		for i in range(self.dims["x"]):
-			for j in range(self.dims["y"]):
+		for i in range(3):
+			for j in range(3):
 				if grid[i][j] == " ":
 					children.append((i,j))
 		return children
