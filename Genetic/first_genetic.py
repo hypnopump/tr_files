@@ -1,4 +1,4 @@
-# Author: Eric Alcaide - First approach to genetic algorithms
+# Author: Eric Alcaide - First approach to evolutionary strategies (elitist selection + parents are part of the next generation)
 
 # Import the necessary modules
 import numpy as np
@@ -23,6 +23,7 @@ def fitness(individual, target):
 
 # Measure the fitness of an entire population. Lower is better.
 def evaluate(population, target):
+	print(population)
 	total = reduce(add, (fitness(individual, target) for individual in population), 0)
 	return total / (len(population) * 1.0)
 
@@ -57,7 +58,7 @@ def evolve(population, target, minimum, maximum, count, retain, random_aditional
 			child = male[:cross_point]+female[cross_point:] 			# Combine male and female
 			children.append(child)
 	parents.extend(children)											# Extend parents list by appending children list
-	return parents
+	return parents 												# Return the next Generation of individuals
 
 # Plot the Fitness of each generation. Lower is better
 def plot_graph(eval_history):
