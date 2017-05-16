@@ -43,7 +43,7 @@ def separate(data_list, which):
 
 	return features_x_coord, features_y_coord, features_labels
 
-# Get the result of the squashing function. Could be either a 0 or a 1.
+# Get the result of the squashing function. Could be either a -1 or a 1.
 def f_x(weight1, weight2, value1, value2, weight0):
 	result = np.sign(weight1*value1 + weight2*value2 + weight0) 
 
