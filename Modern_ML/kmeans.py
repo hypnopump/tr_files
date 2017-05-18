@@ -1,16 +1,16 @@
 # Code written entirely by Eric Alcaide
 # K-means algorithm for clustering in 2-D
 
-from random import random,randint
-import numpy as np
-import matplotlib.pyplot as plt
+from random import random,randint 			# Generate pseudo-random numbers
+import numpy as np 							# Maths library
+import matplotlib.pyplot as plt 			#Required for graphs plotting
 
 class KMEANS():
-	k = 6				# Number of clusters
+	k = 2				# Number of clusters - less than 7
 	num = (5,15)		# Range for number of points per cluster
 	lims = (4,7)		# Range for max distance between point and center of the cluster
-	board = (75,75)		# Board of points
-	it = 100 			# Number of iterations of the algorithm
+	board = (15,15)		# Board of points
+	it = 5 	 			# Number of iterations of the algorithm
 	points = list() 	# Set of points
 	parents = list() 	# List of parents
 	centers = list() 	# List of centers
@@ -20,7 +20,6 @@ class KMEANS():
 	def createData(self):
 		# First create the parents of the clusters
 		self.parents = self.createCenters()
-		# self.parents = [[10,10], [60,10]] 		# , [10,60], [60,60]
 		# Create the points (5-15) for each cluster (within less than 3-5 euclidean distance from the center to ensure Gaussian distribution)
 		for p in self.parents:
 			count = 0										# Counter of points
@@ -44,7 +43,7 @@ class KMEANS():
 			centers.append(p)
 		return centers
 
-	# Evolve the number of iterations set before
+	# Evolve the N iterations (set before)
 	def evolve(self):
 		self.centers = self.createCenters()
 		self.plotGraph()
@@ -68,12 +67,11 @@ class KMEANS():
 						total_x = total_x+p[0]
 						total_y = total_y+p[1]
 						counter = counter+1
-						print("Working")
 				if counter != 0:
 					self.centers[k] = [total_x/counter, total_y/counter]
 			print(self.centers)
-			if i % 20 == 0:
-				self.plotGraph()
+			
+			self.plotGraph()
 
 	def plotGraph(self):
 		for p in self.points:
@@ -82,7 +80,7 @@ class KMEANS():
 			plt.plot(c[0], c[1], self.exchange_dict[self.centers.index(c)]+"o")
 		plt.xlabel("X coord")
 		plt.ylabel("Y coord")
-		plt.axis([0, self.board[0], 0, self.board[1]])
+		plt.axis()
 
 		plt.show()
 

@@ -90,7 +90,7 @@ def perceptron(data_list):
 			else:
 				# Reset to 0 every time a point is missclassified
 				counter = 0
-			# Update weights
+			# Update auxiliar weights
 			weight1_aux = weight1
 			weight2_aux = weight2
 			b_aux = b

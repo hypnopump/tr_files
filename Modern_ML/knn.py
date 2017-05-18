@@ -3,12 +3,9 @@
 # KNN algorithm
 
 # First, import the necessary libraries
-# Used to generate pseudo-random numbers.
-from random import random, randint
-# Used for graphs plotting														
-import matplotlib.pyplot as plt 
-# Used for maths operations														
-import numpy as np 		
+from random import random, randint			# Used to generate pseudo-random numbers.													
+import matplotlib.pyplot as plt 			# Used for graphs plotting														
+import numpy as np 							# Used for maths operations		
 # Used to reduce verbosity / simplify code															
 from operator import add															
 from functools import reduce 															
