@@ -25,13 +25,14 @@ class Regression():
 		return age_rescaled, weight_rescaled, height
 
 	# Perform Linear Regression
-	def run(self,features, it, alpha = 0.05):
+	def run(self,features, it, alpha = 0.005):
 		# Initialize weights of the hyperplane (aka Betas) to 0
 		w = [0, 0, 0]
 		# Will only restart when all points have been checked
 		for i in range(it):	
-			# Gradient sum for each w - updated later & number of points
-			gradient_sum = [0, 0, 0] 											
+			# Gradient sum for each w - updated later & risk & number of points
+			gradient_sum = [0, 0, 0] 	
+			risk = 0
 			w_num = len(features[0])								
 			# Check all points 
 			for num in range(w_num):
@@ -42,14 +43,17 @@ class Regression():
 				gradient_sum[0] += (f_x - point[2])
 				gradient_sum[1] += (f_x - point[2])*point[0]
 				gradient_sum[2] += (f_x - point[2])*point[1]
+				# Update risk w/ squared error
+				risk += (f_x - point[2])**2
 
-			# Update betas/weights with the (gradients * learning rate)
-			w[0] = w[0] - alpha*(1/w_num)*gradient_sum[0]
-			w[1] = w[1] - alpha*(1/w_num)*gradient_sum[1]
-			w[2] = w[2] - alpha*(1/w_num)*gradient_sum[2]
+			# Update betas/weights with the (gradients * learning rate) & risk
+			risk *= (1/(2*w_num)) 
+			w[0] -= alpha*(1/w_num)*gradient_sum[0]
+			w[1] -= alpha*(1/w_num)*gradient_sum[1]
+			w[2] -= alpha*(1/w_num)*gradient_sum[2]
 			
 		# Output f(x) function and the regression hyperplane
-		print("After", it, "iterations: f(x;w) =", w[0], "+", w[1], "* x1 +", w[2], "* X2")
+		print("After", it, ": f(x;w) =", w[0], "+", w[1], "* x1 +", w[2], "* X2 || Risk:", risk)
 		self.plotGraph(features, [w[0], w[1], w[2]])
 
 	# Plot a graph representation of the data in 3D
@@ -67,7 +71,7 @@ class Regression():
 			# calculate corresponding z for each x,y pair
 			z = plane[0] + plane[1]*xx + plane[2]*yy
 			# plot the surface
-			ax.plot_surface(xx, yy, z, cmap=cm.viridis_r)
+			ax.plot_surface(xx, yy, z, cmap=cm.coolwarm)
 
 		plt.show()
 
@@ -75,7 +79,7 @@ class Regression():
 	def justDoIt(self):
 		features = self.extractData()
 		regression.plotGraph(features, plane = False) 	# First plot the points to visualize data
-		its = [200, 250, 500, 1000]						# Try linear regression with each number of iterations here - see how does the hyperplane change
+		its = [200, 250, 500, 1000, 1500]						# Try linear regression with each number of iterations here - see how does the hyperplane change
 		for i in its:
 			regression.run(features, i)
 
