@@ -8,12 +8,6 @@ mnist = input_data.read_data_sets('MNIST_data', one_hot=True)
 import tensorflow as tf
 import numpy as np
 
-def my_function(x):
-	x = float(x)
-	y = (np.sqrt(x))+(x/4) if x > 0 else 0
-
-	return y
-
 batch_size = 100
 K = 200
 L = 100

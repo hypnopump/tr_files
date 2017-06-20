@@ -15,7 +15,7 @@ def individual(length, minimum, maximum):
 # Create the population here
 def population(count, length, minimum, maximum):
 	return [ individual(length, minimum, maximum) for x in range(count) ]
-
+	
 # Measure the fitness of an individual. Lower is better.
 def fitness(individual, target):
 	total = reduce(add, individual, 0) # Use this line for sum
