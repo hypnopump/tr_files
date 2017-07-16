@@ -42,13 +42,13 @@ def kmeans(k, epsilon):
 
 # Run the algorithm
 def justDoIt():
-	post = kmeans(3, 6)
+	post = kmeans(2, 15)
 	# Plot graph
 	for i, c in enumerate(post[0]):
 		plt.plot([p[0] for j,p in enumerate(post[1]) if post[2][j] == i], [p[1] for j,p in enumerate(post[1]) if post[2][j] == i], '.')
 
 	plt.plot([c[0] for c in post[0]], [c[1] for c in post[0]], 'o')
-	plt.title("KMeans algorithm with K = "+str(z))
+	plt.title("KMeans algorithm with K = "+str(len(post[0])))
 	plt.show()
 
 if __name__ == "__main__":
