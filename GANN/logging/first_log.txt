@@ -1,0 +1,6 @@
+INFO 2017-08-04 19:34:51,849 - Saving the accuracy result of the first test
+INFO 2017-08-04 19:34:51,849 - Number of layers: 5
+INFO 2017-08-04 19:34:51,849 - Number of neurons: 512
+INFO 2017-08-04 19:34:51,849 - Activation: <keras.layers.advanced_activations.LeakyReLU object at 0x00000221AF1929B0>
+INFO 2017-08-04 19:34:51,849 - Optimizer: adamax
+INFO 2017-08-04 19:57:52,953 - Acc: 0.5054%

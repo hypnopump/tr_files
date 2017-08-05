@@ -163,12 +163,6 @@ class Genetic():
 
 if __name__ == "__main__":
 	gen = Genetic()
-	# proof = [(nn.nn_params_choices) for nn in gen.population()]
-	# print(proof)
-	# print(gen.population())
-
-	# for i in range(5):
-	# 	print(gen.neural(NN(gen.nn_params)))
 
 	# Plot the Fitness of each generation. Lower is better
 	def plot_graph(eval_history):
