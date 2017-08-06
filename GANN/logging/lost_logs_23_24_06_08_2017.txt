@@ -1,0 +1,22 @@
+line 375 +
+
+INFO 2017-08-06 21:52:52,032 - Generation Average: 45.8605
+INFO 2017-08-06 21:52:52,032 - --------------------------------------------------------
+INFO 2017-08-06 21:52:52,032 - Parents: [{'activation': 'sigmoid', 'dropout': 0.05, 'nb_neurons': 1024, 'optimizer': 'adamax', 'nb_layers': 4}, {'activation': 'sigmoid', 'dropout': 0.1, 'nb_neurons': 1024, 'optimizer': 'adamax', 'nb_layers': 3}, {'activation': 'elu', 'dropout': 0.05, 'nb_neurons': 256, 'optimizer': 'adam', 'nb_layers': 3}, {'activation': 'selu', 'dropout': 0.15, 'nb_neurons': 512, 'optimizer': 'adamax', 'nb_layers': 1}, {'activation': 'selu', 'dropout': 0.1, 'nb_neurons': 1024, 'optimizer': 'adamax', 'nb_layers': 1}]
+INFO 2017-08-06 21:52:52,032 - *************************************************
+INFO 2017-08-06 21:52:52,032 - ------ GEN 3 ------
+INFO 2017-08-06 21:52:52,032 - Saving the accuracy result of the training
+INFO 2017-08-06 21:52:52,032 - Number of layers: 4
+INFO 2017-08-06 21:52:52,032 - Number of neurons: 1024
+INFO 2017-08-06 21:52:52,033 - Activation: sigmoid
+INFO 2017-08-06 21:52:52,033 - Optimizer: adamax
+INFO 2017-08-06 21:52:52,033 - Dropout: 0.05
+INFO 2017-08-06 22:49:22,933 - Acc @ Training: 0%
+INFO 2017-08-06 22:49:22,933 - Acc @ Testing: 54.43%
+INFO 2017-08-06 22:49:22,933 - --------------------------------------------------------
+INFO 2017-08-06 22:49:22,933 - Saving the accuracy result of the training
+INFO 2017-08-06 22:49:22,933 - Number of layers: 3
+INFO 2017-08-06 22:49:22,933 - Number of neurons: 1024
+INFO 2017-08-06 22:49:22,933 - Activation: sigmoid
+INFO 2017-08-06 22:49:22,933 - Optimizer: adamax
+INFO 2017-08-06 22:49:22,933 - Dropout: 0.1

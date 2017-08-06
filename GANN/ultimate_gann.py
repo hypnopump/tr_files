@@ -1,4 +1,4 @@
-# # -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 
 """
 	Code written entirely by Eric Alcaide: https://github.com/EricAlcaide
@@ -99,7 +99,7 @@ class Network():
 	def train(self):
 		"""Train the model, return test accuracy."""
 		# Helper: Early stopping.
-		early_stopper = EarlyStopping(patience=5, verbose = 1)
+		early_stopper = EarlyStopping(patience=10, verbose = 1)
 		self.model.fit(self.data.x_train, self.data.y_train,
 						batch_size=self.data.batch_size,
 						epochs=10000,  # using early stopping, so no real limit
@@ -125,7 +125,7 @@ class Genetic():
 		self.random_add = 0.05
 		self.eval_history = [0]	
 
-		self.nb_layers = [1,2,3,4,5,6]
+		self.nb_layers = [1,2,3,4,5]
 		self.nb_neurons = [32,64,128,256,512,768,1024]
 		self.activation = ['tanh', 'sigmoid', 'relu', 'elu', 'selu', 'linear']
 		self.optimizer = ['sgd', 'adamax', 'rmsprop', 'adagrad', 'adadelta', 'adam', 'nadam']
@@ -232,8 +232,105 @@ if __name__ == "__main__":
 	logger.info("/////////////////////////////////////////////////////")
 
 	# Run the Genetic Algorithm and let Nets Evolve
-	pop = gen.generation()
-	for i in range(gen.n_iter):
+	pop = []
+	# pop = gen.generation()
+
+	# Create individuals from latest logs
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
+	child.acc_test = 55.16
+	pop.append(child) 
+	child = NetworkParams(4, 256, 'elu', 'adam', 0.05)
+	child.acc_test = 51.13
+	pop.append(child)
+	child = NetworkParams(1, 512, 'selu', 'adamax', 0.15)
+	child.acc_test = 52.52
+	pop.append(child)
+	child = NetworkParams(4, 128, 'selu', 'nadam', 0.05)
+	child.acc_test = 47.24
+	pop.append(child)
+	child = NetworkParams(4, 512, 'selu', 'nadam', 0.05)
+	child.acc_test = 10.0
+	pop.append(child)
+	child = NetworkParams(4, 256, 'elu', 'adam', 0.05)
+	child.acc_test = 51.71
+	pop.append(child)
+	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
+	child.acc_test = 49.94
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adam', 0.1)
+	child.acc_test = 46.57
+	pop.append(child)
+	child = NetworkParams(4, 256, 'elu', 'nadam', 0.05)
+	child.acc_test = 48.58
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'sigmoid', 'adamax', 0.05)
+	child.acc_test = 55.29
+	pop.append(child)
+	child = NetworkParams(4, 128, 'selu', 'nadam', 0.05)
+	child.acc_test = 47.08
+	pop.append(child)
+	child = NetworkParams(4, 256, 'selu', 'adamax', 0.1)
+	child.acc_test = 46.18
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'selu', 'adamax', 0.1)
+	child.acc_test = 10.0
+	pop.append(child)
+	child = NetworkParams(1, 512, 'selu', 'adamax', 0.15)
+	child.acc_test = 51.98
+	pop.append(child)
+	child = NetworkParams(1, 1024, 'selu', 'adamax', 0.1)
+	child.acc_test = 42.78
+	pop.append(child)
+	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
+	child.acc_test = 50.48
+	pop.append(child)
+	child = NetworkParams(1, 256, 'selu', 'adamax', 0.05)
+	child.acc_test = 51.03
+	pop.append(child)
+	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
+	child.acc_test = 48.3
+	pop.append(child)
+	child = NetworkParams(4, 256, 'elu', 'nadam', 0.05)
+	child.acc_test = 48.46
+	pop.append(child)
+	child = NetworkParams(3, 256, 'elu', 'adam', 0.05)
+	child.acc_test = 52.78
+	pop.append(child)
+
+	print(pop)
+	# Select the best individuals
+	tupled = [ nn for nn in sorted(pop, key=lambda x: x.acc_test, reverse=True)]
+	parents = tupled[:gen.retain_length]
+	# Select other individuals randomly to maintain genetic diversity.
+	for nn in tupled[gen.retain_length:]:
+		if gen.random_add > np.random.random():
+			parents.append(nn)
+	# Record the selected parents
+	logger.info("Parents: "+str([nn.params for nn in parents]))
+	logger.info("*************************************************")
+	# Mutate some individuals to maintain genetic diversity
+	for nn in parents:
+		for key in gen.params:
+			if gen.mutation > np.random.random():
+				nn.params[key] = random.choice(gen.params[key])
+	# Crossover of parents to generate children
+	parents_length = len(parents)
+	children_maxlength = gen.n_nets - parents_length
+	children = []
+	while len(children) < children_maxlength:
+		male = np.random.randint(0, parents_length)
+		female = np.random.randint(0, parents_length)
+		if male != female:
+			# Combine male and female
+			child = gen.breed(parents[male], parents[female])			
+			children.append(child)
+	# Extend parents list by appending children list
+	parents.extend(children)	
+	# Return the next Generation of individuals
+	pop = parents
+
+
+	for i in range(2,gen.n_iter):
 		logger.info("------ GEN "+str(i+1)+" ------")
 		pop = gen.evolve(pop)
 
