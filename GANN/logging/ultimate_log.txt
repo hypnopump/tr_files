@@ -374,12 +374,552 @@ INFO 2017-08-06 21:52:52,032 - Acc @ Testing: 52.78%
 INFO 2017-08-06 21:52:52,032 - --------------------------------------------------------
 INFO 2017-08-06 21:52:52,032 - Generation Average: 45.8605
 INFO 2017-08-06 21:52:52,032 - --------------------------------------------------------
-INFO 2017-08-06 23:38:48,770 - Parents: [{'nb_layers': 4, 'activation': 'sigmoid', 'nb_neurons': 1024, 'dropout': 0.05, 'optimizer': 'adamax'}, {'nb_layers': 3, 'activation': 'sigmoid', 'nb_neurons': 1024, 'dropout': 0.1, 'optimizer': 'adamax'}, {'nb_layers': 3, 'activation': 'elu', 'nb_neurons': 256, 'dropout': 0.05, 'optimizer': 'adam'}, {'nb_layers': 1, 'activation': 'selu', 'nb_neurons': 512, 'dropout': 0.15, 'optimizer': 'adamax'}]
-INFO 2017-08-06 23:38:48,770 - *************************************************
-INFO 2017-08-06 23:38:48,770 - ------ GEN 3 ------
-INFO 2017-08-06 23:38:48,770 - Saving the accuracy result of the training
-INFO 2017-08-06 23:38:48,770 - Number of layers: 4
-INFO 2017-08-06 23:38:48,770 - Number of neurons: 1024
-INFO 2017-08-06 23:38:48,770 - Activation: sigmoid
-INFO 2017-08-06 23:38:48,770 - Optimizer: adamax
-INFO 2017-08-06 23:38:48,770 - Dropout: 0.05
+INFO 2017-08-07 23:42:45,040 - Parents: [{'nb_layers': 4, 'nb_neurons': 1024, 'dropout': 0.05, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 3, 'nb_neurons': 1024, 'dropout': 0.1, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 3, 'nb_neurons': 256, 'dropout': 0.05, 'activation': 'elu', 'optimizer': 'adam'}, {'nb_layers': 1, 'nb_neurons': 512, 'dropout': 0.15, 'activation': 'selu', 'optimizer': 'adamax'}]
+INFO 2017-08-07 23:42:45,040 - *************************************************
+INFO 2017-08-07 23:42:45,041 - ------ GEN 3 ------
+INFO 2017-08-07 23:42:45,041 - Saving the accuracy result of the training
+INFO 2017-08-07 23:42:45,041 - Number of layers: 4
+INFO 2017-08-07 23:42:45,041 - Number of neurons: 1024
+INFO 2017-08-07 23:42:45,041 - Activation: sigmoid
+INFO 2017-08-07 23:42:45,041 - Optimizer: adamax
+INFO 2017-08-07 23:42:45,041 - Dropout: 0.05
+INFO 2017-08-08 00:51:17,637 - Acc @ Training: 0%
+INFO 2017-08-08 00:51:17,640 - Acc @ Testing: 53.87%
+INFO 2017-08-08 00:51:17,640 - --------------------------------------------------------
+INFO 2017-08-08 00:51:17,640 - Saving the accuracy result of the training
+INFO 2017-08-08 00:51:17,640 - Number of layers: 3
+INFO 2017-08-08 00:51:17,640 - Number of neurons: 1024
+INFO 2017-08-08 00:51:17,640 - Activation: sigmoid
+INFO 2017-08-08 00:51:17,640 - Optimizer: adamax
+INFO 2017-08-08 00:51:17,640 - Dropout: 0.1
+INFO 2017-08-08 02:04:00,084 - Acc @ Training: 0%
+INFO 2017-08-08 02:04:00,085 - Acc @ Testing: 55.13%
+INFO 2017-08-08 02:04:00,085 - --------------------------------------------------------
+INFO 2017-08-08 02:04:00,085 - Saving the accuracy result of the training
+INFO 2017-08-08 02:04:00,085 - Number of layers: 3
+INFO 2017-08-08 02:04:00,085 - Number of neurons: 256
+INFO 2017-08-08 02:04:00,085 - Activation: elu
+INFO 2017-08-08 02:04:00,085 - Optimizer: sgd
+INFO 2017-08-08 02:04:00,085 - Dropout: 0.05
+INFO 2017-08-08 02:05:53,926 - Acc @ Training: 0%
+INFO 2017-08-08 02:05:53,926 - Acc @ Testing: 34.88%
+INFO 2017-08-08 02:05:53,927 - --------------------------------------------------------
+INFO 2017-08-08 02:05:53,927 - Saving the accuracy result of the training
+INFO 2017-08-08 02:05:53,927 - Number of layers: 1
+INFO 2017-08-08 02:05:53,927 - Number of neurons: 512
+INFO 2017-08-08 02:05:53,927 - Activation: selu
+INFO 2017-08-08 02:05:53,927 - Optimizer: adamax
+INFO 2017-08-08 02:05:53,927 - Dropout: 0.15
+INFO 2017-08-08 02:18:14,624 - Acc @ Training: 0%
+INFO 2017-08-08 02:18:14,624 - Acc @ Testing: 52.56%
+INFO 2017-08-08 02:18:14,624 - --------------------------------------------------------
+INFO 2017-08-08 02:18:14,624 - Saving the accuracy result of the training
+INFO 2017-08-08 02:18:14,624 - Number of layers: 4
+INFO 2017-08-08 02:18:14,625 - Number of neurons: 512
+INFO 2017-08-08 02:18:14,625 - Activation: sigmoid
+INFO 2017-08-08 02:18:14,625 - Optimizer: adamax
+INFO 2017-08-08 02:18:14,625 - Dropout: 0.05
+INFO 2017-08-08 02:39:37,336 - Acc @ Training: 0%
+INFO 2017-08-08 02:39:37,336 - Acc @ Testing: 52.3%
+INFO 2017-08-08 02:39:37,337 - --------------------------------------------------------
+INFO 2017-08-08 02:39:37,337 - Saving the accuracy result of the training
+INFO 2017-08-08 02:39:37,337 - Number of layers: 1
+INFO 2017-08-08 02:39:37,337 - Number of neurons: 512
+INFO 2017-08-08 02:39:37,337 - Activation: selu
+INFO 2017-08-08 02:39:37,337 - Optimizer: adamax
+INFO 2017-08-08 02:39:37,337 - Dropout: 0.15
+INFO 2017-08-08 02:52:49,877 - Acc @ Training: 0%
+INFO 2017-08-08 02:52:49,877 - Acc @ Testing: 50.54%
+INFO 2017-08-08 02:52:49,877 - --------------------------------------------------------
+INFO 2017-08-08 02:52:49,877 - Saving the accuracy result of the training
+INFO 2017-08-08 02:52:49,877 - Number of layers: 3
+INFO 2017-08-08 02:52:49,877 - Number of neurons: 512
+INFO 2017-08-08 02:52:49,877 - Activation: elu
+INFO 2017-08-08 02:52:49,877 - Optimizer: sgd
+INFO 2017-08-08 02:52:49,877 - Dropout: 0.15
+INFO 2017-08-08 03:05:54,024 - Acc @ Training: 0%
+INFO 2017-08-08 03:05:54,024 - Acc @ Testing: 48.92%
+INFO 2017-08-08 03:05:54,024 - --------------------------------------------------------
+INFO 2017-08-08 03:05:54,024 - Saving the accuracy result of the training
+INFO 2017-08-08 03:05:54,024 - Number of layers: 4
+INFO 2017-08-08 03:05:54,024 - Number of neurons: 512
+INFO 2017-08-08 03:05:54,024 - Activation: sigmoid
+INFO 2017-08-08 03:05:54,024 - Optimizer: adamax
+INFO 2017-08-08 03:05:54,024 - Dropout: 0.05
+INFO 2017-08-08 03:26:06,918 - Acc @ Training: 0%
+INFO 2017-08-08 03:26:06,918 - Acc @ Testing: 52.71%
+INFO 2017-08-08 03:26:06,918 - --------------------------------------------------------
+INFO 2017-08-08 03:26:06,918 - Saving the accuracy result of the training
+INFO 2017-08-08 03:26:06,918 - Number of layers: 3
+INFO 2017-08-08 03:26:06,918 - Number of neurons: 512
+INFO 2017-08-08 03:26:06,918 - Activation: elu
+INFO 2017-08-08 03:26:06,918 - Optimizer: sgd
+INFO 2017-08-08 03:26:06,918 - Dropout: 0.15
+INFO 2017-08-08 03:32:40,926 - Acc @ Training: 0%
+INFO 2017-08-08 03:32:40,926 - Acc @ Testing: 45.85%
+INFO 2017-08-08 03:32:40,926 - --------------------------------------------------------
+INFO 2017-08-08 03:32:40,926 - Saving the accuracy result of the training
+INFO 2017-08-08 03:32:40,926 - Number of layers: 3
+INFO 2017-08-08 03:32:40,926 - Number of neurons: 1024
+INFO 2017-08-08 03:32:40,927 - Activation: sigmoid
+INFO 2017-08-08 03:32:40,927 - Optimizer: sgd
+INFO 2017-08-08 03:32:40,927 - Dropout: 0.1
+INFO 2017-08-08 06:17:23,649 - Acc @ Training: 0%
+INFO 2017-08-08 06:17:23,649 - Acc @ Testing: 45.26%
+INFO 2017-08-08 06:17:23,649 - --------------------------------------------------------
+INFO 2017-08-08 06:17:23,649 - Saving the accuracy result of the training
+INFO 2017-08-08 06:17:23,649 - Number of layers: 1
+INFO 2017-08-08 06:17:23,649 - Number of neurons: 512
+INFO 2017-08-08 06:17:23,649 - Activation: selu
+INFO 2017-08-08 06:17:23,649 - Optimizer: adamax
+INFO 2017-08-08 06:17:23,650 - Dropout: 0.05
+INFO 2017-08-08 06:26:10,535 - Acc @ Training: 0%
+INFO 2017-08-08 06:26:10,535 - Acc @ Testing: 52.19%
+INFO 2017-08-08 06:26:10,535 - --------------------------------------------------------
+INFO 2017-08-08 06:26:10,536 - Saving the accuracy result of the training
+INFO 2017-08-08 06:26:10,536 - Number of layers: 3
+INFO 2017-08-08 06:26:10,536 - Number of neurons: 1024
+INFO 2017-08-08 06:26:10,536 - Activation: sigmoid
+INFO 2017-08-08 06:26:10,536 - Optimizer: adamax
+INFO 2017-08-08 06:26:10,536 - Dropout: 0.05
+INFO 2017-08-08 06:55:46,189 - Acc @ Training: 0%
+INFO 2017-08-08 06:55:46,189 - Acc @ Testing: 52.54%
+INFO 2017-08-08 06:55:46,190 - --------------------------------------------------------
+INFO 2017-08-08 06:55:46,190 - Saving the accuracy result of the training
+INFO 2017-08-08 06:55:46,190 - Number of layers: 3
+INFO 2017-08-08 06:55:46,190 - Number of neurons: 1024
+INFO 2017-08-08 06:55:46,190 - Activation: selu
+INFO 2017-08-08 06:55:46,190 - Optimizer: adamax
+INFO 2017-08-08 06:55:46,190 - Dropout: 0.15
+INFO 2017-08-08 07:05:29,947 - Acc @ Training: 0%
+INFO 2017-08-08 07:05:29,947 - Acc @ Testing: 10.0%
+INFO 2017-08-08 07:05:29,947 - --------------------------------------------------------
+INFO 2017-08-08 07:05:29,947 - Saving the accuracy result of the training
+INFO 2017-08-08 07:05:29,947 - Number of layers: 3
+INFO 2017-08-08 07:05:29,947 - Number of neurons: 1024
+INFO 2017-08-08 07:05:29,947 - Activation: sigmoid
+INFO 2017-08-08 07:05:29,947 - Optimizer: adamax
+INFO 2017-08-08 07:05:29,947 - Dropout: 0.05
+INFO 2017-08-08 07:43:55,949 - Acc @ Training: 0%
+INFO 2017-08-08 07:43:55,949 - Acc @ Testing: 53.3%
+INFO 2017-08-08 07:43:55,949 - --------------------------------------------------------
+INFO 2017-08-08 07:43:55,950 - Saving the accuracy result of the training
+INFO 2017-08-08 07:43:55,950 - Number of layers: 1
+INFO 2017-08-08 07:43:55,950 - Number of neurons: 512
+INFO 2017-08-08 07:43:55,950 - Activation: elu
+INFO 2017-08-08 07:43:55,950 - Optimizer: sgd
+INFO 2017-08-08 07:43:55,950 - Dropout: 0.05
+INFO 2017-08-08 07:48:39,833 - Acc @ Training: 0%
+INFO 2017-08-08 07:48:39,833 - Acc @ Testing: 44.06%
+INFO 2017-08-08 07:48:39,833 - --------------------------------------------------------
+INFO 2017-08-08 07:48:39,833 - Saving the accuracy result of the training
+INFO 2017-08-08 07:48:39,833 - Number of layers: 1
+INFO 2017-08-08 07:48:39,833 - Number of neurons: 512
+INFO 2017-08-08 07:48:39,833 - Activation: selu
+INFO 2017-08-08 07:48:39,833 - Optimizer: adamax
+INFO 2017-08-08 07:48:39,833 - Dropout: 0.15
+INFO 2017-08-08 08:01:25,158 - Acc @ Training: 0%
+INFO 2017-08-08 08:01:25,158 - Acc @ Testing: 52.17%
+INFO 2017-08-08 08:01:25,158 - --------------------------------------------------------
+INFO 2017-08-08 08:01:25,158 - Saving the accuracy result of the training
+INFO 2017-08-08 08:01:25,158 - Number of layers: 4
+INFO 2017-08-08 08:01:25,158 - Number of neurons: 1024
+INFO 2017-08-08 08:01:25,158 - Activation: sigmoid
+INFO 2017-08-08 08:01:25,158 - Optimizer: adamax
+INFO 2017-08-08 08:01:25,158 - Dropout: 0.1
+INFO 2017-08-08 09:22:31,217 - Acc @ Training: 0%
+INFO 2017-08-08 09:22:31,220 - Acc @ Testing: 53.34%
+INFO 2017-08-08 09:22:31,220 - --------------------------------------------------------
+INFO 2017-08-08 09:22:31,220 - Saving the accuracy result of the training
+INFO 2017-08-08 09:22:31,220 - Number of layers: 3
+INFO 2017-08-08 09:22:31,220 - Number of neurons: 256
+INFO 2017-08-08 09:22:31,220 - Activation: selu
+INFO 2017-08-08 09:22:31,221 - Optimizer: adamax
+INFO 2017-08-08 09:22:31,221 - Dropout: 0.15
+INFO 2017-08-08 09:31:08,474 - Acc @ Training: 0%
+INFO 2017-08-08 09:31:08,474 - Acc @ Testing: 54.65%
+INFO 2017-08-08 09:31:08,474 - --------------------------------------------------------
+INFO 2017-08-08 09:31:08,474 - Saving the accuracy result of the training
+INFO 2017-08-08 09:31:08,474 - Number of layers: 1
+INFO 2017-08-08 09:31:08,474 - Number of neurons: 512
+INFO 2017-08-08 09:31:08,474 - Activation: sigmoid
+INFO 2017-08-08 09:31:08,474 - Optimizer: adamax
+INFO 2017-08-08 09:31:08,474 - Dropout: 0.15
+INFO 2017-08-08 09:51:35,185 - Acc @ Training: 0%
+INFO 2017-08-08 09:51:35,185 - Acc @ Testing: 52.68%
+INFO 2017-08-08 09:51:35,185 - --------------------------------------------------------
+INFO 2017-08-08 09:51:35,186 - Saving the accuracy result of the training
+INFO 2017-08-08 09:51:35,186 - Number of layers: 1
+INFO 2017-08-08 09:51:35,186 - Number of neurons: 256
+INFO 2017-08-08 09:51:35,186 - Activation: elu
+INFO 2017-08-08 09:51:35,186 - Optimizer: adamax
+INFO 2017-08-08 09:51:35,186 - Dropout: 0.15
+INFO 2017-08-08 09:56:15,535 - Acc @ Training: 0%
+INFO 2017-08-08 09:56:15,535 - Acc @ Testing: 51.17%
+INFO 2017-08-08 09:56:15,535 - --------------------------------------------------------
+INFO 2017-08-08 09:56:15,535 - Generation Average: 48.406
+INFO 2017-08-08 09:56:15,535 - --------------------------------------------------------
+INFO 2017-08-08 11:39:07,438 - Parents: [{'nb_layers': 3, 'nb_neurons': 256, 'optimizer': 'adamax', 'dropout': 0.15, 'activation': 'selu'}, {'nb_layers': 4, 'nb_neurons': 1024, 'optimizer': 'adamax', 'dropout': 0.05, 'activation': 'sigmoid'}, {'nb_layers': 4, 'nb_neurons': 1024, 'optimizer': 'adamax', 'dropout': 0.1, 'activation': 'sigmoid'}, {'nb_layers': 3, 'nb_neurons': 1024, 'optimizer': 'adamax', 'dropout': 0.05, 'activation': 'sigmoid'}]
+INFO 2017-08-08 11:39:07,438 - *************************************************
+INFO 2017-08-08 11:39:07,439 - ------ GEN 4 ------
+INFO 2017-08-08 11:39:07,439 - Saving the accuracy result of the training
+INFO 2017-08-08 11:39:07,439 - Number of layers: 3
+INFO 2017-08-08 11:39:07,439 - Number of neurons: 256
+INFO 2017-08-08 11:39:07,439 - Activation: selu
+INFO 2017-08-08 11:39:07,439 - Optimizer: adamax
+INFO 2017-08-08 11:39:07,439 - Dropout: 0.15
+INFO 2017-08-08 11:44:34,887 - Acc @ Training: 0%
+INFO 2017-08-08 11:44:34,891 - Acc @ Testing: 54.87%
+INFO 2017-08-08 11:44:34,891 - --------------------------------------------------------
+INFO 2017-08-08 11:44:34,891 - Saving the accuracy result of the training
+INFO 2017-08-08 11:44:34,891 - Number of layers: 4
+INFO 2017-08-08 11:44:34,891 - Number of neurons: 1024
+INFO 2017-08-08 11:44:34,891 - Activation: sigmoid
+INFO 2017-08-08 11:44:34,891 - Optimizer: adamax
+INFO 2017-08-08 11:44:34,891 - Dropout: 0.05
+INFO 2017-08-08 11:59:49,926 - Acc @ Training: 0%
+INFO 2017-08-08 11:59:49,926 - Acc @ Testing: 53.68%
+INFO 2017-08-08 11:59:49,926 - --------------------------------------------------------
+INFO 2017-08-08 11:59:49,926 - Saving the accuracy result of the training
+INFO 2017-08-08 11:59:49,926 - Number of layers: 4
+INFO 2017-08-08 11:59:49,927 - Number of neurons: 1024
+INFO 2017-08-08 11:59:49,927 - Activation: relu
+INFO 2017-08-08 11:59:49,927 - Optimizer: adamax
+INFO 2017-08-08 11:59:49,927 - Dropout: 0.1
+INFO 2017-08-08 12:10:50,664 - Acc @ Training: 0%
+INFO 2017-08-08 12:10:50,664 - Acc @ Testing: 52.07%
+INFO 2017-08-08 12:10:50,664 - --------------------------------------------------------
+INFO 2017-08-08 12:10:50,664 - Saving the accuracy result of the training
+INFO 2017-08-08 12:10:50,664 - Number of layers: 3
+INFO 2017-08-08 12:10:50,664 - Number of neurons: 1024
+INFO 2017-08-08 12:10:50,664 - Activation: sigmoid
+INFO 2017-08-08 12:10:50,664 - Optimizer: adamax
+INFO 2017-08-08 12:10:50,664 - Dropout: 0.15
+INFO 2017-08-08 12:29:28,109 - Acc @ Training: 0%
+INFO 2017-08-08 12:29:28,109 - Acc @ Testing: 54.33%
+INFO 2017-08-08 12:29:28,109 - --------------------------------------------------------
+INFO 2017-08-08 12:29:28,109 - Saving the accuracy result of the training
+INFO 2017-08-08 12:29:28,109 - Number of layers: 3
+INFO 2017-08-08 12:29:28,109 - Number of neurons: 256
+INFO 2017-08-08 12:29:28,109 - Activation: sigmoid
+INFO 2017-08-08 12:29:28,109 - Optimizer: adamax
+INFO 2017-08-08 12:29:28,109 - Dropout: 0.15
+INFO 2017-08-08 12:34:24,791 - Acc @ Training: 0%
+INFO 2017-08-08 12:34:24,791 - Acc @ Testing: 53.56%
+INFO 2017-08-08 12:34:24,791 - --------------------------------------------------------
+INFO 2017-08-08 12:34:24,791 - Saving the accuracy result of the training
+INFO 2017-08-08 12:34:24,791 - Number of layers: 3
+INFO 2017-08-08 12:34:24,791 - Number of neurons: 1024
+INFO 2017-08-08 12:34:24,791 - Activation: sigmoid
+INFO 2017-08-08 12:34:24,791 - Optimizer: adamax
+INFO 2017-08-08 12:34:24,791 - Dropout: 0.15
+INFO 2017-08-08 12:50:50,030 - Acc @ Training: 0%
+INFO 2017-08-08 12:50:50,030 - Acc @ Testing: 54.95%
+INFO 2017-08-08 12:50:50,030 - --------------------------------------------------------
+INFO 2017-08-08 12:50:50,030 - Saving the accuracy result of the training
+INFO 2017-08-08 12:50:50,030 - Number of layers: 3
+INFO 2017-08-08 12:50:50,030 - Number of neurons: 1024
+INFO 2017-08-08 12:50:50,030 - Activation: relu
+INFO 2017-08-08 12:50:50,030 - Optimizer: adamax
+INFO 2017-08-08 12:50:50,030 - Dropout: 0.15
+INFO 2017-08-08 13:04:30,016 - Acc @ Training: 0%
+INFO 2017-08-08 13:04:30,016 - Acc @ Testing: 52.56%
+INFO 2017-08-08 13:04:30,017 - --------------------------------------------------------
+INFO 2017-08-08 13:04:30,017 - Saving the accuracy result of the training
+INFO 2017-08-08 13:04:30,017 - Number of layers: 3
+INFO 2017-08-08 13:04:30,017 - Number of neurons: 1024
+INFO 2017-08-08 13:04:30,017 - Activation: sigmoid
+INFO 2017-08-08 13:04:30,017 - Optimizer: adamax
+INFO 2017-08-08 13:04:30,017 - Dropout: 0.15
+INFO 2017-08-08 13:20:52,511 - Acc @ Training: 0%
+INFO 2017-08-08 13:20:52,511 - Acc @ Testing: 54.61%
+INFO 2017-08-08 13:20:52,511 - --------------------------------------------------------
+INFO 2017-08-08 13:20:52,511 - Saving the accuracy result of the training
+INFO 2017-08-08 13:20:52,511 - Number of layers: 4
+INFO 2017-08-08 13:20:52,511 - Number of neurons: 1024
+INFO 2017-08-08 13:20:52,511 - Activation: relu
+INFO 2017-08-08 13:20:52,511 - Optimizer: adamax
+INFO 2017-08-08 13:20:52,511 - Dropout: 0.1
+INFO 2017-08-08 13:33:47,941 - Acc @ Training: 0%
+INFO 2017-08-08 13:33:47,941 - Acc @ Testing: 52.0%
+INFO 2017-08-08 13:33:47,941 - --------------------------------------------------------
+INFO 2017-08-08 13:33:47,941 - Saving the accuracy result of the training
+INFO 2017-08-08 13:33:47,941 - Number of layers: 4
+INFO 2017-08-08 13:33:47,941 - Number of neurons: 1024
+INFO 2017-08-08 13:33:47,941 - Activation: relu
+INFO 2017-08-08 13:33:47,941 - Optimizer: adamax
+INFO 2017-08-08 13:33:47,941 - Dropout: 0.05
+INFO 2017-08-08 13:44:28,002 - Acc @ Training: 0%
+INFO 2017-08-08 13:44:28,002 - Acc @ Testing: 50.85%
+INFO 2017-08-08 13:44:28,003 - --------------------------------------------------------
+INFO 2017-08-08 13:44:28,003 - Saving the accuracy result of the training
+INFO 2017-08-08 13:44:28,003 - Number of layers: 3
+INFO 2017-08-08 13:44:28,003 - Number of neurons: 256
+INFO 2017-08-08 13:44:28,003 - Activation: sigmoid
+INFO 2017-08-08 13:44:28,003 - Optimizer: adamax
+INFO 2017-08-08 13:44:28,003 - Dropout: 0.15
+INFO 2017-08-08 13:50:20,193 - Acc @ Training: 0%
+INFO 2017-08-08 13:50:20,194 - Acc @ Testing: 54.1%
+INFO 2017-08-08 13:50:20,194 - --------------------------------------------------------
+INFO 2017-08-08 13:50:20,194 - Saving the accuracy result of the training
+INFO 2017-08-08 13:50:20,194 - Number of layers: 4
+INFO 2017-08-08 13:50:20,194 - Number of neurons: 1024
+INFO 2017-08-08 13:50:20,194 - Activation: relu
+INFO 2017-08-08 13:50:20,194 - Optimizer: adamax
+INFO 2017-08-08 13:50:20,194 - Dropout: 0.05
+INFO 2017-08-08 13:58:35,645 - Acc @ Training: 0%
+INFO 2017-08-08 13:58:35,645 - Acc @ Testing: 52.56%
+INFO 2017-08-08 13:58:35,645 - --------------------------------------------------------
+INFO 2017-08-08 13:58:35,645 - Saving the accuracy result of the training
+INFO 2017-08-08 13:58:35,645 - Number of layers: 3
+INFO 2017-08-08 13:58:35,645 - Number of neurons: 1024
+INFO 2017-08-08 13:58:35,645 - Activation: sigmoid
+INFO 2017-08-08 13:58:35,645 - Optimizer: adamax
+INFO 2017-08-08 13:58:35,645 - Dropout: 0.05
+INFO 2017-08-08 14:10:26,835 - Acc @ Training: 0%
+INFO 2017-08-08 14:10:26,835 - Acc @ Testing: 54.06%
+INFO 2017-08-08 14:10:26,835 - --------------------------------------------------------
+INFO 2017-08-08 14:10:26,835 - Saving the accuracy result of the training
+INFO 2017-08-08 14:10:26,835 - Number of layers: 3
+INFO 2017-08-08 14:10:26,836 - Number of neurons: 1024
+INFO 2017-08-08 14:10:26,836 - Activation: sigmoid
+INFO 2017-08-08 14:10:26,836 - Optimizer: adamax
+INFO 2017-08-08 14:10:26,836 - Dropout: 0.15
+INFO 2017-08-08 14:29:34,594 - Acc @ Training: 0%
+INFO 2017-08-08 14:29:34,594 - Acc @ Testing: 56.42%
+INFO 2017-08-08 14:29:34,594 - --------------------------------------------------------
+INFO 2017-08-08 14:29:34,595 - Saving the accuracy result of the training
+INFO 2017-08-08 14:29:34,595 - Number of layers: 4
+INFO 2017-08-08 14:29:34,595 - Number of neurons: 1024
+INFO 2017-08-08 14:29:34,595 - Activation: relu
+INFO 2017-08-08 14:29:34,595 - Optimizer: adamax
+INFO 2017-08-08 14:29:34,595 - Dropout: 0.1
+INFO 2017-08-08 14:43:57,228 - Acc @ Training: 0%
+INFO 2017-08-08 14:43:57,228 - Acc @ Testing: 52.43%
+INFO 2017-08-08 14:43:57,228 - --------------------------------------------------------
+INFO 2017-08-08 14:43:57,228 - Saving the accuracy result of the training
+INFO 2017-08-08 14:43:57,228 - Number of layers: 3
+INFO 2017-08-08 14:43:57,228 - Number of neurons: 256
+INFO 2017-08-08 14:43:57,228 - Activation: selu
+INFO 2017-08-08 14:43:57,228 - Optimizer: adamax
+INFO 2017-08-08 14:43:57,228 - Dropout: 0.15
+INFO 2017-08-08 14:47:53,847 - Acc @ Training: 0%
+INFO 2017-08-08 14:47:53,848 - Acc @ Testing: 53.24%
+INFO 2017-08-08 14:47:53,848 - --------------------------------------------------------
+INFO 2017-08-08 14:47:53,848 - Saving the accuracy result of the training
+INFO 2017-08-08 14:47:53,848 - Number of layers: 3
+INFO 2017-08-08 14:47:53,848 - Number of neurons: 1024
+INFO 2017-08-08 14:47:53,848 - Activation: selu
+INFO 2017-08-08 14:47:53,848 - Optimizer: adamax
+INFO 2017-08-08 14:47:53,848 - Dropout: 0.05
+INFO 2017-08-08 14:50:55,663 - Acc @ Training: 0%
+INFO 2017-08-08 14:50:55,663 - Acc @ Testing: 10.0%
+INFO 2017-08-08 14:50:55,663 - --------------------------------------------------------
+INFO 2017-08-08 14:50:55,663 - Saving the accuracy result of the training
+INFO 2017-08-08 14:50:55,663 - Number of layers: 3
+INFO 2017-08-08 14:50:55,663 - Number of neurons: 1024
+INFO 2017-08-08 14:50:55,663 - Activation: relu
+INFO 2017-08-08 14:50:55,663 - Optimizer: adamax
+INFO 2017-08-08 14:50:55,663 - Dropout: 0.15
+INFO 2017-08-08 15:08:11,528 - Acc @ Training: 0%
+INFO 2017-08-08 15:08:11,529 - Acc @ Testing: 52.56%
+INFO 2017-08-08 15:08:11,529 - --------------------------------------------------------
+INFO 2017-08-08 15:08:11,529 - Saving the accuracy result of the training
+INFO 2017-08-08 15:08:11,529 - Number of layers: 3
+INFO 2017-08-08 15:08:11,529 - Number of neurons: 1024
+INFO 2017-08-08 15:08:11,529 - Activation: sigmoid
+INFO 2017-08-08 15:08:11,529 - Optimizer: adamax
+INFO 2017-08-08 15:08:11,529 - Dropout: 0.15
+INFO 2017-08-08 15:24:10,334 - Acc @ Training: 0%
+INFO 2017-08-08 15:24:10,334 - Acc @ Testing: 53.76%
+INFO 2017-08-08 15:24:10,334 - --------------------------------------------------------
+INFO 2017-08-08 15:24:10,334 - Saving the accuracy result of the training
+INFO 2017-08-08 15:24:10,334 - Number of layers: 3
+INFO 2017-08-08 15:24:10,335 - Number of neurons: 1024
+INFO 2017-08-08 15:24:10,335 - Activation: sigmoid
+INFO 2017-08-08 15:24:10,335 - Optimizer: adamax
+INFO 2017-08-08 15:24:10,335 - Dropout: 0.15
+INFO 2017-08-08 15:37:58,092 - Acc @ Training: 0%
+INFO 2017-08-08 15:37:58,093 - Acc @ Testing: 53.46%
+INFO 2017-08-08 15:37:58,093 - --------------------------------------------------------
+INFO 2017-08-08 15:37:58,093 - Generation Average: 51.3035
+INFO 2017-08-08 15:37:58,093 - --------------------------------------------------------
+INFO 2017-08-08 16:50:36,743 - Cifar10 data retrieved & Processed
+INFO 2017-08-08 16:50:36,744 - Starting Proof of Concept
+INFO 2017-08-08 16:50:36,744 - Number of layers: [1, 2, 3, 4, 5]
+INFO 2017-08-08 16:50:36,744 - Number of neurons: [32, 64, 128, 256, 512, 768, 1024]
+INFO 2017-08-08 16:50:36,744 - Activation: ['tanh', 'sigmoid', 'relu', 'elu', 'selu', 'linear']
+INFO 2017-08-08 16:50:36,744 - Optimizer: ['sgd', 'adamax', 'rmsprop', 'adagrad', 'adadelta', 'adam', 'nadam']
+INFO 2017-08-08 16:50:36,744 - Dropout: [0, 0.05, 0.1, 0.15, 0.2, 0.25, 0.3, 0.4]
+INFO 2017-08-08 16:50:36,744 - /////////////////////////////////////////////////////
+INFO 2017-08-08 16:50:36,745 - Parents: [{'optimizer': 'adamax', 'nb_neurons': 1024, 'activation': 'sigmoid', 'dropout': 0.15, 'nb_layers': 3}, {'optimizer': 'adamax', 'nb_neurons': 1024, 'activation': 'sigmoid', 'dropout': 0.15, 'nb_layers': 3}, {'optimizer': 'adamax', 'nb_neurons': 256, 'activation': 'selu', 'dropout': 0.15, 'nb_layers': 3}, {'optimizer': 'adamax', 'nb_neurons': 1024, 'activation': 'sigmoid', 'dropout': 0.15, 'nb_layers': 3}]
+INFO 2017-08-08 16:50:36,745 - *************************************************
+INFO 2017-08-08 16:50:36,746 - ------ GEN 5 ------
+INFO 2017-08-08 16:50:36,746 - Saving the accuracy result of the training
+INFO 2017-08-08 16:50:36,746 - Number of layers: 3
+INFO 2017-08-08 16:50:36,746 - Number of neurons: 1024
+INFO 2017-08-08 16:50:36,746 - Activation: sigmoid
+INFO 2017-08-08 16:50:36,746 - Optimizer: adamax
+INFO 2017-08-08 16:50:36,746 - Dropout: 0.15
+INFO 2017-08-08 17:09:08,703 - Acc @ Training: 0%
+INFO 2017-08-08 17:09:08,709 - Acc @ Testing: 55.63%
+INFO 2017-08-08 17:09:08,709 - --------------------------------------------------------
+INFO 2017-08-08 17:09:08,709 - Saving the accuracy result of the training
+INFO 2017-08-08 17:09:08,709 - Number of layers: 3
+INFO 2017-08-08 17:09:08,709 - Number of neurons: 1024
+INFO 2017-08-08 17:09:08,709 - Activation: sigmoid
+INFO 2017-08-08 17:09:08,709 - Optimizer: adamax
+INFO 2017-08-08 17:09:08,709 - Dropout: 0.15
+INFO 2017-08-08 17:23:11,113 - Acc @ Training: 0%
+INFO 2017-08-08 17:23:11,114 - Acc @ Testing: 54.37%
+INFO 2017-08-08 17:23:11,114 - --------------------------------------------------------
+INFO 2017-08-08 17:23:11,114 - Saving the accuracy result of the training
+INFO 2017-08-08 17:23:11,114 - Number of layers: 4
+INFO 2017-08-08 17:23:11,114 - Number of neurons: 256
+INFO 2017-08-08 17:23:11,114 - Activation: selu
+INFO 2017-08-08 17:23:11,114 - Optimizer: adamax
+INFO 2017-08-08 17:23:11,114 - Dropout: 0.15
+INFO 2017-08-08 17:28:43,385 - Acc @ Training: 0%
+INFO 2017-08-08 17:28:43,385 - Acc @ Testing: 52.87%
+INFO 2017-08-08 17:28:43,385 - --------------------------------------------------------
+INFO 2017-08-08 17:28:43,385 - Saving the accuracy result of the training
+INFO 2017-08-08 17:28:43,385 - Number of layers: 3
+INFO 2017-08-08 17:28:43,385 - Number of neurons: 1024
+INFO 2017-08-08 17:28:43,385 - Activation: sigmoid
+INFO 2017-08-08 17:28:43,385 - Optimizer: adamax
+INFO 2017-08-08 17:28:43,385 - Dropout: 0.1
+INFO 2017-08-08 17:46:19,007 - Acc @ Training: 0%
+INFO 2017-08-08 17:46:19,008 - Acc @ Testing: 55.0%
+INFO 2017-08-08 17:46:19,008 - --------------------------------------------------------
+INFO 2017-08-08 17:46:19,008 - Saving the accuracy result of the training
+INFO 2017-08-08 17:46:19,008 - Number of layers: 3
+INFO 2017-08-08 17:46:19,008 - Number of neurons: 1024
+INFO 2017-08-08 17:46:19,008 - Activation: sigmoid
+INFO 2017-08-08 17:46:19,008 - Optimizer: adamax
+INFO 2017-08-08 17:46:19,008 - Dropout: 0.15
+INFO 2017-08-08 18:03:10,329 - Acc @ Training: 0%
+INFO 2017-08-08 18:03:10,329 - Acc @ Testing: 54.91%
+INFO 2017-08-08 18:03:10,329 - --------------------------------------------------------
+INFO 2017-08-08 18:03:10,329 - Saving the accuracy result of the training
+INFO 2017-08-08 18:03:10,329 - Number of layers: 3
+INFO 2017-08-08 18:03:10,329 - Number of neurons: 1024
+INFO 2017-08-08 18:03:10,329 - Activation: sigmoid
+INFO 2017-08-08 18:03:10,329 - Optimizer: adamax
+INFO 2017-08-08 18:03:10,329 - Dropout: 0.15
+INFO 2017-08-08 18:22:05,884 - Acc @ Training: 0%
+INFO 2017-08-08 18:22:05,885 - Acc @ Testing: 55.44%
+INFO 2017-08-08 18:22:05,885 - --------------------------------------------------------
+INFO 2017-08-08 18:22:05,885 - Saving the accuracy result of the training
+INFO 2017-08-08 18:22:05,885 - Number of layers: 3
+INFO 2017-08-08 18:22:05,885 - Number of neurons: 256
+INFO 2017-08-08 18:22:05,885 - Activation: sigmoid
+INFO 2017-08-08 18:22:05,885 - Optimizer: adamax
+INFO 2017-08-08 18:22:05,885 - Dropout: 0.1
+INFO 2017-08-08 18:25:48,221 - Acc @ Training: 0%
+INFO 2017-08-08 18:25:48,221 - Acc @ Testing: 51.06%
+INFO 2017-08-08 18:25:48,221 - --------------------------------------------------------
+INFO 2017-08-08 18:25:48,221 - Saving the accuracy result of the training
+INFO 2017-08-08 18:25:48,221 - Number of layers: 3
+INFO 2017-08-08 18:25:48,221 - Number of neurons: 1024
+INFO 2017-08-08 18:25:48,221 - Activation: sigmoid
+INFO 2017-08-08 18:25:48,221 - Optimizer: adamax
+INFO 2017-08-08 18:25:48,221 - Dropout: 0.1
+INFO 2017-08-08 18:39:03,151 - Acc @ Training: 0%
+INFO 2017-08-08 18:39:03,151 - Acc @ Testing: 54.91%
+INFO 2017-08-08 18:39:03,151 - --------------------------------------------------------
+INFO 2017-08-08 18:39:03,151 - Saving the accuracy result of the training
+INFO 2017-08-08 18:39:03,151 - Number of layers: 3
+INFO 2017-08-08 18:39:03,151 - Number of neurons: 256
+INFO 2017-08-08 18:39:03,151 - Activation: sigmoid
+INFO 2017-08-08 18:39:03,151 - Optimizer: adamax
+INFO 2017-08-08 18:39:03,151 - Dropout: 0.1
+INFO 2017-08-08 18:42:44,251 - Acc @ Training: 0%
+INFO 2017-08-08 18:42:44,251 - Acc @ Testing: 52.57%
+INFO 2017-08-08 18:42:44,251 - --------------------------------------------------------
+INFO 2017-08-08 18:42:44,251 - Saving the accuracy result of the training
+INFO 2017-08-08 18:42:44,251 - Number of layers: 4
+INFO 2017-08-08 18:42:44,251 - Number of neurons: 256
+INFO 2017-08-08 18:42:44,251 - Activation: selu
+INFO 2017-08-08 18:42:44,251 - Optimizer: adamax
+INFO 2017-08-08 18:42:44,251 - Dropout: 0.15
+INFO 2017-08-08 18:48:45,514 - Acc @ Training: 0%
+INFO 2017-08-08 18:48:45,514 - Acc @ Testing: 54.58%
+INFO 2017-08-08 18:48:45,514 - --------------------------------------------------------
+INFO 2017-08-08 18:48:45,514 - Saving the accuracy result of the training
+INFO 2017-08-08 18:48:45,514 - Number of layers: 3
+INFO 2017-08-08 18:48:45,514 - Number of neurons: 1024
+INFO 2017-08-08 18:48:45,514 - Activation: sigmoid
+INFO 2017-08-08 18:48:45,515 - Optimizer: adamax
+INFO 2017-08-08 18:48:45,515 - Dropout: 0.15
+INFO 2017-08-08 19:10:36,182 - Acc @ Training: 0%
+INFO 2017-08-08 19:10:36,182 - Acc @ Testing: 56.42%
+INFO 2017-08-08 19:10:36,182 - --------------------------------------------------------
+INFO 2017-08-08 19:10:36,182 - Saving the accuracy result of the training
+INFO 2017-08-08 19:10:36,182 - Number of layers: 3
+INFO 2017-08-08 19:10:36,182 - Number of neurons: 1024
+INFO 2017-08-08 19:10:36,182 - Activation: sigmoid
+INFO 2017-08-08 19:10:36,182 - Optimizer: adamax
+INFO 2017-08-08 19:10:36,182 - Dropout: 0.15
+INFO 2017-08-08 19:27:45,324 - Acc @ Training: 0%
+INFO 2017-08-08 19:27:45,324 - Acc @ Testing: 54.05%
+INFO 2017-08-08 19:27:45,324 - --------------------------------------------------------
+INFO 2017-08-08 19:27:45,324 - Saving the accuracy result of the training
+INFO 2017-08-08 19:27:45,324 - Number of layers: 3
+INFO 2017-08-08 19:27:45,324 - Number of neurons: 1024
+INFO 2017-08-08 19:27:45,324 - Activation: sigmoid
+INFO 2017-08-08 19:27:45,324 - Optimizer: adamax
+INFO 2017-08-08 19:27:45,324 - Dropout: 0.15
+INFO 2017-08-08 19:46:02,637 - Acc @ Training: 0%
+INFO 2017-08-08 19:46:02,637 - Acc @ Testing: 54.66%
+INFO 2017-08-08 19:46:02,637 - --------------------------------------------------------
+INFO 2017-08-08 19:46:02,637 - Saving the accuracy result of the training
+INFO 2017-08-08 19:46:02,637 - Number of layers: 3
+INFO 2017-08-08 19:46:02,637 - Number of neurons: 1024
+INFO 2017-08-08 19:46:02,637 - Activation: sigmoid
+INFO 2017-08-08 19:46:02,637 - Optimizer: adamax
+INFO 2017-08-08 19:46:02,638 - Dropout: 0.15
+INFO 2017-08-08 19:56:02,887 - Acc @ Training: 0%
+INFO 2017-08-08 19:56:02,887 - Acc @ Testing: 51.41%
+INFO 2017-08-08 19:56:02,887 - --------------------------------------------------------
+INFO 2017-08-08 19:56:02,887 - Saving the accuracy result of the training
+INFO 2017-08-08 19:56:02,887 - Number of layers: 4
+INFO 2017-08-08 19:56:02,887 - Number of neurons: 256
+INFO 2017-08-08 19:56:02,887 - Activation: selu
+INFO 2017-08-08 19:56:02,887 - Optimizer: adamax
+INFO 2017-08-08 19:56:02,887 - Dropout: 0.1
+INFO 2017-08-08 19:59:41,101 - Acc @ Training: 0%
+INFO 2017-08-08 19:59:41,102 - Acc @ Testing: 53.08%
+INFO 2017-08-08 19:59:41,102 - --------------------------------------------------------
+INFO 2017-08-08 19:59:41,102 - Saving the accuracy result of the training
+INFO 2017-08-08 19:59:41,102 - Number of layers: 3
+INFO 2017-08-08 19:59:41,102 - Number of neurons: 1024
+INFO 2017-08-08 19:59:41,102 - Activation: sigmoid
+INFO 2017-08-08 19:59:41,102 - Optimizer: adamax
+INFO 2017-08-08 19:59:41,102 - Dropout: 0.15
+INFO 2017-08-08 20:18:40,760 - Acc @ Training: 0%
+INFO 2017-08-08 20:18:40,760 - Acc @ Testing: 54.86%
+INFO 2017-08-08 20:18:40,760 - --------------------------------------------------------
+INFO 2017-08-08 20:18:40,760 - Saving the accuracy result of the training
+INFO 2017-08-08 20:18:40,760 - Number of layers: 3
+INFO 2017-08-08 20:18:40,760 - Number of neurons: 1024
+INFO 2017-08-08 20:18:40,760 - Activation: sigmoid
+INFO 2017-08-08 20:18:40,760 - Optimizer: adamax
+INFO 2017-08-08 20:18:40,760 - Dropout: 0.15
+INFO 2017-08-08 20:36:39,328 - Acc @ Training: 0%
+INFO 2017-08-08 20:36:39,328 - Acc @ Testing: 55.69%
+INFO 2017-08-08 20:36:39,328 - --------------------------------------------------------
+INFO 2017-08-08 20:36:39,328 - Saving the accuracy result of the training
+INFO 2017-08-08 20:36:39,328 - Number of layers: 4
+INFO 2017-08-08 20:36:39,328 - Number of neurons: 1024
+INFO 2017-08-08 20:36:39,328 - Activation: selu
+INFO 2017-08-08 20:36:39,328 - Optimizer: adamax
+INFO 2017-08-08 20:36:39,328 - Dropout: 0.15
+INFO 2017-08-08 20:40:10,324 - Acc @ Training: 0%
+INFO 2017-08-08 20:40:10,324 - Acc @ Testing: 10.0%
+INFO 2017-08-08 20:40:10,324 - --------------------------------------------------------
+INFO 2017-08-08 20:40:10,324 - Saving the accuracy result of the training
+INFO 2017-08-08 20:40:10,324 - Number of layers: 3
+INFO 2017-08-08 20:40:10,324 - Number of neurons: 1024
+INFO 2017-08-08 20:40:10,324 - Activation: sigmoid
+INFO 2017-08-08 20:40:10,324 - Optimizer: adamax
+INFO 2017-08-08 20:40:10,324 - Dropout: 0.15

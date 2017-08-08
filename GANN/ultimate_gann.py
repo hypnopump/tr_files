@@ -99,7 +99,7 @@ class Network():
 	def train(self):
 		"""Train the model, return test accuracy."""
 		# Helper: Early stopping.
-		early_stopper = EarlyStopping(patience=10, verbose = 1)
+		early_stopper = EarlyStopping(patience=5, verbose = 1)
 		self.model.fit(self.data.x_train, self.data.y_train,
 						batch_size=self.data.batch_size,
 						epochs=10000,  # using early stopping, so no real limit
@@ -236,65 +236,65 @@ if __name__ == "__main__":
 	# pop = gen.generation()
 
 	# Create individuals from latest logs
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
-	child.acc_test = 55.16
+	child = NetworkParams(3, 256, 'selu', 'adamax', 0.15)
+	child.acc_test = 54.87
 	pop.append(child) 
-	child = NetworkParams(4, 256, 'elu', 'adam', 0.05)
-	child.acc_test = 51.13
-	pop.append(child)
-	child = NetworkParams(1, 512, 'selu', 'adamax', 0.15)
-	child.acc_test = 52.52
-	pop.append(child)
-	child = NetworkParams(4, 128, 'selu', 'nadam', 0.05)
-	child.acc_test = 47.24
-	pop.append(child)
-	child = NetworkParams(4, 512, 'selu', 'nadam', 0.05)
-	child.acc_test = 10.0
-	pop.append(child)
-	child = NetworkParams(4, 256, 'elu', 'adam', 0.05)
-	child.acc_test = 51.71
-	pop.append(child)
-	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
-	child.acc_test = 49.94
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adam', 0.1)
-	child.acc_test = 46.57
-	pop.append(child)
-	child = NetworkParams(4, 256, 'elu', 'nadam', 0.05)
-	child.acc_test = 48.58
-	pop.append(child)
 	child = NetworkParams(4, 1024, 'sigmoid', 'adamax', 0.05)
-	child.acc_test = 55.29
+	child.acc_test = 53.68
 	pop.append(child)
-	child = NetworkParams(4, 128, 'selu', 'nadam', 0.05)
-	child.acc_test = 47.08
+	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
+	child.acc_test = 52.07
 	pop.append(child)
-	child = NetworkParams(4, 256, 'selu', 'adamax', 0.1)
-	child.acc_test = 46.18
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.33
 	pop.append(child)
-	child = NetworkParams(3, 1024, 'selu', 'adamax', 0.1)
+	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 53.56
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.95
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'relu', 'adamax', 0.15)
+	child.acc_test = 52.56
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.61
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
+	child.acc_test = 52.0
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.05)
+	child.acc_test = 50.85
+	pop.append(child)
+	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.10
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.05)
+	child.acc_test = 52.56
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.05)
+	child.acc_test = 54.06
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 56.42
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
+	child.acc_test = 52.43
+	pop.append(child)
+	child = NetworkParams(3, 256, 'selu', 'adamax', 0.15)
+	child.acc_test = 53.24
+	pop.append(child)
+	child = NetworkParams(3, 1042, 'selu', 'adamax', 0.05)
 	child.acc_test = 10.0
 	pop.append(child)
-	child = NetworkParams(1, 512, 'selu', 'adamax', 0.15)
-	child.acc_test = 51.98
+	child = NetworkParams(3, 1024, 'relu', 'adamax', 0.15)
+	child.acc_test = 52.56
 	pop.append(child)
-	child = NetworkParams(1, 1024, 'selu', 'adamax', 0.1)
-	child.acc_test = 42.78
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 53.76
 	pop.append(child)
-	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
-	child.acc_test = 50.48
-	pop.append(child)
-	child = NetworkParams(1, 256, 'selu', 'adamax', 0.05)
-	child.acc_test = 51.03
-	pop.append(child)
-	child = NetworkParams(4, 128, 'selu', 'adam', 0.05)
-	child.acc_test = 48.3
-	pop.append(child)
-	child = NetworkParams(4, 256, 'elu', 'nadam', 0.05)
-	child.acc_test = 48.46
-	pop.append(child)
-	child = NetworkParams(3, 256, 'elu', 'adam', 0.05)
-	child.acc_test = 52.78
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 53.46
 	pop.append(child)
 
 	print(pop)
@@ -330,7 +330,7 @@ if __name__ == "__main__":
 	pop = parents
 
 
-	for i in range(2,gen.n_iter):
+	for i in range(4,gen.n_iter):
 		logger.info("------ GEN "+str(i+1)+" ------")
 		pop = gen.evolve(pop)
 
