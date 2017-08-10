@@ -205,19 +205,26 @@ class Genetic():
 			logger.info("Activation: "+str(nn.params['activation']))
 			logger.info("Optimizer: "+str(nn.params['optimizer']))
 			logger.info("Dropout: "+str(nn.params['dropout']))
-
+			# Train Network
 			result = Network(self.data, nn).train()
 			nn.acc_train = result[0]
 			nn.acc_test = result[1]
-
+			# Log the result
 			logger.info("Acc @ Training: "+str(nn.acc_train*100)+"%")
 			logger.info("Acc @ Testing: "+str(nn.acc_test*100)+"%")
 			logger.info("--------------------------------------------------------")
+			# Free space
+			self.free_gpu_mem()
 
 		avg_acc = self.evaluate(population)
 		self.eval_history.append(avg_acc)
 		logger.info("Generation Average: "+str(avg_acc))
 		logger.info("--------------------------------------------------------")
+
+	def free_gpu_mem(self):
+		# Free gpu space
+		keras.backend.get_session().close()
+		keras.backend.set_session(keras.backend.tf.Session())
 
 
 if __name__ == "__main__":
@@ -236,65 +243,65 @@ if __name__ == "__main__":
 	# pop = gen.generation()
 
 	# Create individuals from latest logs
-	child = NetworkParams(3, 256, 'selu', 'adamax', 0.15)
-	child.acc_test = 54.87
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 55.63
 	pop.append(child) 
-	child = NetworkParams(4, 1024, 'sigmoid', 'adamax', 0.05)
-	child.acc_test = 53.68
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.37
 	pop.append(child)
-	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
-	child.acc_test = 52.07
+	child = NetworkParams(4, 256, 'selu', 'adamax', 0.15)
+	child.acc_test = 52.87
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
+	child.acc_test = 55.00
 	pop.append(child)
 	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.33
-	pop.append(child)
-	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 53.56
+	child.acc_test = 54.91
 	pop.append(child)
 	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.95
+	child.acc_test = 55.44
 	pop.append(child)
-	child = NetworkParams(3, 1024, 'relu', 'adamax', 0.15)
+	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.1)
 	child.acc_test = 52.56
 	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.61
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
+	child.acc_test = 54.91
 	pop.append(child)
-	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
-	child.acc_test = 52.0
+	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.1)
+	child.acc_test = 52.57
 	pop.append(child)
-	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.05)
-	child.acc_test = 50.85
-	pop.append(child)
-	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.10
-	pop.append(child)
-	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.05)
-	child.acc_test = 52.56
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.05)
-	child.acc_test = 54.06
+	child = NetworkParams(4, 256, 'selu', 'adamax', 0.15)
+	child.acc_test = 54.58
 	pop.append(child)
 	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
 	child.acc_test = 56.42
 	pop.append(child)
-	child = NetworkParams(4, 1024, 'relu', 'adamax', 0.1)
-	child.acc_test = 52.43
-	pop.append(child)
-	child = NetworkParams(3, 256, 'selu', 'adamax', 0.15)
-	child.acc_test = 53.24
-	pop.append(child)
-	child = NetworkParams(3, 1042, 'selu', 'adamax', 0.05)
-	child.acc_test = 10.0
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'relu', 'adamax', 0.15)
-	child.acc_test = 52.56
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.05
 	pop.append(child)
 	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 53.76
+	child.acc_test = 54.66
 	pop.append(child)
 	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 53.46
+	child.acc_test = 51.41
+	pop.append(child)
+	child = NetworkParams(4, 256, 'selu', 'adamax', 0.1)
+	child.acc_test = 53.08
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.86
+	pop.append(child)
+	child = NetworkParams(3, 1042, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 55.69
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'selu', 'adamax', 0.15)
+	child.acc_test = 10
+	pop.append(child)
+	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.48
+	pop.append(child)
+	child = NetworkParams(4, 1024, 'sigmoid', 'adamax', 0.15)
+	child.acc_test = 54.37
 	pop.append(child)
 
 	print(pop)
@@ -330,7 +337,7 @@ if __name__ == "__main__":
 	pop = parents
 
 
-	for i in range(4,gen.n_iter):
+	for i in range(5,gen.n_iter):
 		logger.info("------ GEN "+str(i+1)+" ------")
 		pop = gen.evolve(pop)
 
