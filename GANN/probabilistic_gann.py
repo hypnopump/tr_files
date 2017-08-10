@@ -195,6 +195,7 @@ class Genetic():
 			logger.info("Activation: {0}".format(nn.params['activation']))
 			logger.info("Optimizer: {0}".format(nn.params['optimizer']))
 			logger.info("Dropout: {0}".format(nn.params['dropout']))
+			logger.info("/////////////////////////////////////////////////////")
 			# Train Network
 			nn.acc_test = Network(self.data, nn).train()
 			# Log the result
@@ -221,10 +222,9 @@ if __name__ == "__main__":
 	logger.info("Saving the accuracy result of the training")
 
 	for i in range(0,gen.n_iter):
-		logger.info("------ GEN ".fomrat(i+1)+" ------")
+		logger.info("------ GEN {0} ------".format(i+1))
 		pop = gen.evolve(pop)
 
 	# Record final information
-	logger.info("/////////////////////////////////////////////////////")
 	logger.info("/////////////////////////////////////////////////////")
 	logger.info(str(gen.eval_history))
