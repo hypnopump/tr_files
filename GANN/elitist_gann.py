@@ -4,31 +4,32 @@
 	Code written entirely by Eric Alcaide: https://github.com/EricAlcaide
 
 	Mimic biological reproduction in a darwinist environment.
-	Elititst reproduction strategy, only the best ones survive.
+	Elititst reproduction strategy, only the best ones survive
+	plus a random additional to ensure genetic diversity.
 	Attempt to create self-evolving, learning-based Neural Nets.
 
 	ConvNets would perform much better, but it's not about accuracy.
 """
 
-import logging
-import os
-import random
-import keras
-import numpy as np
-from operator import add
 from functools import reduce
-from keras.utils import np_utils
+import keras
+from keras.callbacks import EarlyStopping
 from keras.datasets import cifar10
 from keras.models import Sequential
 from keras.optimizers import Optimizer
-from keras.callbacks import EarlyStopping
+from keras.utils import np_utils
 from keras.layers.core import Dense, Dropout, Activation
+import logging
+import numpy as np
+from operator import add
+import os
+import random
 
 # For reproducibility
 np.random.seed(5)
 # Record settings
 LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
-logging.basicConfig(filename=str(os.getcwd())+"/logging/ultimate_log.txt",
+logging.basicConfig(filename=str(os.getcwd())+"/logging/elitist_log.txt",
 					format = LOG_FORMAT,
 					level = logging.DEBUG,
 					filemode = "a")
@@ -83,7 +84,7 @@ class Network():
 		model = Sequential()
 		# Add each layer.
 		for i in range(params['nb_layers']):
-			# Need input shape for first layer.
+			# Need input dim for first layer.
 			if i == 0:
 				model.add(Dense(params['nb_neurons'], activation=params['activation'], input_dim = data.input_dim))
 			else:
@@ -99,17 +100,17 @@ class Network():
 	def train(self):
 		"""Train the model, return test accuracy."""
 		# Helper: Early stopping.
-		early_stopper = EarlyStopping(patience=5, verbose = 1)
+		early_stop = EarlyStopping(patience=5, verbose = 1)
 		self.model.fit(self.data.x_train, self.data.y_train,
 						batch_size=self.data.batch_size,
 						epochs=10000,  # using early stopping, so no real limit
 						verbose=1,
 						validation_split=0.05,
-						callbacks=[early_stopper])
+						callbacks=[early_stop])
 
 		score = self.model.evaluate(self.data.x_test, self.data.y_test, verbose=1)
 
-		return 0, score[1]  # 1 is accuracy. 0 is loss.
+		return score[1]  # return accuracy. [0] is loss.
 
 
 # Genetic Algorithm stuff
@@ -118,7 +119,7 @@ class Genetic():
 		self.data = DataPrep()
 
 		self.n_nets = 20
-		self.n_iter = 15
+		self.n_iter = 10
 		self.retain = 0.2
 		self.retain_length = int(self.retain*self.n_nets)
 		self.mutation = 0.1
@@ -173,7 +174,7 @@ class Genetic():
 			if self.random_add > np.random.random():
 				parents.append(nn)
 		# Record the selected parents
-		logger.info("Parents: "+str([nn.params for nn in parents]))
+		logger.info("Parents: {0}".format(str([nn.params for nn in parents])))
 		logger.info("*************************************************")
 		# Mutate some individuals to maintain genetic diversity
 		for nn in parents:
@@ -200,25 +201,24 @@ class Genetic():
 	def train(self, population):
 		for nn in population:
 			logger.info("Saving the accuracy result of the training")
-			logger.info("Number of layers: "+str(nn.params['nb_layers']))
-			logger.info("Number of neurons: "+str(nn.params['nb_neurons']))
-			logger.info("Activation: "+str(nn.params['activation']))
-			logger.info("Optimizer: "+str(nn.params['optimizer']))
-			logger.info("Dropout: "+str(nn.params['dropout']))
+			logger.info("Number of layers: {0}".format(nn.params['nb_layers']))
+			logger.info("Number of neurons: {0}".format(nn.params['nb_neurons']))
+			logger.info("Activation: {0}".format(nn.params['activation']))
+			logger.info("Optimizer: {0}".format(nn.params['optimizer']))
+			logger.info("Dropout: {0}".format(nn.params['dropout']))
 			# Train Network
 			result = Network(self.data, nn).train()
 			nn.acc_train = result[0]
 			nn.acc_test = result[1]
 			# Log the result
-			logger.info("Acc @ Training: "+str(nn.acc_train*100)+"%")
-			logger.info("Acc @ Testing: "+str(nn.acc_test*100)+"%")
+			logger.info("Acc @ Testing: {0}%".format(nn.acc_test*100)+"%")
 			logger.info("--------------------------------------------------------")
 			# Free space
 			self.free_gpu_mem()
 
 		avg_acc = self.evaluate(population)
 		self.eval_history.append(avg_acc)
-		logger.info("Generation Average: "+str(avg_acc))
+		logger.info("Generation Average: {0}%".format(avg_acc))
 		logger.info("--------------------------------------------------------")
 
 	def free_gpu_mem(self):
@@ -229,122 +229,15 @@ class Genetic():
 
 if __name__ == "__main__":
 	gen = Genetic()
-
-	logger.info("Starting Proof of Concept")
-	logger.info("Number of layers: "+str(gen.nb_layers))
-	logger.info("Number of neurons: "+str(gen.nb_neurons))
-	logger.info("Activation: "+str(gen.activation))
-	logger.info("Optimizer: "+str(gen.optimizer))
-	logger.info("Dropout: "+str(gen.dropout))
-	logger.info("/////////////////////////////////////////////////////")
-
+	
 	# Run the Genetic Algorithm and let Nets Evolve
-	pop = []
-	# pop = gen.generation()
+	pop = gen.generation()
 
-	# Create individuals from latest logs
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 55.63
-	pop.append(child) 
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.37
-	pop.append(child)
-	child = NetworkParams(4, 256, 'selu', 'adamax', 0.15)
-	child.acc_test = 52.87
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
-	child.acc_test = 55.00
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.91
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 55.44
-	pop.append(child)
-	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.1)
-	child.acc_test = 52.56
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.1)
-	child.acc_test = 54.91
-	pop.append(child)
-	child = NetworkParams(3, 256, 'sigmoid', 'adamax', 0.1)
-	child.acc_test = 52.57
-	pop.append(child)
-	child = NetworkParams(4, 256, 'selu', 'adamax', 0.15)
-	child.acc_test = 54.58
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 56.42
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.05
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.66
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 51.41
-	pop.append(child)
-	child = NetworkParams(4, 256, 'selu', 'adamax', 0.1)
-	child.acc_test = 53.08
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.86
-	pop.append(child)
-	child = NetworkParams(3, 1042, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 55.69
-	pop.append(child)
-	child = NetworkParams(4, 1024, 'selu', 'adamax', 0.15)
-	child.acc_test = 10
-	pop.append(child)
-	child = NetworkParams(3, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.48
-	pop.append(child)
-	child = NetworkParams(4, 1024, 'sigmoid', 'adamax', 0.15)
-	child.acc_test = 54.37
-	pop.append(child)
-
-	print(pop)
-	# Select the best individuals
-	tupled = [ nn for nn in sorted(pop, key=lambda x: x.acc_test, reverse=True)]
-	parents = tupled[:gen.retain_length]
-	# Select other individuals randomly to maintain genetic diversity.
-	for nn in tupled[gen.retain_length:]:
-		if gen.random_add > np.random.random():
-			parents.append(nn)
-	# Record the selected parents
-	logger.info("Parents: "+str([nn.params for nn in parents]))
-	logger.info("*************************************************")
-	# Mutate some individuals to maintain genetic diversity
-	for nn in parents:
-		for key in gen.params:
-			if gen.mutation > np.random.random():
-				nn.params[key] = random.choice(gen.params[key])
-	# Crossover of parents to generate children
-	parents_length = len(parents)
-	children_maxlength = gen.n_nets - parents_length
-	children = []
-	while len(children) < children_maxlength:
-		male = np.random.randint(0, parents_length)
-		female = np.random.randint(0, parents_length)
-		if male != female:
-			# Combine male and female
-			child = gen.breed(parents[male], parents[female])			
-			children.append(child)
-	# Extend parents list by appending children list
-	parents.extend(children)	
-	# Return the next Generation of individuals
-	pop = parents
-
-
-	for i in range(5,gen.n_iter):
-		logger.info("------ GEN "+str(i+1)+" ------")
+	for i in range(0,gen.n_iter):
+		logger.info("------ GEN {0}".format(i+1)+" ------")
 		pop = gen.evolve(pop)
 
 	# Record final information
-	print("------------------------------")
-	print("------------------------------")
-	print(gen.eval_history)
 	logger.info("/////////////////////////////////////////////////////")
 	logger.info("/////////////////////////////////////////////////////")
 	logger.info(str(gen.eval_history))
