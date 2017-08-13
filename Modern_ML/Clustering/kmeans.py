@@ -1,22 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+	Code written entirely by Eric Alcaide.
+
+	Find K clusters given a set of points.
+	Points tend to be normally distributed.
+"""
 # Import dependecies
 import numpy as np
 import matplotlib.pyplot as plt 
 
-# Extract data from the txt file
 def extract(filename):
+	""" Extract data from the txt file."""
 	return np.loadtxt(filename)
 
-# Return the Euclidean distance between two points
 def distance(a,b):
+	""" Return the Euclidean distance between two points."""
 	return np.linalg.norm(a-b)
 
-# KMEANS algorithm // K = number of clusters // epsilon = max iterations
 def kmeans(k, epsilon):
+	"""KMEANS algorithm // K = number of clusters // epsilon = max iterations"""
 	# Extract data
-	data = extract("durum.txt")
+	data = extract("toy_data.txt")
 	# Get the number of rows (instances) and columns (features) from the dataset
 	num_instances, num_features = data.shape
-	# Define k centroids (n of clusters we want to find) chosen randomly (K too high -> risk of repeating a starting point)
+	# Define k centroids (n clusters we want to find) chosen randomly (K too high -> risk of repeating a starting point)
 	centroids = data[np.random.randint(0, num_instances - 1, size=k)]
 	# Array to save the cluster a point pertains to
 	belongs_to = np.zeros((num_instances, 1))
@@ -40,15 +47,16 @@ def kmeans(k, epsilon):
 	# Return position of centroids, data and cluster assignment for each point
 	return centroids, data, belongs_to
 
-# Run the algorithm
+
 def justDoIt():
+	""" Run the algorithm."""
 	post = kmeans(2, 15)
 	# Plot graph
 	for i, c in enumerate(post[0]):
 		plt.plot([p[0] for j,p in enumerate(post[1]) if post[2][j] == i], [p[1] for j,p in enumerate(post[1]) if post[2][j] == i], '.')
 
 	plt.plot([c[0] for c in post[0]], [c[1] for c in post[0]], 'o')
-	plt.title("KMeans algorithm with K = "+str(len(post[0])))
+	plt.title("KMeans algorithm with K = {0}".format(len(post[0])))
 	plt.show()
 
 if __name__ == "__main__":

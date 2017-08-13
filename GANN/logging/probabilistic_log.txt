@@ -1,0 +1,1660 @@
+INFO 2017-08-10 19:16:32,728 - Cifar10 data retrieved & Processed
+INFO 2017-08-10 19:16:32,728 - Number of layers: [1, 2, 3, 4, 5]
+INFO 2017-08-10 19:16:32,728 - Number of neurons: [32, 64, 128, 256, 512, 768, 1024]
+INFO 2017-08-10 19:16:32,728 - Activation: ['tanh', 'sigmoid', 'relu', 'elu', 'selu']
+INFO 2017-08-10 19:16:32,728 - Optimizer: ['sgd', 'adamax', 'rmsprop', 'adagrad', 'adadelta']
+INFO 2017-08-10 19:16:32,728 - Dropout: [0.15, 0.2, 0.25]
+INFO 2017-08-10 19:16:32,728 - /////////////////////////////////////////////////////
+INFO 2017-08-10 19:16:32,728 - Saving the accuracy result of the training
+INFO 2017-08-10 19:16:32,728 - ------ GEN 1 ------
+INFO 2017-08-10 19:16:32,728 - Number of layers: 5
+INFO 2017-08-10 19:16:32,728 - Number of neurons: 768
+INFO 2017-08-10 19:16:32,728 - Activation: tanh
+INFO 2017-08-10 19:16:32,729 - Optimizer: adagrad
+INFO 2017-08-10 19:16:32,729 - Dropout: 0.2
+INFO 2017-08-10 19:19:14,470 - Acc @ Testing: 10.0%
+INFO 2017-08-10 19:19:14,470 - --------------------------------------------------------
+INFO 2017-08-10 19:19:14,475 - Number of layers: 4
+INFO 2017-08-10 19:19:14,475 - Number of neurons: 768
+INFO 2017-08-10 19:19:14,475 - Activation: relu
+INFO 2017-08-10 19:19:14,475 - Optimizer: adadelta
+INFO 2017-08-10 19:19:14,475 - Dropout: 0.25
+INFO 2017-08-10 19:36:52,992 - Acc @ Testing: 52.470000000000006%
+INFO 2017-08-10 19:36:52,993 - --------------------------------------------------------
+INFO 2017-08-10 19:36:53,000 - Number of layers: 1
+INFO 2017-08-10 19:36:53,001 - Number of neurons: 32
+INFO 2017-08-10 19:36:53,001 - Activation: selu
+INFO 2017-08-10 19:36:53,001 - Optimizer: rmsprop
+INFO 2017-08-10 19:36:53,001 - Dropout: 0.2
+INFO 2017-08-10 19:37:54,673 - Acc @ Testing: 43.49%
+INFO 2017-08-10 19:37:54,673 - --------------------------------------------------------
+INFO 2017-08-10 19:37:54,682 - Number of layers: 1
+INFO 2017-08-10 19:37:54,682 - Number of neurons: 64
+INFO 2017-08-10 19:37:54,682 - Activation: sigmoid
+INFO 2017-08-10 19:37:54,682 - Optimizer: sgd
+INFO 2017-08-10 19:37:54,682 - Dropout: 0.2
+INFO 2017-08-10 19:50:32,089 - Acc @ Testing: 49.87%
+INFO 2017-08-10 19:50:32,089 - --------------------------------------------------------
+INFO 2017-08-10 19:50:32,098 - Number of layers: 5
+INFO 2017-08-10 19:50:32,098 - Number of neurons: 256
+INFO 2017-08-10 19:50:32,099 - Activation: tanh
+INFO 2017-08-10 19:50:32,099 - Optimizer: adagrad
+INFO 2017-08-10 19:50:32,099 - Dropout: 0.2
+INFO 2017-08-10 20:01:31,511 - Acc @ Testing: 49.32%
+INFO 2017-08-10 20:01:31,511 - --------------------------------------------------------
+INFO 2017-08-10 20:01:31,524 - Number of layers: 1
+INFO 2017-08-10 20:01:31,525 - Number of neurons: 128
+INFO 2017-08-10 20:01:31,525 - Activation: elu
+INFO 2017-08-10 20:01:31,525 - Optimizer: sgd
+INFO 2017-08-10 20:01:31,525 - Dropout: 0.2
+INFO 2017-08-10 20:04:05,535 - Acc @ Testing: 46.760000000000005%
+INFO 2017-08-10 20:04:05,535 - --------------------------------------------------------
+INFO 2017-08-10 20:04:05,548 - Number of layers: 4
+INFO 2017-08-10 20:04:05,548 - Number of neurons: 768
+INFO 2017-08-10 20:04:05,548 - Activation: elu
+INFO 2017-08-10 20:04:05,549 - Optimizer: adagrad
+INFO 2017-08-10 20:04:05,549 - Dropout: 0.25
+INFO 2017-08-10 20:06:30,582 - Acc @ Testing: 10.0%
+INFO 2017-08-10 20:06:30,582 - --------------------------------------------------------
+INFO 2017-08-10 20:06:30,597 - Number of layers: 1
+INFO 2017-08-10 20:06:30,598 - Number of neurons: 64
+INFO 2017-08-10 20:06:30,598 - Activation: sigmoid
+INFO 2017-08-10 20:06:30,598 - Optimizer: adamax
+INFO 2017-08-10 20:06:30,598 - Dropout: 0.15
+INFO 2017-08-10 20:09:28,401 - Acc @ Testing: 48.74%
+INFO 2017-08-10 20:09:28,401 - --------------------------------------------------------
+INFO 2017-08-10 20:09:28,416 - Number of layers: 3
+INFO 2017-08-10 20:09:28,416 - Number of neurons: 512
+INFO 2017-08-10 20:09:28,416 - Activation: elu
+INFO 2017-08-10 20:09:28,416 - Optimizer: adagrad
+INFO 2017-08-10 20:09:28,416 - Dropout: 0.25
+INFO 2017-08-10 20:10:55,744 - Acc @ Testing: 10.0%
+INFO 2017-08-10 20:10:55,744 - --------------------------------------------------------
+INFO 2017-08-10 20:10:55,759 - Number of layers: 5
+INFO 2017-08-10 20:10:55,760 - Number of neurons: 128
+INFO 2017-08-10 20:10:55,760 - Activation: tanh
+INFO 2017-08-10 20:10:55,760 - Optimizer: sgd
+INFO 2017-08-10 20:10:55,760 - Dropout: 0.15
+INFO 2017-08-10 20:14:02,510 - Acc @ Testing: 46.97%
+INFO 2017-08-10 20:14:02,510 - --------------------------------------------------------
+INFO 2017-08-10 20:14:02,529 - Number of layers: 1
+INFO 2017-08-10 20:14:02,529 - Number of neurons: 512
+INFO 2017-08-10 20:14:02,530 - Activation: sigmoid
+INFO 2017-08-10 20:14:02,530 - Optimizer: adadelta
+INFO 2017-08-10 20:14:02,530 - Dropout: 0.2
+INFO 2017-08-10 20:21:16,302 - Acc @ Testing: 51.690000000000005%
+INFO 2017-08-10 20:21:16,302 - --------------------------------------------------------
+INFO 2017-08-10 20:21:16,319 - Number of layers: 3
+INFO 2017-08-10 20:21:16,320 - Number of neurons: 128
+INFO 2017-08-10 20:21:16,320 - Activation: tanh
+INFO 2017-08-10 20:21:16,320 - Optimizer: adamax
+INFO 2017-08-10 20:21:16,320 - Dropout: 0.2
+INFO 2017-08-10 20:27:33,872 - Acc @ Testing: 47.77%
+INFO 2017-08-10 20:27:33,872 - --------------------------------------------------------
+INFO 2017-08-10 20:27:33,894 - Number of layers: 2
+INFO 2017-08-10 20:27:33,894 - Number of neurons: 64
+INFO 2017-08-10 20:27:33,894 - Activation: elu
+INFO 2017-08-10 20:27:33,894 - Optimizer: adagrad
+INFO 2017-08-10 20:27:33,894 - Dropout: 0.25
+INFO 2017-08-10 20:34:08,688 - Acc @ Testing: 48.51%
+INFO 2017-08-10 20:34:08,688 - --------------------------------------------------------
+INFO 2017-08-10 20:34:08,708 - Number of layers: 3
+INFO 2017-08-10 20:34:08,709 - Number of neurons: 256
+INFO 2017-08-10 20:34:08,709 - Activation: tanh
+INFO 2017-08-10 20:34:08,709 - Optimizer: adagrad
+INFO 2017-08-10 20:34:08,709 - Dropout: 0.2
+INFO 2017-08-10 20:40:10,983 - Acc @ Testing: 48.94%
+INFO 2017-08-10 20:40:10,983 - --------------------------------------------------------
+INFO 2017-08-10 20:40:11,009 - Number of layers: 5
+INFO 2017-08-10 20:40:11,009 - Number of neurons: 64
+INFO 2017-08-10 20:40:11,009 - Activation: relu
+INFO 2017-08-10 20:40:11,009 - Optimizer: adadelta
+INFO 2017-08-10 20:40:11,009 - Dropout: 0.15
+INFO 2017-08-10 20:41:51,118 - Acc @ Testing: 35.72%
+INFO 2017-08-10 20:41:51,118 - --------------------------------------------------------
+INFO 2017-08-10 20:41:51,148 - Generations Average: [0, 40.016666666666666]
+INFO 2017-08-10 20:41:51,148 - --------------------------------------------------------
+INFO 2017-08-10 20:41:51,154 - Parents: [{'nb_neurons': 768, 'dropout': 0.2, 'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adagrad'}, {'nb_neurons': 768, 'dropout': 0.25, 'activation': 'relu', 'nb_layers': 4, 'optimizer': 'adadelta'}, {'nb_neurons': 256, 'dropout': 0.2, 'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adagrad'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'sgd'}, {'nb_neurons': 512, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad'}, {'nb_neurons': 64, 'dropout': 0.15, 'activation': 'relu', 'nb_layers': 5, 'optimizer': 'adadelta'}]
+INFO 2017-08-10 20:41:51,154 - *************************************************
+INFO 2017-08-10 20:41:51,154 - ------ GEN 2 ------
+INFO 2017-08-10 20:41:51,154 - Number of layers: 5
+INFO 2017-08-10 20:41:51,154 - Number of neurons: 768
+INFO 2017-08-10 20:41:51,154 - Activation: tanh
+INFO 2017-08-10 20:41:51,154 - Optimizer: adagrad
+INFO 2017-08-10 20:41:51,154 - Dropout: 0.2
+INFO 2017-08-10 21:21:43,778 - Acc @ Testing: 49.81%
+INFO 2017-08-10 21:21:43,778 - --------------------------------------------------------
+INFO 2017-08-10 21:21:43,807 - Number of layers: 4
+INFO 2017-08-10 21:21:43,807 - Number of neurons: 768
+INFO 2017-08-10 21:21:43,807 - Activation: relu
+INFO 2017-08-10 21:21:43,807 - Optimizer: adadelta
+INFO 2017-08-10 21:21:43,807 - Dropout: 0.25
+INFO 2017-08-10 21:40:11,362 - Acc @ Testing: 51.849999999999994%
+INFO 2017-08-10 21:40:11,362 - --------------------------------------------------------
+INFO 2017-08-10 21:40:11,394 - Number of layers: 5
+INFO 2017-08-10 21:40:11,394 - Number of neurons: 256
+INFO 2017-08-10 21:40:11,394 - Activation: tanh
+INFO 2017-08-10 21:40:11,394 - Optimizer: adagrad
+INFO 2017-08-10 21:40:11,394 - Dropout: 0.2
+INFO 2017-08-10 21:56:22,334 - Acc @ Testing: 51.2%
+INFO 2017-08-10 21:56:22,334 - --------------------------------------------------------
+INFO 2017-08-10 21:56:22,368 - Number of layers: 1
+INFO 2017-08-10 21:56:22,368 - Number of neurons: 128
+INFO 2017-08-10 21:56:22,368 - Activation: elu
+INFO 2017-08-10 21:56:22,368 - Optimizer: rmsprop
+INFO 2017-08-10 21:56:22,368 - Dropout: 0.2
+INFO 2017-08-10 21:57:33,368 - Acc @ Testing: 40.26%
+INFO 2017-08-10 21:57:33,368 - --------------------------------------------------------
+INFO 2017-08-10 21:57:33,398 - Number of layers: 1
+INFO 2017-08-10 21:57:33,398 - Number of neurons: 512
+INFO 2017-08-10 21:57:33,398 - Activation: sigmoid
+INFO 2017-08-10 21:57:33,398 - Optimizer: adadelta
+INFO 2017-08-10 21:57:33,399 - Dropout: 0.2
+INFO 2017-08-10 22:02:47,171 - Acc @ Testing: 49.28%
+INFO 2017-08-10 22:02:47,171 - --------------------------------------------------------
+INFO 2017-08-10 22:02:47,208 - Number of layers: 2
+INFO 2017-08-10 22:02:47,208 - Number of neurons: 64
+INFO 2017-08-10 22:02:47,208 - Activation: elu
+INFO 2017-08-10 22:02:47,208 - Optimizer: adagrad
+INFO 2017-08-10 22:02:47,208 - Dropout: 0.25
+INFO 2017-08-10 22:12:23,337 - Acc @ Testing: 49.53%
+INFO 2017-08-10 22:12:23,337 - --------------------------------------------------------
+INFO 2017-08-10 22:12:23,378 - Number of layers: 5
+INFO 2017-08-10 22:12:23,378 - Number of neurons: 64
+INFO 2017-08-10 22:12:23,378 - Activation: relu
+INFO 2017-08-10 22:12:23,378 - Optimizer: adadelta
+INFO 2017-08-10 22:12:23,378 - Dropout: 0.15
+INFO 2017-08-10 22:19:51,275 - Acc @ Testing: 46.46%
+INFO 2017-08-10 22:19:51,275 - --------------------------------------------------------
+INFO 2017-08-10 22:19:51,316 - Number of layers: 2
+INFO 2017-08-10 22:19:51,316 - Number of neurons: 64
+INFO 2017-08-10 22:19:51,316 - Activation: elu
+INFO 2017-08-10 22:19:51,316 - Optimizer: adagrad
+INFO 2017-08-10 22:19:51,316 - Dropout: 0.25
+INFO 2017-08-10 22:28:05,225 - Acc @ Testing: 50.31%
+INFO 2017-08-10 22:28:05,225 - --------------------------------------------------------
+INFO 2017-08-10 22:28:05,266 - Number of layers: 2
+INFO 2017-08-10 22:28:05,266 - Number of neurons: 64
+INFO 2017-08-10 22:28:05,266 - Activation: sigmoid
+INFO 2017-08-10 22:28:05,266 - Optimizer: adamax
+INFO 2017-08-10 22:28:05,266 - Dropout: 0.2
+INFO 2017-08-10 22:33:54,297 - Acc @ Testing: 49.34%
+INFO 2017-08-10 22:33:54,297 - --------------------------------------------------------
+INFO 2017-08-10 22:33:54,340 - Number of layers: 1
+INFO 2017-08-10 22:33:54,340 - Number of neurons: 128
+INFO 2017-08-10 22:33:54,340 - Activation: sigmoid
+INFO 2017-08-10 22:33:54,340 - Optimizer: adadelta
+INFO 2017-08-10 22:33:54,340 - Dropout: 0.2
+INFO 2017-08-10 22:37:44,997 - Acc @ Testing: 49.55%
+INFO 2017-08-10 22:37:44,997 - --------------------------------------------------------
+INFO 2017-08-10 22:37:45,039 - Number of layers: 5
+INFO 2017-08-10 22:37:45,039 - Number of neurons: 256
+INFO 2017-08-10 22:37:45,039 - Activation: tanh
+INFO 2017-08-10 22:37:45,039 - Optimizer: adagrad
+INFO 2017-08-10 22:37:45,039 - Dropout: 0.2
+INFO 2017-08-10 22:50:21,642 - Acc @ Testing: 50.54%
+INFO 2017-08-10 22:50:21,642 - --------------------------------------------------------
+INFO 2017-08-10 22:50:21,691 - Number of layers: 1
+INFO 2017-08-10 22:50:21,691 - Number of neurons: 512
+INFO 2017-08-10 22:50:21,691 - Activation: sigmoid
+INFO 2017-08-10 22:50:21,691 - Optimizer: adadelta
+INFO 2017-08-10 22:50:21,691 - Dropout: 0.2
+INFO 2017-08-10 22:57:22,116 - Acc @ Testing: 51.51%
+INFO 2017-08-10 22:57:22,116 - --------------------------------------------------------
+INFO 2017-08-10 22:57:22,171 - Number of layers: 1
+INFO 2017-08-10 22:57:22,171 - Number of neurons: 128
+INFO 2017-08-10 22:57:22,171 - Activation: elu
+INFO 2017-08-10 22:57:22,171 - Optimizer: sgd
+INFO 2017-08-10 22:57:22,171 - Dropout: 0.2
+INFO 2017-08-10 23:00:19,397 - Acc @ Testing: 48.97%
+INFO 2017-08-10 23:00:19,397 - --------------------------------------------------------
+INFO 2017-08-10 23:00:19,442 - Number of layers: 5
+INFO 2017-08-10 23:00:19,442 - Number of neurons: 64
+INFO 2017-08-10 23:00:19,442 - Activation: sigmoid
+INFO 2017-08-10 23:00:19,442 - Optimizer: adadelta
+INFO 2017-08-10 23:00:19,442 - Dropout: 0.15
+INFO 2017-08-10 23:10:53,300 - Acc @ Testing: 45.51%
+INFO 2017-08-10 23:10:53,300 - --------------------------------------------------------
+INFO 2017-08-10 23:10:53,352 - Number of layers: 1
+INFO 2017-08-10 23:10:53,352 - Number of neurons: 128
+INFO 2017-08-10 23:10:53,352 - Activation: elu
+INFO 2017-08-10 23:10:53,352 - Optimizer: adadelta
+INFO 2017-08-10 23:10:53,352 - Dropout: 0.2
+INFO 2017-08-10 23:14:32,352 - Acc @ Testing: 48.83%
+INFO 2017-08-10 23:14:32,352 - --------------------------------------------------------
+INFO 2017-08-10 23:14:32,406 - Generations Average: [0, 40.016666666666666, 48.863333333333337]%
+INFO 2017-08-10 23:14:32,406 - --------------------------------------------------------
+INFO 2017-08-10 23:14:32,406 - Parents: [{'nb_neurons': 768, 'dropout': 0.25, 'activation': 'relu', 'nb_layers': 4, 'optimizer': 'adadelta'}, {'nb_neurons': 256, 'dropout': 0.2, 'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adagrad'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'rmsprop'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad'}, {'nb_neurons': 256, 'dropout': 0.2, 'activation': 'tanh', 'nb_layers': 5, 'optimizer': 'adagrad'}, {'nb_neurons': 512, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adadelta'}]
+INFO 2017-08-10 23:14:32,406 - *************************************************
+INFO 2017-08-10 23:14:32,407 - ------ GEN 3 ------
+INFO 2017-08-10 23:14:32,407 - Number of layers: 4
+INFO 2017-08-10 23:14:32,407 - Number of neurons: 768
+INFO 2017-08-10 23:14:32,407 - Activation: relu
+INFO 2017-08-10 23:14:32,407 - Optimizer: adadelta
+INFO 2017-08-10 23:14:32,407 - Dropout: 0.2
+INFO 2017-08-10 23:30:06,232 - Acc @ Testing: 48.36%
+INFO 2017-08-10 23:30:06,232 - --------------------------------------------------------
+INFO 2017-08-10 23:30:06,289 - Number of layers: 5
+INFO 2017-08-10 23:30:06,289 - Number of neurons: 256
+INFO 2017-08-10 23:30:06,289 - Activation: tanh
+INFO 2017-08-10 23:30:06,289 - Optimizer: adagrad
+INFO 2017-08-10 23:30:06,289 - Dropout: 0.2
+INFO 2017-08-10 23:44:39,632 - Acc @ Testing: 50.6%
+INFO 2017-08-10 23:44:39,632 - --------------------------------------------------------
+INFO 2017-08-10 23:44:39,691 - Number of layers: 1
+INFO 2017-08-10 23:44:39,691 - Number of neurons: 128
+INFO 2017-08-10 23:44:39,691 - Activation: elu
+INFO 2017-08-10 23:44:39,691 - Optimizer: adamax
+INFO 2017-08-10 23:44:39,692 - Dropout: 0.2
+INFO 2017-08-10 23:48:41,392 - Acc @ Testing: 51.57000000000001%
+INFO 2017-08-10 23:48:41,392 - --------------------------------------------------------
+INFO 2017-08-10 23:48:41,449 - Number of layers: 2
+INFO 2017-08-10 23:48:41,449 - Number of neurons: 64
+INFO 2017-08-10 23:48:41,449 - Activation: elu
+INFO 2017-08-10 23:48:41,449 - Optimizer: adagrad
+INFO 2017-08-10 23:48:41,449 - Dropout: 0.25
+INFO 2017-08-10 23:56:02,424 - Acc @ Testing: 49.34%
+INFO 2017-08-10 23:56:02,424 - --------------------------------------------------------
+INFO 2017-08-10 23:56:02,484 - Number of layers: 5
+INFO 2017-08-10 23:56:02,484 - Number of neurons: 256
+INFO 2017-08-10 23:56:02,484 - Activation: tanh
+INFO 2017-08-10 23:56:02,484 - Optimizer: adagrad
+INFO 2017-08-10 23:56:02,484 - Dropout: 0.2
+INFO 2017-08-11 00:07:30,293 - Acc @ Testing: 50.080000000000005%
+INFO 2017-08-11 00:07:30,294 - --------------------------------------------------------
+INFO 2017-08-11 00:07:30,354 - Number of layers: 1
+INFO 2017-08-11 00:07:30,354 - Number of neurons: 512
+INFO 2017-08-11 00:07:30,354 - Activation: sigmoid
+INFO 2017-08-11 00:07:30,354 - Optimizer: adadelta
+INFO 2017-08-11 00:07:30,354 - Dropout: 0.2
+INFO 2017-08-11 00:13:45,787 - Acc @ Testing: 51.0%
+INFO 2017-08-11 00:13:45,788 - --------------------------------------------------------
+INFO 2017-08-11 00:13:45,848 - Number of layers: 2
+INFO 2017-08-11 00:13:45,848 - Number of neurons: 768
+INFO 2017-08-11 00:13:45,848 - Activation: elu
+INFO 2017-08-11 00:13:45,848 - Optimizer: adadelta
+INFO 2017-08-11 00:13:45,848 - Dropout: 0.25
+INFO 2017-08-11 00:24:20,791 - Acc @ Testing: 53.620000000000005%
+INFO 2017-08-11 00:24:20,791 - --------------------------------------------------------
+INFO 2017-08-11 00:24:20,859 - Number of layers: 1
+INFO 2017-08-11 00:24:20,859 - Number of neurons: 256
+INFO 2017-08-11 00:24:20,859 - Activation: tanh
+INFO 2017-08-11 00:24:20,859 - Optimizer: rmsprop
+INFO 2017-08-11 00:24:20,859 - Dropout: 0.15
+INFO 2017-08-11 00:27:43,862 - Acc @ Testing: 41.25%
+INFO 2017-08-11 00:27:43,863 - --------------------------------------------------------
+INFO 2017-08-11 00:27:43,924 - Number of layers: 2
+INFO 2017-08-11 00:27:43,924 - Number of neurons: 64
+INFO 2017-08-11 00:27:43,924 - Activation: sigmoid
+INFO 2017-08-11 00:27:43,924 - Optimizer: adadelta
+INFO 2017-08-11 00:27:43,924 - Dropout: 0.25
+INFO 2017-08-11 00:33:55,064 - Acc @ Testing: 46.949999999999996%
+INFO 2017-08-11 00:33:55,064 - --------------------------------------------------------
+INFO 2017-08-11 00:33:55,132 - Number of layers: 1
+INFO 2017-08-11 00:33:55,132 - Number of neurons: 256
+INFO 2017-08-11 00:33:55,132 - Activation: elu
+INFO 2017-08-11 00:33:55,132 - Optimizer: adagrad
+INFO 2017-08-11 00:33:55,132 - Dropout: 0.2
+INFO 2017-08-11 00:38:23,125 - Acc @ Testing: 49.66%
+INFO 2017-08-11 00:38:23,125 - --------------------------------------------------------
+INFO 2017-08-11 00:38:23,189 - Number of layers: 5
+INFO 2017-08-11 00:38:23,189 - Number of neurons: 256
+INFO 2017-08-11 00:38:23,189 - Activation: tanh
+INFO 2017-08-11 00:38:23,189 - Optimizer: adagrad
+INFO 2017-08-11 00:38:23,189 - Dropout: 0.25
+INFO 2017-08-11 00:58:54,593 - Acc @ Testing: 50.78%
+INFO 2017-08-11 00:58:54,593 - --------------------------------------------------------
+INFO 2017-08-11 00:58:54,662 - Number of layers: 1
+INFO 2017-08-11 00:58:54,662 - Number of neurons: 128
+INFO 2017-08-11 00:58:54,662 - Activation: elu
+INFO 2017-08-11 00:58:54,662 - Optimizer: adadelta
+INFO 2017-08-11 00:58:54,662 - Dropout: 0.2
+INFO 2017-08-11 01:01:54,202 - Acc @ Testing: 49.35%
+INFO 2017-08-11 01:01:54,203 - --------------------------------------------------------
+INFO 2017-08-11 01:01:54,271 - Number of layers: 1
+INFO 2017-08-11 01:01:54,271 - Number of neurons: 128
+INFO 2017-08-11 01:01:54,271 - Activation: elu
+INFO 2017-08-11 01:01:54,271 - Optimizer: sgd
+INFO 2017-08-11 01:01:54,271 - Dropout: 0.2
+INFO 2017-08-11 01:04:03,527 - Acc @ Testing: 46.02%
+INFO 2017-08-11 01:04:03,528 - --------------------------------------------------------
+INFO 2017-08-11 01:04:03,597 - Number of layers: 5
+INFO 2017-08-11 01:04:03,597 - Number of neurons: 768
+INFO 2017-08-11 01:04:03,597 - Activation: tanh
+INFO 2017-08-11 01:04:03,597 - Optimizer: adagrad
+INFO 2017-08-11 01:04:03,597 - Dropout: 0.2
+INFO 2017-08-11 01:51:45,685 - Acc @ Testing: 52.89%
+INFO 2017-08-11 01:51:45,685 - --------------------------------------------------------
+INFO 2017-08-11 01:51:45,759 - Number of layers: 1
+INFO 2017-08-11 01:51:45,760 - Number of neurons: 256
+INFO 2017-08-11 01:51:45,760 - Activation: selu
+INFO 2017-08-11 01:51:45,760 - Optimizer: adadelta
+INFO 2017-08-11 01:51:45,760 - Dropout: 0.2
+INFO 2017-08-11 01:55:32,822 - Acc @ Testing: 48.67%
+INFO 2017-08-11 01:55:32,822 - --------------------------------------------------------
+INFO 2017-08-11 01:55:32,897 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666]%
+INFO 2017-08-11 01:55:32,897 - --------------------------------------------------------
+INFO 2017-08-11 01:55:32,897 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad'}, {'nb_neurons': 512, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 768, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 256, 'dropout': 0.2, 'activation': 'selu', 'nb_layers': 1, 'optimizer': 'adadelta'}]
+INFO 2017-08-11 01:55:32,897 - *************************************************
+INFO 2017-08-11 01:55:32,897 - ------ GEN 4 ------
+INFO 2017-08-11 01:55:32,897 - Number of layers: 1
+INFO 2017-08-11 01:55:32,897 - Number of neurons: 128
+INFO 2017-08-11 01:55:32,897 - Activation: elu
+INFO 2017-08-11 01:55:32,897 - Optimizer: adamax
+INFO 2017-08-11 01:55:32,897 - Dropout: 0.2
+INFO 2017-08-11 01:59:01,674 - Acc @ Testing: 52.480000000000004%
+INFO 2017-08-11 01:59:01,674 - --------------------------------------------------------
+INFO 2017-08-11 01:59:01,749 - Number of layers: 2
+INFO 2017-08-11 01:59:01,749 - Number of neurons: 64
+INFO 2017-08-11 01:59:01,749 - Activation: elu
+INFO 2017-08-11 01:59:01,749 - Optimizer: adagrad
+INFO 2017-08-11 01:59:01,749 - Dropout: 0.25
+INFO 2017-08-11 02:02:55,021 - Acc @ Testing: 46.7%
+INFO 2017-08-11 02:02:55,021 - --------------------------------------------------------
+INFO 2017-08-11 02:02:55,098 - Number of layers: 1
+INFO 2017-08-11 02:02:55,098 - Number of neurons: 512
+INFO 2017-08-11 02:02:55,098 - Activation: sigmoid
+INFO 2017-08-11 02:02:55,098 - Optimizer: adadelta
+INFO 2017-08-11 02:02:55,098 - Dropout: 0.2
+INFO 2017-08-11 02:08:04,285 - Acc @ Testing: 49.76%
+INFO 2017-08-11 02:08:04,285 - --------------------------------------------------------
+INFO 2017-08-11 02:08:04,363 - Number of layers: 2
+INFO 2017-08-11 02:08:04,363 - Number of neurons: 768
+INFO 2017-08-11 02:08:04,363 - Activation: elu
+INFO 2017-08-11 02:08:04,363 - Optimizer: adadelta
+INFO 2017-08-11 02:08:04,363 - Dropout: 0.25
+INFO 2017-08-11 02:19:36,678 - Acc @ Testing: 51.18000000000001%
+INFO 2017-08-11 02:19:36,678 - --------------------------------------------------------
+INFO 2017-08-11 02:19:36,758 - Number of layers: 2
+INFO 2017-08-11 02:19:36,758 - Number of neurons: 64
+INFO 2017-08-11 02:19:36,758 - Activation: sigmoid
+INFO 2017-08-11 02:19:36,758 - Optimizer: adadelta
+INFO 2017-08-11 02:19:36,758 - Dropout: 0.25
+INFO 2017-08-11 02:24:25,093 - Acc @ Testing: 47.99%
+INFO 2017-08-11 02:24:25,093 - --------------------------------------------------------
+INFO 2017-08-11 02:24:25,196 - Number of layers: 1
+INFO 2017-08-11 02:24:25,196 - Number of neurons: 128
+INFO 2017-08-11 02:24:25,196 - Activation: elu
+INFO 2017-08-11 02:24:25,197 - Optimizer: adadelta
+INFO 2017-08-11 02:24:25,197 - Dropout: 0.2
+INFO 2017-08-11 02:27:28,076 - Acc @ Testing: 46.989999999999995%
+INFO 2017-08-11 02:27:28,076 - --------------------------------------------------------
+INFO 2017-08-11 02:27:28,165 - Number of layers: 1
+INFO 2017-08-11 02:27:28,165 - Number of neurons: 256
+INFO 2017-08-11 02:27:28,165 - Activation: selu
+INFO 2017-08-11 02:27:28,165 - Optimizer: adadelta
+INFO 2017-08-11 02:27:28,165 - Dropout: 0.2
+INFO 2017-08-11 02:30:43,544 - Acc @ Testing: 47.660000000000004%
+INFO 2017-08-11 02:30:43,544 - --------------------------------------------------------
+INFO 2017-08-11 02:30:43,629 - Number of layers: 2
+INFO 2017-08-11 02:30:43,630 - Number of neurons: 512
+INFO 2017-08-11 02:30:43,630 - Activation: elu
+INFO 2017-08-11 02:30:43,630 - Optimizer: adagrad
+INFO 2017-08-11 02:30:43,630 - Dropout: 0.25
+INFO 2017-08-11 02:32:07,074 - Acc @ Testing: 10.0%
+INFO 2017-08-11 02:32:07,075 - --------------------------------------------------------
+INFO 2017-08-11 02:32:07,160 - Number of layers: 2
+INFO 2017-08-11 02:32:07,160 - Number of neurons: 768
+INFO 2017-08-11 02:32:07,160 - Activation: sigmoid
+INFO 2017-08-11 02:32:07,160 - Optimizer: adadelta
+INFO 2017-08-11 02:32:07,160 - Dropout: 0.25
+INFO 2017-08-11 02:49:10,204 - Acc @ Testing: 53.59%
+INFO 2017-08-11 02:49:10,204 - --------------------------------------------------------
+INFO 2017-08-11 02:49:10,294 - Number of layers: 1
+INFO 2017-08-11 02:49:10,294 - Number of neurons: 128
+INFO 2017-08-11 02:49:10,294 - Activation: elu
+INFO 2017-08-11 02:49:10,294 - Optimizer: adadelta
+INFO 2017-08-11 02:49:10,294 - Dropout: 0.2
+INFO 2017-08-11 02:53:13,090 - Acc @ Testing: 51.22%
+INFO 2017-08-11 02:53:13,090 - --------------------------------------------------------
+INFO 2017-08-11 02:53:13,183 - Number of layers: 1
+INFO 2017-08-11 02:53:13,183 - Number of neurons: 768
+INFO 2017-08-11 02:53:13,183 - Activation: elu
+INFO 2017-08-11 02:53:13,183 - Optimizer: adadelta
+INFO 2017-08-11 02:53:13,183 - Dropout: 0.25
+INFO 2017-08-11 03:01:36,055 - Acc @ Testing: 46.19%
+INFO 2017-08-11 03:01:36,055 - --------------------------------------------------------
+INFO 2017-08-11 03:01:36,151 - Number of layers: 2
+INFO 2017-08-11 03:01:36,151 - Number of neurons: 64
+INFO 2017-08-11 03:01:36,151 - Activation: elu
+INFO 2017-08-11 03:01:36,151 - Optimizer: adadelta
+INFO 2017-08-11 03:01:36,151 - Dropout: 0.25
+INFO 2017-08-11 03:04:30,938 - Acc @ Testing: 47.89%
+INFO 2017-08-11 03:04:30,938 - --------------------------------------------------------
+INFO 2017-08-11 03:04:31,032 - Number of layers: 2
+INFO 2017-08-11 03:04:31,032 - Number of neurons: 256
+INFO 2017-08-11 03:04:31,032 - Activation: elu
+INFO 2017-08-11 03:04:31,032 - Optimizer: adadelta
+INFO 2017-08-11 03:04:31,032 - Dropout: 0.25
+INFO 2017-08-11 03:09:50,223 - Acc @ Testing: 49.3%
+INFO 2017-08-11 03:09:50,223 - --------------------------------------------------------
+INFO 2017-08-11 03:09:50,321 - Number of layers: 2
+INFO 2017-08-11 03:09:50,321 - Number of neurons: 128
+INFO 2017-08-11 03:09:50,321 - Activation: sigmoid
+INFO 2017-08-11 03:09:50,321 - Optimizer: adamax
+INFO 2017-08-11 03:09:50,321 - Dropout: 0.2
+INFO 2017-08-11 03:14:46,939 - Acc @ Testing: 52.56999999999999%
+INFO 2017-08-11 03:14:46,939 - --------------------------------------------------------
+INFO 2017-08-11 03:14:47,035 - Number of layers: 2
+INFO 2017-08-11 03:14:47,035 - Number of neurons: 512
+INFO 2017-08-11 03:14:47,035 - Activation: elu
+INFO 2017-08-11 03:14:47,035 - Optimizer: adadelta
+INFO 2017-08-11 03:14:47,035 - Dropout: 0.2
+INFO 2017-08-11 03:21:51,703 - Acc @ Testing: 52.76%
+INFO 2017-08-11 03:21:51,703 - --------------------------------------------------------
+INFO 2017-08-11 03:21:51,801 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331]%
+INFO 2017-08-11 03:21:51,801 - --------------------------------------------------------
+INFO 2017-08-11 03:21:51,801 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 256, 'dropout': 0.2, 'activation': 'selu', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 512, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adagrad'}, {'nb_neurons': 768, 'dropout': 0.25, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 512, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'}]
+INFO 2017-08-11 03:21:51,801 - *************************************************
+INFO 2017-08-11 03:21:51,801 - ------ GEN 5 ------
+INFO 2017-08-11 03:21:51,801 - Number of layers: 1
+INFO 2017-08-11 03:21:51,801 - Number of neurons: 128
+INFO 2017-08-11 03:21:51,801 - Activation: elu
+INFO 2017-08-11 03:21:51,802 - Optimizer: adamax
+INFO 2017-08-11 03:21:51,802 - Dropout: 0.2
+INFO 2017-08-11 03:24:42,960 - Acc @ Testing: 51.15%
+INFO 2017-08-11 03:24:42,960 - --------------------------------------------------------
+INFO 2017-08-11 03:24:43,065 - Number of layers: 2
+INFO 2017-08-11 03:24:43,065 - Number of neurons: 64
+INFO 2017-08-11 03:24:43,065 - Activation: elu
+INFO 2017-08-11 03:24:43,065 - Optimizer: adagrad
+INFO 2017-08-11 03:24:43,065 - Dropout: 0.25
+INFO 2017-08-11 03:29:32,449 - Acc @ Testing: 47.69%
+INFO 2017-08-11 03:29:32,449 - --------------------------------------------------------
+INFO 2017-08-11 03:29:32,551 - Number of layers: 2
+INFO 2017-08-11 03:29:32,552 - Number of neurons: 64
+INFO 2017-08-11 03:29:32,552 - Activation: sigmoid
+INFO 2017-08-11 03:29:32,552 - Optimizer: adadelta
+INFO 2017-08-11 03:29:32,552 - Dropout: 0.25
+INFO 2017-08-11 03:35:58,139 - Acc @ Testing: 46.67%
+INFO 2017-08-11 03:35:58,139 - --------------------------------------------------------
+INFO 2017-08-11 03:35:58,244 - Number of layers: 1
+INFO 2017-08-11 03:35:58,244 - Number of neurons: 128
+INFO 2017-08-11 03:35:58,244 - Activation: elu
+INFO 2017-08-11 03:35:58,244 - Optimizer: adadelta
+INFO 2017-08-11 03:35:58,244 - Dropout: 0.2
+INFO 2017-08-11 03:38:35,761 - Acc @ Testing: 39.56%
+INFO 2017-08-11 03:38:35,761 - --------------------------------------------------------
+INFO 2017-08-11 03:38:35,866 - Number of layers: 1
+INFO 2017-08-11 03:38:35,866 - Number of neurons: 256
+INFO 2017-08-11 03:38:35,866 - Activation: selu
+INFO 2017-08-11 03:38:35,866 - Optimizer: adadelta
+INFO 2017-08-11 03:38:35,866 - Dropout: 0.2
+INFO 2017-08-11 03:44:56,935 - Acc @ Testing: 47.29%
+INFO 2017-08-11 03:44:56,935 - --------------------------------------------------------
+INFO 2017-08-11 03:44:57,039 - Number of layers: 2
+INFO 2017-08-11 03:44:57,039 - Number of neurons: 512
+INFO 2017-08-11 03:44:57,039 - Activation: elu
+INFO 2017-08-11 03:44:57,039 - Optimizer: adagrad
+INFO 2017-08-11 03:44:57,039 - Dropout: 0.25
+INFO 2017-08-11 03:46:22,854 - Acc @ Testing: 10.0%
+INFO 2017-08-11 03:46:22,854 - --------------------------------------------------------
+INFO 2017-08-11 03:46:22,951 - Number of layers: 2
+INFO 2017-08-11 03:46:22,951 - Number of neurons: 768
+INFO 2017-08-11 03:46:22,951 - Activation: sigmoid
+INFO 2017-08-11 03:46:22,951 - Optimizer: adadelta
+INFO 2017-08-11 03:46:22,951 - Dropout: 0.25
+INFO 2017-08-11 03:53:12,201 - Acc @ Testing: 46.93%
+INFO 2017-08-11 03:53:12,201 - --------------------------------------------------------
+INFO 2017-08-11 03:53:12,300 - Number of layers: 2
+INFO 2017-08-11 03:53:12,300 - Number of neurons: 64
+INFO 2017-08-11 03:53:12,300 - Activation: elu
+INFO 2017-08-11 03:53:12,300 - Optimizer: adadelta
+INFO 2017-08-11 03:53:12,300 - Dropout: 0.25
+INFO 2017-08-11 03:54:49,501 - Acc @ Testing: 45.2%
+INFO 2017-08-11 03:54:49,501 - --------------------------------------------------------
+INFO 2017-08-11 03:54:49,617 - Number of layers: 2
+INFO 2017-08-11 03:54:49,617 - Number of neurons: 128
+INFO 2017-08-11 03:54:49,617 - Activation: sigmoid
+INFO 2017-08-11 03:54:49,617 - Optimizer: adamax
+INFO 2017-08-11 03:54:49,617 - Dropout: 0.2
+INFO 2017-08-11 04:01:34,669 - Acc @ Testing: 52.72%
+INFO 2017-08-11 04:01:34,669 - --------------------------------------------------------
+INFO 2017-08-11 04:01:34,780 - Number of layers: 2
+INFO 2017-08-11 04:01:34,780 - Number of neurons: 512
+INFO 2017-08-11 04:01:34,780 - Activation: elu
+INFO 2017-08-11 04:01:34,780 - Optimizer: adadelta
+INFO 2017-08-11 04:01:34,780 - Dropout: 0.2
+INFO 2017-08-11 04:06:55,242 - Acc @ Testing: 51.019999999999996%
+INFO 2017-08-11 04:06:55,242 - --------------------------------------------------------
+INFO 2017-08-11 04:06:55,356 - Number of layers: 1
+INFO 2017-08-11 04:06:55,357 - Number of neurons: 512
+INFO 2017-08-11 04:06:55,357 - Activation: elu
+INFO 2017-08-11 04:06:55,357 - Optimizer: rmsprop
+INFO 2017-08-11 04:06:55,357 - Dropout: 0.2
+INFO 2017-08-11 04:09:03,308 - Acc @ Testing: 36.980000000000004%
+INFO 2017-08-11 04:09:03,308 - --------------------------------------------------------
+INFO 2017-08-11 04:09:03,410 - Number of layers: 2
+INFO 2017-08-11 04:09:03,410 - Number of neurons: 768
+INFO 2017-08-11 04:09:03,410 - Activation: sigmoid
+INFO 2017-08-11 04:09:03,410 - Optimizer: adadelta
+INFO 2017-08-11 04:09:03,411 - Dropout: 0.25
+INFO 2017-08-11 04:20:42,663 - Acc @ Testing: 50.449999999999996%
+INFO 2017-08-11 04:20:42,664 - --------------------------------------------------------
+INFO 2017-08-11 04:20:42,784 - Number of layers: 2
+INFO 2017-08-11 04:20:42,784 - Number of neurons: 64
+INFO 2017-08-11 04:20:42,784 - Activation: elu
+INFO 2017-08-11 04:20:42,784 - Optimizer: adadelta
+INFO 2017-08-11 04:20:42,784 - Dropout: 0.25
+INFO 2017-08-11 04:24:22,658 - Acc @ Testing: 47.75%
+INFO 2017-08-11 04:24:22,658 - --------------------------------------------------------
+INFO 2017-08-11 04:24:22,779 - Number of layers: 2
+INFO 2017-08-11 04:24:22,779 - Number of neurons: 128
+INFO 2017-08-11 04:24:22,779 - Activation: elu
+INFO 2017-08-11 04:24:22,779 - Optimizer: adadelta
+INFO 2017-08-11 04:24:22,779 - Dropout: 0.2
+INFO 2017-08-11 04:26:27,461 - Acc @ Testing: 47.949999999999996%
+INFO 2017-08-11 04:26:27,461 - --------------------------------------------------------
+INFO 2017-08-11 04:26:27,583 - Number of layers: 2
+INFO 2017-08-11 04:26:27,583 - Number of neurons: 128
+INFO 2017-08-11 04:26:27,583 - Activation: elu
+INFO 2017-08-11 04:26:27,583 - Optimizer: adadelta
+INFO 2017-08-11 04:26:27,583 - Dropout: 0.2
+INFO 2017-08-11 04:30:31,131 - Acc @ Testing: 51.0%
+INFO 2017-08-11 04:30:31,131 - --------------------------------------------------------
+INFO 2017-08-11 04:30:31,255 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998]%
+INFO 2017-08-11 04:30:31,255 - --------------------------------------------------------
+INFO 2017-08-11 04:30:31,255 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 512, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'rmsprop'}, {'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'}]
+INFO 2017-08-11 04:30:31,255 - *************************************************
+INFO 2017-08-11 04:30:31,255 - ------ GEN 6 ------
+INFO 2017-08-11 04:30:31,255 - Number of layers: 1
+INFO 2017-08-11 04:30:31,255 - Number of neurons: 128
+INFO 2017-08-11 04:30:31,255 - Activation: elu
+INFO 2017-08-11 04:30:31,255 - Optimizer: adamax
+INFO 2017-08-11 04:30:31,256 - Dropout: 0.2
+INFO 2017-08-11 04:34:05,419 - Acc @ Testing: 51.83%
+INFO 2017-08-11 04:34:05,419 - --------------------------------------------------------
+INFO 2017-08-11 04:34:05,544 - Number of layers: 2
+INFO 2017-08-11 04:34:05,544 - Number of neurons: 64
+INFO 2017-08-11 04:34:05,544 - Activation: sigmoid
+INFO 2017-08-11 04:34:05,544 - Optimizer: adadelta
+INFO 2017-08-11 04:34:05,544 - Dropout: 0.25
+INFO 2017-08-11 04:39:42,374 - Acc @ Testing: 46.29%
+INFO 2017-08-11 04:39:42,375 - --------------------------------------------------------
+INFO 2017-08-11 04:39:42,506 - Number of layers: 1
+INFO 2017-08-11 04:39:42,506 - Number of neurons: 128
+INFO 2017-08-11 04:39:42,506 - Activation: elu
+INFO 2017-08-11 04:39:42,506 - Optimizer: adadelta
+INFO 2017-08-11 04:39:42,506 - Dropout: 0.2
+INFO 2017-08-11 04:43:31,991 - Acc @ Testing: 48.36%
+INFO 2017-08-11 04:43:31,991 - --------------------------------------------------------
+INFO 2017-08-11 04:43:32,132 - Number of layers: 2
+INFO 2017-08-11 04:43:32,132 - Number of neurons: 128
+INFO 2017-08-11 04:43:32,132 - Activation: sigmoid
+INFO 2017-08-11 04:43:32,132 - Optimizer: adamax
+INFO 2017-08-11 04:43:32,132 - Dropout: 0.2
+INFO 2017-08-11 04:49:02,462 - Acc @ Testing: 52.81%
+INFO 2017-08-11 04:49:02,462 - --------------------------------------------------------
+INFO 2017-08-11 04:49:02,597 - Number of layers: 1
+INFO 2017-08-11 04:49:02,597 - Number of neurons: 512
+INFO 2017-08-11 04:49:02,597 - Activation: elu
+INFO 2017-08-11 04:49:02,597 - Optimizer: rmsprop
+INFO 2017-08-11 04:49:02,597 - Dropout: 0.2
+INFO 2017-08-11 04:51:43,379 - Acc @ Testing: 41.63%
+INFO 2017-08-11 04:51:43,379 - --------------------------------------------------------
+INFO 2017-08-11 04:51:43,513 - Number of layers: 2
+INFO 2017-08-11 04:51:43,513 - Number of neurons: 64
+INFO 2017-08-11 04:51:43,513 - Activation: elu
+INFO 2017-08-11 04:51:43,513 - Optimizer: adadelta
+INFO 2017-08-11 04:51:43,513 - Dropout: 0.25
+INFO 2017-08-11 04:56:54,930 - Acc @ Testing: 50.21%
+INFO 2017-08-11 04:56:54,930 - --------------------------------------------------------
+INFO 2017-08-11 04:56:55,066 - Number of layers: 2
+INFO 2017-08-11 04:56:55,067 - Number of neurons: 128
+INFO 2017-08-11 04:56:55,067 - Activation: elu
+INFO 2017-08-11 04:56:55,067 - Optimizer: adadelta
+INFO 2017-08-11 04:56:55,067 - Dropout: 0.2
+INFO 2017-08-11 05:01:02,810 - Acc @ Testing: 52.28%
+INFO 2017-08-11 05:01:02,811 - --------------------------------------------------------
+INFO 2017-08-11 05:01:02,950 - Number of layers: 1
+INFO 2017-08-11 05:01:02,950 - Number of neurons: 128
+INFO 2017-08-11 05:01:02,950 - Activation: elu
+INFO 2017-08-11 05:01:02,950 - Optimizer: adamax
+INFO 2017-08-11 05:01:02,950 - Dropout: 0.25
+INFO 2017-08-11 05:05:09,511 - Acc @ Testing: 52.53%
+INFO 2017-08-11 05:05:09,512 - --------------------------------------------------------
+INFO 2017-08-11 05:05:09,655 - Number of layers: 1
+INFO 2017-08-11 05:05:09,655 - Number of neurons: 128
+INFO 2017-08-11 05:05:09,655 - Activation: elu
+INFO 2017-08-11 05:05:09,655 - Optimizer: adamax
+INFO 2017-08-11 05:05:09,655 - Dropout: 0.2
+INFO 2017-08-11 05:07:35,250 - Acc @ Testing: 50.89%
+INFO 2017-08-11 05:07:35,250 - --------------------------------------------------------
+INFO 2017-08-11 05:07:35,391 - Number of layers: 2
+INFO 2017-08-11 05:07:35,392 - Number of neurons: 64
+INFO 2017-08-11 05:07:35,392 - Activation: sigmoid
+INFO 2017-08-11 05:07:35,392 - Optimizer: adadelta
+INFO 2017-08-11 05:07:35,392 - Dropout: 0.25
+INFO 2017-08-11 05:13:36,604 - Acc @ Testing: 48.24%
+INFO 2017-08-11 05:13:36,605 - --------------------------------------------------------
+INFO 2017-08-11 05:13:36,748 - Number of layers: 1
+INFO 2017-08-11 05:13:36,748 - Number of neurons: 128
+INFO 2017-08-11 05:13:36,748 - Activation: elu
+INFO 2017-08-11 05:13:36,748 - Optimizer: adamax
+INFO 2017-08-11 05:13:36,748 - Dropout: 0.2
+INFO 2017-08-11 05:16:38,120 - Acc @ Testing: 51.629999999999995%
+INFO 2017-08-11 05:16:38,120 - --------------------------------------------------------
+INFO 2017-08-11 05:16:38,266 - Number of layers: 1
+INFO 2017-08-11 05:16:38,266 - Number of neurons: 128
+INFO 2017-08-11 05:16:38,266 - Activation: elu
+INFO 2017-08-11 05:16:38,266 - Optimizer: adamax
+INFO 2017-08-11 05:16:38,266 - Dropout: 0.2
+INFO 2017-08-11 05:19:51,508 - Acc @ Testing: 52.080000000000005%
+INFO 2017-08-11 05:19:51,508 - --------------------------------------------------------
+INFO 2017-08-11 05:19:51,659 - Number of layers: 1
+INFO 2017-08-11 05:19:51,659 - Number of neurons: 128
+INFO 2017-08-11 05:19:51,659 - Activation: elu
+INFO 2017-08-11 05:19:51,659 - Optimizer: adadelta
+INFO 2017-08-11 05:19:51,659 - Dropout: 0.2
+INFO 2017-08-11 05:22:21,298 - Acc @ Testing: 47.27%
+INFO 2017-08-11 05:22:21,298 - --------------------------------------------------------
+INFO 2017-08-11 05:22:21,446 - Number of layers: 1
+INFO 2017-08-11 05:22:21,446 - Number of neurons: 64
+INFO 2017-08-11 05:22:21,446 - Activation: elu
+INFO 2017-08-11 05:22:21,446 - Optimizer: adadelta
+INFO 2017-08-11 05:22:21,446 - Dropout: 0.25
+INFO 2017-08-11 05:24:48,384 - Acc @ Testing: 47.949999999999996%
+INFO 2017-08-11 05:24:48,384 - --------------------------------------------------------
+INFO 2017-08-11 05:24:48,537 - Number of layers: 2
+INFO 2017-08-11 05:24:48,537 - Number of neurons: 64
+INFO 2017-08-11 05:24:48,537 - Activation: sigmoid
+INFO 2017-08-11 05:24:48,537 - Optimizer: adamax
+INFO 2017-08-11 05:24:48,537 - Dropout: 0.2
+INFO 2017-08-11 05:28:41,156 - Acc @ Testing: 48.449999999999996%
+INFO 2017-08-11 05:28:41,157 - --------------------------------------------------------
+INFO 2017-08-11 05:28:41,311 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667]%
+INFO 2017-08-11 05:28:41,311 - --------------------------------------------------------
+INFO 2017-08-11 05:28:41,311 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}]
+INFO 2017-08-11 05:28:41,311 - *************************************************
+INFO 2017-08-11 05:28:41,312 - ------ GEN 7 ------
+INFO 2017-08-11 05:28:41,312 - Number of layers: 1
+INFO 2017-08-11 05:28:41,312 - Number of neurons: 128
+INFO 2017-08-11 05:28:41,312 - Activation: elu
+INFO 2017-08-11 05:28:41,312 - Optimizer: adamax
+INFO 2017-08-11 05:28:41,312 - Dropout: 0.2
+INFO 2017-08-11 05:32:42,392 - Acc @ Testing: 52.05%
+INFO 2017-08-11 05:32:42,392 - --------------------------------------------------------
+INFO 2017-08-11 05:32:42,548 - Number of layers: 2
+INFO 2017-08-11 05:32:42,548 - Number of neurons: 64
+INFO 2017-08-11 05:32:42,549 - Activation: sigmoid
+INFO 2017-08-11 05:32:42,549 - Optimizer: adamax
+INFO 2017-08-11 05:32:42,549 - Dropout: 0.2
+INFO 2017-08-11 05:36:06,744 - Acc @ Testing: 48.78%
+INFO 2017-08-11 05:36:06,744 - --------------------------------------------------------
+INFO 2017-08-11 05:36:06,896 - Number of layers: 2
+INFO 2017-08-11 05:36:06,896 - Number of neurons: 128
+INFO 2017-08-11 05:36:06,896 - Activation: sigmoid
+INFO 2017-08-11 05:36:06,896 - Optimizer: adamax
+INFO 2017-08-11 05:36:06,896 - Dropout: 0.2
+INFO 2017-08-11 05:41:30,982 - Acc @ Testing: 52.739999999999995%
+INFO 2017-08-11 05:41:30,983 - --------------------------------------------------------
+INFO 2017-08-11 05:41:31,150 - Number of layers: 2
+INFO 2017-08-11 05:41:31,150 - Number of neurons: 64
+INFO 2017-08-11 05:41:31,150 - Activation: selu
+INFO 2017-08-11 05:41:31,150 - Optimizer: adamax
+INFO 2017-08-11 05:41:31,150 - Dropout: 0.2
+INFO 2017-08-11 05:45:48,922 - Acc @ Testing: 51.83%
+INFO 2017-08-11 05:45:48,922 - --------------------------------------------------------
+INFO 2017-08-11 05:45:49,080 - Number of layers: 2
+INFO 2017-08-11 05:45:49,080 - Number of neurons: 128
+INFO 2017-08-11 05:45:49,080 - Activation: sigmoid
+INFO 2017-08-11 05:45:49,080 - Optimizer: adamax
+INFO 2017-08-11 05:45:49,080 - Dropout: 0.15
+INFO 2017-08-11 05:49:04,716 - Acc @ Testing: 50.2%
+INFO 2017-08-11 05:49:04,716 - --------------------------------------------------------
+INFO 2017-08-11 05:49:04,881 - Number of layers: 2
+INFO 2017-08-11 05:49:04,881 - Number of neurons: 128
+INFO 2017-08-11 05:49:04,881 - Activation: elu
+INFO 2017-08-11 05:49:04,881 - Optimizer: adamax
+INFO 2017-08-11 05:49:04,881 - Dropout: 0.2
+INFO 2017-08-11 05:54:03,701 - Acc @ Testing: 54.230000000000004%
+INFO 2017-08-11 05:54:03,702 - --------------------------------------------------------
+INFO 2017-08-11 05:54:03,865 - Number of layers: 2
+INFO 2017-08-11 05:54:03,865 - Number of neurons: 128
+INFO 2017-08-11 05:54:03,865 - Activation: elu
+INFO 2017-08-11 05:54:03,865 - Optimizer: adamax
+INFO 2017-08-11 05:54:03,865 - Dropout: 0.2
+INFO 2017-08-11 05:59:27,297 - Acc @ Testing: 54.09%
+INFO 2017-08-11 05:59:27,297 - --------------------------------------------------------
+INFO 2017-08-11 05:59:27,461 - Number of layers: 1
+INFO 2017-08-11 05:59:27,461 - Number of neurons: 64
+INFO 2017-08-11 05:59:27,461 - Activation: elu
+INFO 2017-08-11 05:59:27,461 - Optimizer: adamax
+INFO 2017-08-11 05:59:27,461 - Dropout: 0.2
+INFO 2017-08-11 06:03:11,957 - Acc @ Testing: 51.349999999999994%
+INFO 2017-08-11 06:03:11,958 - --------------------------------------------------------
+INFO 2017-08-11 06:03:12,129 - Number of layers: 2
+INFO 2017-08-11 06:03:12,129 - Number of neurons: 128
+INFO 2017-08-11 06:03:12,129 - Activation: sigmoid
+INFO 2017-08-11 06:03:12,129 - Optimizer: adamax
+INFO 2017-08-11 06:03:12,129 - Dropout: 0.2
+INFO 2017-08-11 06:08:29,533 - Acc @ Testing: 51.51%
+INFO 2017-08-11 06:08:29,534 - --------------------------------------------------------
+INFO 2017-08-11 06:08:29,701 - Number of layers: 1
+INFO 2017-08-11 06:08:29,702 - Number of neurons: 64
+INFO 2017-08-11 06:08:29,702 - Activation: elu
+INFO 2017-08-11 06:08:29,702 - Optimizer: adamax
+INFO 2017-08-11 06:08:29,702 - Dropout: 0.2
+INFO 2017-08-11 06:11:58,040 - Acc @ Testing: 50.46000000000001%
+INFO 2017-08-11 06:11:58,040 - --------------------------------------------------------
+INFO 2017-08-11 06:11:58,225 - Number of layers: 1
+INFO 2017-08-11 06:11:58,225 - Number of neurons: 64
+INFO 2017-08-11 06:11:58,225 - Activation: elu
+INFO 2017-08-11 06:11:58,225 - Optimizer: adamax
+INFO 2017-08-11 06:11:58,225 - Dropout: 0.2
+INFO 2017-08-11 06:14:31,051 - Acc @ Testing: 49.309999999999995%
+INFO 2017-08-11 06:14:31,051 - --------------------------------------------------------
+INFO 2017-08-11 06:14:31,227 - Number of layers: 1
+INFO 2017-08-11 06:14:31,227 - Number of neurons: 64
+INFO 2017-08-11 06:14:31,227 - Activation: sigmoid
+INFO 2017-08-11 06:14:31,227 - Optimizer: adamax
+INFO 2017-08-11 06:14:31,227 - Dropout: 0.2
+INFO 2017-08-11 06:18:36,922 - Acc @ Testing: 48.53%
+INFO 2017-08-11 06:18:36,922 - --------------------------------------------------------
+INFO 2017-08-11 06:18:37,100 - Number of layers: 2
+INFO 2017-08-11 06:18:37,100 - Number of neurons: 128
+INFO 2017-08-11 06:18:37,100 - Activation: sigmoid
+INFO 2017-08-11 06:18:37,100 - Optimizer: adamax
+INFO 2017-08-11 06:18:37,100 - Dropout: 0.2
+INFO 2017-08-11 06:27:07,919 - Acc @ Testing: 53.28000000000001%
+INFO 2017-08-11 06:27:07,919 - --------------------------------------------------------
+INFO 2017-08-11 06:27:08,100 - Number of layers: 2
+INFO 2017-08-11 06:27:08,100 - Number of neurons: 128
+INFO 2017-08-11 06:27:08,100 - Activation: sigmoid
+INFO 2017-08-11 06:27:08,100 - Optimizer: adamax
+INFO 2017-08-11 06:27:08,100 - Dropout: 0.2
+INFO 2017-08-11 06:33:23,816 - Acc @ Testing: 52.66%
+INFO 2017-08-11 06:33:23,816 - --------------------------------------------------------
+INFO 2017-08-11 06:33:23,993 - Number of layers: 5
+INFO 2017-08-11 06:33:23,993 - Number of neurons: 128
+INFO 2017-08-11 06:33:23,993 - Activation: sigmoid
+INFO 2017-08-11 06:33:23,993 - Optimizer: adamax
+INFO 2017-08-11 06:33:23,993 - Dropout: 0.15
+INFO 2017-08-11 06:39:30,867 - Acc @ Testing: 49.6%
+INFO 2017-08-11 06:39:30,867 - --------------------------------------------------------
+INFO 2017-08-11 06:39:31,063 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667, 51.374666666666663]%
+INFO 2017-08-11 06:39:31,063 - --------------------------------------------------------
+INFO 2017-08-11 06:39:31,063 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}]
+INFO 2017-08-11 06:39:31,063 - *************************************************
+INFO 2017-08-11 06:39:31,063 - ------ GEN 8 ------
+INFO 2017-08-11 06:39:31,063 - Number of layers: 1
+INFO 2017-08-11 06:39:31,063 - Number of neurons: 128
+INFO 2017-08-11 06:39:31,063 - Activation: elu
+INFO 2017-08-11 06:39:31,063 - Optimizer: adamax
+INFO 2017-08-11 06:39:31,063 - Dropout: 0.2
+INFO 2017-08-11 06:42:52,971 - Acc @ Testing: 51.24999999999999%
+INFO 2017-08-11 06:42:52,972 - --------------------------------------------------------
+INFO 2017-08-11 06:42:53,169 - Number of layers: 2
+INFO 2017-08-11 06:42:53,169 - Number of neurons: 64
+INFO 2017-08-11 06:42:53,169 - Activation: sigmoid
+INFO 2017-08-11 06:42:53,169 - Optimizer: adamax
+INFO 2017-08-11 06:42:53,169 - Dropout: 0.2
+INFO 2017-08-11 06:47:06,529 - Acc @ Testing: 47.13%
+INFO 2017-08-11 06:47:06,530 - --------------------------------------------------------
+INFO 2017-08-11 06:47:06,717 - Number of layers: 2
+INFO 2017-08-11 06:47:06,717 - Number of neurons: 128
+INFO 2017-08-11 06:47:06,717 - Activation: sigmoid
+INFO 2017-08-11 06:47:06,717 - Optimizer: adamax
+INFO 2017-08-11 06:47:06,717 - Dropout: 0.2
+INFO 2017-08-11 06:51:46,437 - Acc @ Testing: 51.370000000000005%
+INFO 2017-08-11 06:51:46,437 - --------------------------------------------------------
+INFO 2017-08-11 06:51:46,630 - Number of layers: 2
+INFO 2017-08-11 06:51:46,630 - Number of neurons: 128
+INFO 2017-08-11 06:51:46,630 - Activation: elu
+INFO 2017-08-11 06:51:46,630 - Optimizer: adamax
+INFO 2017-08-11 06:51:46,630 - Dropout: 0.2
+INFO 2017-08-11 06:57:34,382 - Acc @ Testing: 53.72%
+INFO 2017-08-11 06:57:34,383 - --------------------------------------------------------
+INFO 2017-08-11 06:57:34,577 - Number of layers: 2
+INFO 2017-08-11 06:57:34,577 - Number of neurons: 128
+INFO 2017-08-11 06:57:34,577 - Activation: elu
+INFO 2017-08-11 06:57:34,577 - Optimizer: adamax
+INFO 2017-08-11 06:57:34,577 - Dropout: 0.2
+INFO 2017-08-11 07:01:21,236 - Acc @ Testing: 52.86%
+INFO 2017-08-11 07:01:21,236 - --------------------------------------------------------
+INFO 2017-08-11 07:01:21,430 - Number of layers: 4
+INFO 2017-08-11 07:01:21,430 - Number of neurons: 64
+INFO 2017-08-11 07:01:21,430 - Activation: elu
+INFO 2017-08-11 07:01:21,430 - Optimizer: adamax
+INFO 2017-08-11 07:01:21,430 - Dropout: 0.2
+INFO 2017-08-11 07:07:36,954 - Acc @ Testing: 51.66%
+INFO 2017-08-11 07:07:36,954 - --------------------------------------------------------
+INFO 2017-08-11 07:07:37,156 - Number of layers: 2
+INFO 2017-08-11 07:07:37,156 - Number of neurons: 128
+INFO 2017-08-11 07:07:37,156 - Activation: sigmoid
+INFO 2017-08-11 07:07:37,156 - Optimizer: adamax
+INFO 2017-08-11 07:07:37,156 - Dropout: 0.2
+INFO 2017-08-11 07:14:54,098 - Acc @ Testing: 52.99%
+INFO 2017-08-11 07:14:54,098 - --------------------------------------------------------
+INFO 2017-08-11 07:14:54,298 - Number of layers: 1
+INFO 2017-08-11 07:14:54,298 - Number of neurons: 64
+INFO 2017-08-11 07:14:54,298 - Activation: elu
+INFO 2017-08-11 07:14:54,298 - Optimizer: adamax
+INFO 2017-08-11 07:14:54,298 - Dropout: 0.2
+INFO 2017-08-11 07:18:49,176 - Acc @ Testing: 50.56%
+INFO 2017-08-11 07:18:49,176 - --------------------------------------------------------
+INFO 2017-08-11 07:18:49,372 - Number of layers: 1
+INFO 2017-08-11 07:18:49,372 - Number of neurons: 64
+INFO 2017-08-11 07:18:49,372 - Activation: elu
+INFO 2017-08-11 07:18:49,372 - Optimizer: adamax
+INFO 2017-08-11 07:18:49,372 - Dropout: 0.2
+INFO 2017-08-11 07:22:02,677 - Acc @ Testing: 49.559999999999995%
+INFO 2017-08-11 07:22:02,677 - --------------------------------------------------------
+INFO 2017-08-11 07:22:02,878 - Number of layers: 1
+INFO 2017-08-11 07:22:02,878 - Number of neurons: 64
+INFO 2017-08-11 07:22:02,878 - Activation: sigmoid
+INFO 2017-08-11 07:22:02,878 - Optimizer: adamax
+INFO 2017-08-11 07:22:02,878 - Dropout: 0.2
+INFO 2017-08-11 07:26:02,836 - Acc @ Testing: 47.78%
+INFO 2017-08-11 07:26:02,836 - --------------------------------------------------------
+INFO 2017-08-11 07:26:03,038 - Number of layers: 2
+INFO 2017-08-11 07:26:03,038 - Number of neurons: 128
+INFO 2017-08-11 07:26:03,038 - Activation: sigmoid
+INFO 2017-08-11 07:26:03,038 - Optimizer: adamax
+INFO 2017-08-11 07:26:03,038 - Dropout: 0.2
+INFO 2017-08-11 07:31:07,949 - Acc @ Testing: 51.85999999999999%
+INFO 2017-08-11 07:31:07,949 - --------------------------------------------------------
+INFO 2017-08-11 07:31:08,167 - Number of layers: 2
+INFO 2017-08-11 07:31:08,167 - Number of neurons: 128
+INFO 2017-08-11 07:31:08,167 - Activation: sigmoid
+INFO 2017-08-11 07:31:08,167 - Optimizer: adamax
+INFO 2017-08-11 07:31:08,167 - Dropout: 0.2
+INFO 2017-08-11 07:35:33,593 - Acc @ Testing: 50.93%
+INFO 2017-08-11 07:35:33,594 - --------------------------------------------------------
+INFO 2017-08-11 07:35:33,799 - Number of layers: 4
+INFO 2017-08-11 07:35:33,799 - Number of neurons: 128
+INFO 2017-08-11 07:35:33,799 - Activation: sigmoid
+INFO 2017-08-11 07:35:33,799 - Optimizer: adamax
+INFO 2017-08-11 07:35:33,799 - Dropout: 0.2
+INFO 2017-08-11 07:43:33,966 - Acc @ Testing: 50.739999999999995%
+INFO 2017-08-11 07:43:33,966 - --------------------------------------------------------
+INFO 2017-08-11 07:43:34,180 - Number of layers: 2
+INFO 2017-08-11 07:43:34,180 - Number of neurons: 128
+INFO 2017-08-11 07:43:34,180 - Activation: elu
+INFO 2017-08-11 07:43:34,180 - Optimizer: adamax
+INFO 2017-08-11 07:43:34,180 - Dropout: 0.2
+INFO 2017-08-11 07:48:52,498 - Acc @ Testing: 54.190000000000005%
+INFO 2017-08-11 07:48:52,498 - --------------------------------------------------------
+INFO 2017-08-11 07:48:52,710 - Number of layers: 1
+INFO 2017-08-11 07:48:52,711 - Number of neurons: 64
+INFO 2017-08-11 07:48:52,711 - Activation: elu
+INFO 2017-08-11 07:48:52,711 - Optimizer: adamax
+INFO 2017-08-11 07:48:52,711 - Dropout: 0.25
+INFO 2017-08-11 07:50:50,469 - Acc @ Testing: 48.26%
+INFO 2017-08-11 07:50:50,469 - --------------------------------------------------------
+INFO 2017-08-11 07:50:50,682 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667, 51.374666666666663, 50.990666666666669]%
+INFO 2017-08-11 07:50:50,682 - --------------------------------------------------------
+INFO 2017-08-11 07:50:50,682 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 4, 'optimizer': 'adamax'}]
+INFO 2017-08-11 07:50:50,682 - *************************************************
+INFO 2017-08-11 07:50:50,683 - ------ GEN 9 ------
+INFO 2017-08-11 07:50:50,683 - Number of layers: 2
+INFO 2017-08-11 07:50:50,683 - Number of neurons: 128
+INFO 2017-08-11 07:50:50,683 - Activation: elu
+INFO 2017-08-11 07:50:50,683 - Optimizer: adamax
+INFO 2017-08-11 07:50:50,683 - Dropout: 0.2
+INFO 2017-08-11 07:55:20,098 - Acc @ Testing: 52.96999999999999%
+INFO 2017-08-11 07:55:20,098 - --------------------------------------------------------
+INFO 2017-08-11 07:55:20,326 - Number of layers: 2
+INFO 2017-08-11 07:55:20,326 - Number of neurons: 128
+INFO 2017-08-11 07:55:20,327 - Activation: elu
+INFO 2017-08-11 07:55:20,327 - Optimizer: adamax
+INFO 2017-08-11 07:55:20,327 - Dropout: 0.2
+INFO 2017-08-11 07:59:44,769 - Acc @ Testing: 53.449999999999996%
+INFO 2017-08-11 07:59:44,769 - --------------------------------------------------------
+INFO 2017-08-11 07:59:44,988 - Number of layers: 4
+INFO 2017-08-11 07:59:44,988 - Number of neurons: 64
+INFO 2017-08-11 07:59:44,988 - Activation: elu
+INFO 2017-08-11 07:59:44,988 - Optimizer: adamax
+INFO 2017-08-11 07:59:44,988 - Dropout: 0.2
+INFO 2017-08-11 08:03:04,876 - Acc @ Testing: 49.84%
+INFO 2017-08-11 08:03:04,876 - --------------------------------------------------------
+INFO 2017-08-11 08:03:05,104 - Number of layers: 1
+INFO 2017-08-11 08:03:05,104 - Number of neurons: 64
+INFO 2017-08-11 08:03:05,104 - Activation: elu
+INFO 2017-08-11 08:03:05,104 - Optimizer: adamax
+INFO 2017-08-11 08:03:05,104 - Dropout: 0.2
+INFO 2017-08-11 08:07:24,831 - Acc @ Testing: 50.81%
+INFO 2017-08-11 08:07:24,831 - --------------------------------------------------------
+INFO 2017-08-11 08:07:25,055 - Number of layers: 1
+INFO 2017-08-11 08:07:25,055 - Number of neurons: 64
+INFO 2017-08-11 08:07:25,055 - Activation: elu
+INFO 2017-08-11 08:07:25,055 - Optimizer: adamax
+INFO 2017-08-11 08:07:25,055 - Dropout: 0.2
+INFO 2017-08-11 08:10:02,975 - Acc @ Testing: 48.82%
+INFO 2017-08-11 08:10:02,975 - --------------------------------------------------------
+INFO 2017-08-11 08:10:03,202 - Number of layers: 1
+INFO 2017-08-11 08:10:03,202 - Number of neurons: 64
+INFO 2017-08-11 08:10:03,202 - Activation: sigmoid
+INFO 2017-08-11 08:10:03,202 - Optimizer: adamax
+INFO 2017-08-11 08:10:03,202 - Dropout: 0.2
+INFO 2017-08-11 08:13:49,833 - Acc @ Testing: 49.5%
+INFO 2017-08-11 08:13:49,833 - --------------------------------------------------------
+INFO 2017-08-11 08:13:50,064 - Number of layers: 4
+INFO 2017-08-11 08:13:50,064 - Number of neurons: 128
+INFO 2017-08-11 08:13:50,064 - Activation: sigmoid
+INFO 2017-08-11 08:13:50,064 - Optimizer: adamax
+INFO 2017-08-11 08:13:50,064 - Dropout: 0.2
+INFO 2017-08-11 08:20:40,762 - Acc @ Testing: 50.79%
+INFO 2017-08-11 08:20:40,762 - --------------------------------------------------------
+INFO 2017-08-11 08:20:41,007 - Number of layers: 1
+INFO 2017-08-11 08:20:41,007 - Number of neurons: 64
+INFO 2017-08-11 08:20:41,007 - Activation: sigmoid
+INFO 2017-08-11 08:20:41,007 - Optimizer: adamax
+INFO 2017-08-11 08:20:41,007 - Dropout: 0.2
+INFO 2017-08-11 08:25:33,053 - Acc @ Testing: 48.71%
+INFO 2017-08-11 08:25:33,053 - --------------------------------------------------------
+INFO 2017-08-11 08:25:33,301 - Number of layers: 4
+INFO 2017-08-11 08:25:33,301 - Number of neurons: 64
+INFO 2017-08-11 08:25:33,301 - Activation: elu
+INFO 2017-08-11 08:25:33,302 - Optimizer: adamax
+INFO 2017-08-11 08:25:33,302 - Dropout: 0.2
+INFO 2017-08-11 08:30:59,983 - Acc @ Testing: 51.31%
+INFO 2017-08-11 08:30:59,983 - --------------------------------------------------------
+INFO 2017-08-11 08:31:00,231 - Number of layers: 1
+INFO 2017-08-11 08:31:00,231 - Number of neurons: 64
+INFO 2017-08-11 08:31:00,231 - Activation: elu
+INFO 2017-08-11 08:31:00,231 - Optimizer: adamax
+INFO 2017-08-11 08:31:00,231 - Dropout: 0.2
+INFO 2017-08-11 08:34:35,697 - Acc @ Testing: 48.94%
+INFO 2017-08-11 08:34:35,697 - --------------------------------------------------------
+INFO 2017-08-11 08:34:35,964 - Number of layers: 2
+INFO 2017-08-11 08:34:35,964 - Number of neurons: 64
+INFO 2017-08-11 08:34:35,964 - Activation: sigmoid
+INFO 2017-08-11 08:34:35,964 - Optimizer: adamax
+INFO 2017-08-11 08:34:35,964 - Dropout: 0.2
+INFO 2017-08-11 08:41:45,048 - Acc @ Testing: 49.36%
+INFO 2017-08-11 08:41:45,048 - --------------------------------------------------------
+INFO 2017-08-11 08:41:45,314 - Number of layers: 1
+INFO 2017-08-11 08:41:45,314 - Number of neurons: 64
+INFO 2017-08-11 08:41:45,314 - Activation: elu
+INFO 2017-08-11 08:41:45,314 - Optimizer: adadelta
+INFO 2017-08-11 08:41:45,314 - Dropout: 0.2
+INFO 2017-08-11 08:45:27,770 - Acc @ Testing: 49.32%
+INFO 2017-08-11 08:45:27,770 - --------------------------------------------------------
+INFO 2017-08-11 08:45:28,029 - Number of layers: 1
+INFO 2017-08-11 08:45:28,029 - Number of neurons: 64
+INFO 2017-08-11 08:45:28,030 - Activation: elu
+INFO 2017-08-11 08:45:28,030 - Optimizer: adamax
+INFO 2017-08-11 08:45:28,030 - Dropout: 0.2
+INFO 2017-08-11 08:49:08,883 - Acc @ Testing: 50.5%
+INFO 2017-08-11 08:49:08,883 - --------------------------------------------------------
+INFO 2017-08-11 08:49:09,138 - Number of layers: 1
+INFO 2017-08-11 08:49:09,138 - Number of neurons: 64
+INFO 2017-08-11 08:49:09,138 - Activation: elu
+INFO 2017-08-11 08:49:09,138 - Optimizer: adamax
+INFO 2017-08-11 08:49:09,138 - Dropout: 0.2
+INFO 2017-08-11 08:51:31,688 - Acc @ Testing: 49.519999999999996%
+INFO 2017-08-11 08:51:31,688 - --------------------------------------------------------
+INFO 2017-08-11 08:51:31,953 - Number of layers: 2
+INFO 2017-08-11 08:51:31,953 - Number of neurons: 128
+INFO 2017-08-11 08:51:31,953 - Activation: sigmoid
+INFO 2017-08-11 08:51:31,953 - Optimizer: adamax
+INFO 2017-08-11 08:51:31,953 - Dropout: 0.2
+INFO 2017-08-11 08:56:37,544 - Acc @ Testing: 51.93%
+INFO 2017-08-11 08:56:37,544 - --------------------------------------------------------
+INFO 2017-08-11 08:56:37,798 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667, 51.374666666666663, 50.990666666666669, 50.384666666666668]%
+INFO 2017-08-11 08:56:37,798 - --------------------------------------------------------
+INFO 2017-08-11 08:56:37,798 - Parents: [{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 4, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}, {'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'}]
+INFO 2017-08-11 08:56:37,798 - *************************************************
+INFO 2017-08-11 08:56:37,798 - ------ GEN 10 ------
+INFO 2017-08-11 08:56:37,798 - Number of layers: 2
+INFO 2017-08-11 08:56:37,798 - Number of neurons: 128
+INFO 2017-08-11 08:56:37,798 - Activation: elu
+INFO 2017-08-11 08:56:37,798 - Optimizer: adamax
+INFO 2017-08-11 08:56:37,799 - Dropout: 0.2
+INFO 2017-08-11 09:01:01,918 - Acc @ Testing: 53.290000000000006%
+INFO 2017-08-11 09:01:01,919 - --------------------------------------------------------
+INFO 2017-08-11 09:01:02,190 - Number of layers: 4
+INFO 2017-08-11 09:01:02,190 - Number of neurons: 64
+INFO 2017-08-11 09:01:02,190 - Activation: elu
+INFO 2017-08-11 09:01:02,191 - Optimizer: adamax
+INFO 2017-08-11 09:01:02,191 - Dropout: 0.15
+INFO 2017-08-11 09:06:18,918 - Acc @ Testing: 51.77%
+INFO 2017-08-11 09:06:18,918 - --------------------------------------------------------
+INFO 2017-08-11 09:06:19,182 - Number of layers: 1
+INFO 2017-08-11 09:06:19,182 - Number of neurons: 64
+INFO 2017-08-11 09:06:19,182 - Activation: elu
+INFO 2017-08-11 09:06:19,182 - Optimizer: adamax
+INFO 2017-08-11 09:06:19,182 - Dropout: 0.2
+INFO 2017-08-11 09:09:58,249 - Acc @ Testing: 50.529999999999994%
+INFO 2017-08-11 09:09:58,249 - --------------------------------------------------------
+INFO 2017-08-11 09:09:58,529 - Number of layers: 1
+INFO 2017-08-11 09:09:58,529 - Number of neurons: 768
+INFO 2017-08-11 09:09:58,529 - Activation: elu
+INFO 2017-08-11 09:09:58,529 - Optimizer: adamax
+INFO 2017-08-11 09:09:58,529 - Dropout: 0.2
+INFO 2017-08-11 09:18:30,539 - Acc @ Testing: 53.33%
+INFO 2017-08-11 09:18:30,540 - --------------------------------------------------------
+INFO 2017-08-11 09:18:30,857 - Number of layers: 3
+INFO 2017-08-11 09:18:30,857 - Number of neurons: 128
+INFO 2017-08-11 09:18:30,857 - Activation: sigmoid
+INFO 2017-08-11 09:18:30,858 - Optimizer: adamax
+INFO 2017-08-11 09:18:30,858 - Dropout: 0.2
+INFO 2017-08-11 09:26:08,623 - Acc @ Testing: 51.21%
+INFO 2017-08-11 09:26:08,623 - --------------------------------------------------------
+INFO 2017-08-11 09:26:08,903 - Number of layers: 1
+INFO 2017-08-11 09:26:08,903 - Number of neurons: 64
+INFO 2017-08-11 09:26:08,903 - Activation: sigmoid
+INFO 2017-08-11 09:26:08,903 - Optimizer: adamax
+INFO 2017-08-11 09:26:08,903 - Dropout: 0.2
+INFO 2017-08-11 09:32:13,291 - Acc @ Testing: 49.45%
+INFO 2017-08-11 09:32:13,292 - --------------------------------------------------------
+INFO 2017-08-11 09:32:13,570 - Number of layers: 1
+INFO 2017-08-11 09:32:13,570 - Number of neurons: 64
+INFO 2017-08-11 09:32:13,570 - Activation: elu
+INFO 2017-08-11 09:32:13,570 - Optimizer: adamax
+INFO 2017-08-11 09:32:13,570 - Dropout: 0.2
+INFO 2017-08-11 09:37:54,227 - Acc @ Testing: 50.71%
+INFO 2017-08-11 09:37:54,227 - --------------------------------------------------------
+INFO 2017-08-11 09:37:54,525 - Number of layers: 2
+INFO 2017-08-11 09:37:54,525 - Number of neurons: 64
+INFO 2017-08-11 09:37:54,525 - Activation: sigmoid
+INFO 2017-08-11 09:37:54,525 - Optimizer: adamax
+INFO 2017-08-11 09:37:54,525 - Dropout: 0.2
+INFO 2017-08-11 09:43:48,711 - Acc @ Testing: 49.33%
+INFO 2017-08-11 09:43:48,712 - --------------------------------------------------------
+INFO 2017-08-11 09:43:49,027 - Number of layers: 1
+INFO 2017-08-11 09:43:49,027 - Number of neurons: 64
+INFO 2017-08-11 09:43:49,027 - Activation: elu
+INFO 2017-08-11 09:43:49,027 - Optimizer: adadelta
+INFO 2017-08-11 09:43:49,027 - Dropout: 0.2
+INFO 2017-08-11 09:48:17,009 - Acc @ Testing: 49.51%
+INFO 2017-08-11 09:48:17,009 - --------------------------------------------------------
+INFO 2017-08-11 09:48:17,303 - Number of layers: 2
+INFO 2017-08-11 09:48:17,303 - Number of neurons: 128
+INFO 2017-08-11 09:48:17,303 - Activation: sigmoid
+INFO 2017-08-11 09:48:17,303 - Optimizer: adamax
+INFO 2017-08-11 09:48:17,303 - Dropout: 0.2
+INFO 2017-08-11 09:56:24,759 - Acc @ Testing: 52.93%
+INFO 2017-08-11 09:56:24,759 - --------------------------------------------------------
+INFO 2017-08-11 09:56:25,066 - Number of layers: 2
+INFO 2017-08-11 09:56:25,066 - Number of neurons: 128
+INFO 2017-08-11 09:56:25,066 - Activation: sigmoid
+INFO 2017-08-11 09:56:25,066 - Optimizer: adamax
+INFO 2017-08-11 09:56:25,066 - Dropout: 0.2
+INFO 2017-08-11 10:03:18,224 - Acc @ Testing: 52.559999999999995%
+INFO 2017-08-11 10:03:18,224 - --------------------------------------------------------
+INFO 2017-08-11 10:03:18,545 - Number of layers: 2
+INFO 2017-08-11 10:03:18,545 - Number of neurons: 128
+INFO 2017-08-11 10:03:18,545 - Activation: elu
+INFO 2017-08-11 10:03:18,545 - Optimizer: adadelta
+INFO 2017-08-11 10:03:18,546 - Dropout: 0.2
+INFO 2017-08-11 10:10:30,207 - Acc @ Testing: 53.71%
+INFO 2017-08-11 10:10:30,207 - --------------------------------------------------------
+INFO 2017-08-11 10:10:30,504 - Number of layers: 2
+INFO 2017-08-11 10:10:30,505 - Number of neurons: 128
+INFO 2017-08-11 10:10:30,505 - Activation: elu
+INFO 2017-08-11 10:10:30,505 - Optimizer: adamax
+INFO 2017-08-11 10:10:30,505 - Dropout: 0.2
+INFO 2017-08-11 10:15:52,893 - Acc @ Testing: 52.81%
+INFO 2017-08-11 10:15:52,893 - --------------------------------------------------------
+INFO 2017-08-11 10:15:53,211 - Number of layers: 2
+INFO 2017-08-11 10:15:53,211 - Number of neurons: 64
+INFO 2017-08-11 10:15:53,211 - Activation: elu
+INFO 2017-08-11 10:15:53,211 - Optimizer: adamax
+INFO 2017-08-11 10:15:53,211 - Dropout: 0.2
+INFO 2017-08-11 10:21:01,653 - Acc @ Testing: 51.24999999999999%
+INFO 2017-08-11 10:21:01,654 - --------------------------------------------------------
+INFO 2017-08-11 10:21:01,991 - Number of layers: 4
+INFO 2017-08-11 10:21:01,991 - Number of neurons: 128
+INFO 2017-08-11 10:21:01,991 - Activation: elu
+INFO 2017-08-11 10:21:01,991 - Optimizer: rmsprop
+INFO 2017-08-11 10:21:01,991 - Dropout: 0.2
+INFO 2017-08-11 10:23:44,884 - Acc @ Testing: 44.46%
+INFO 2017-08-11 10:23:44,884 - --------------------------------------------------------
+INFO 2017-08-11 10:23:45,210 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667, 51.374666666666663, 50.990666666666669, 50.384666666666668, 51.123333333333328]%
+INFO 2017-08-11 10:23:45,210 - --------------------------------------------------------
+INFO 2017-08-11 12:06:01,154 - Parents: [{'nb_neurons': 64, 'nb_layers': 4, 'dropout': 0.15, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 768, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 128, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 128, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'nb_layers': 4, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'rmsprop'}]
+INFO 2017-08-11 12:06:01,154 - *************************************************
+INFO 2017-08-11 12:06:01,154 - ------ GEN 11 ------
+INFO 2017-08-11 12:06:01,154 - Number of layers: 4
+INFO 2017-08-11 12:06:01,155 - Number of neurons: 64
+INFO 2017-08-11 12:06:01,155 - Activation: elu
+INFO 2017-08-11 12:06:01,155 - Optimizer: adamax
+INFO 2017-08-11 12:06:01,155 - Dropout: 0.15
+INFO 2017-08-11 12:09:37,514 - Acc @ Testing: 51.42%
+INFO 2017-08-11 12:09:37,514 - --------------------------------------------------------
+INFO 2017-08-11 12:09:37,519 - Number of layers: 1
+INFO 2017-08-11 12:09:37,519 - Number of neurons: 64
+INFO 2017-08-11 12:09:37,520 - Activation: sigmoid
+INFO 2017-08-11 12:09:37,520 - Optimizer: adamax
+INFO 2017-08-11 12:09:37,520 - Dropout: 0.2
+INFO 2017-08-11 12:13:57,092 - Acc @ Testing: 49.980000000000004%
+INFO 2017-08-11 12:13:57,092 - --------------------------------------------------------
+INFO 2017-08-11 12:13:57,098 - Number of layers: 1
+INFO 2017-08-11 12:13:57,098 - Number of neurons: 768
+INFO 2017-08-11 12:13:57,098 - Activation: elu
+INFO 2017-08-11 12:13:57,098 - Optimizer: adamax
+INFO 2017-08-11 12:13:57,098 - Dropout: 0.2
+INFO 2017-08-11 12:19:26,519 - Acc @ Testing: 51.53%
+INFO 2017-08-11 12:19:26,519 - --------------------------------------------------------
+INFO 2017-08-11 12:19:26,526 - Number of layers: 1
+INFO 2017-08-11 12:19:26,526 - Number of neurons: 64
+INFO 2017-08-11 12:19:26,526 - Activation: sigmoid
+INFO 2017-08-11 12:19:26,526 - Optimizer: adamax
+INFO 2017-08-11 12:19:26,526 - Dropout: 0.2
+INFO 2017-08-11 12:23:35,475 - Acc @ Testing: 48.949999999999996%
+INFO 2017-08-11 12:23:35,475 - --------------------------------------------------------
+INFO 2017-08-11 12:23:35,483 - Number of layers: 2
+INFO 2017-08-11 12:23:35,483 - Number of neurons: 64
+INFO 2017-08-11 12:23:35,483 - Activation: sigmoid
+INFO 2017-08-11 12:23:35,483 - Optimizer: adamax
+INFO 2017-08-11 12:23:35,483 - Dropout: 0.2
+INFO 2017-08-11 12:27:43,280 - Acc @ Testing: 48.27%
+INFO 2017-08-11 12:27:43,280 - --------------------------------------------------------
+INFO 2017-08-11 12:27:43,290 - Number of layers: 2
+INFO 2017-08-11 12:27:43,290 - Number of neurons: 64
+INFO 2017-08-11 12:27:43,290 - Activation: sigmoid
+INFO 2017-08-11 12:27:43,291 - Optimizer: adamax
+INFO 2017-08-11 12:27:43,291 - Dropout: 0.2
+INFO 2017-08-11 12:32:48,366 - Acc @ Testing: 49.76%
+INFO 2017-08-11 12:32:48,367 - --------------------------------------------------------
+INFO 2017-08-11 12:32:48,378 - Number of layers: 2
+INFO 2017-08-11 12:32:48,378 - Number of neurons: 128
+INFO 2017-08-11 12:32:48,378 - Activation: elu
+INFO 2017-08-11 12:32:48,378 - Optimizer: adadelta
+INFO 2017-08-11 12:32:48,378 - Dropout: 0.2
+INFO 2017-08-11 12:37:38,504 - Acc @ Testing: 47.92%
+INFO 2017-08-11 12:37:38,505 - --------------------------------------------------------
+INFO 2017-08-11 12:37:38,517 - Number of layers: 4
+INFO 2017-08-11 12:37:38,517 - Number of neurons: 128
+INFO 2017-08-11 12:37:38,517 - Activation: elu
+INFO 2017-08-11 12:37:38,517 - Optimizer: rmsprop
+INFO 2017-08-11 12:37:38,517 - Dropout: 0.2
+INFO 2017-08-11 12:41:41,544 - Acc @ Testing: 51.07000000000001%
+INFO 2017-08-11 12:41:41,544 - --------------------------------------------------------
+INFO 2017-08-11 12:41:41,559 - Number of layers: 2
+INFO 2017-08-11 12:41:41,559 - Number of neurons: 128
+INFO 2017-08-11 12:41:41,559 - Activation: sigmoid
+INFO 2017-08-11 12:41:41,559 - Optimizer: adamax
+INFO 2017-08-11 12:41:41,559 - Dropout: 0.2
+INFO 2017-08-11 12:45:41,021 - Acc @ Testing: 52.339999999999996%
+INFO 2017-08-11 12:45:41,021 - --------------------------------------------------------
+INFO 2017-08-11 12:45:41,035 - Number of layers: 2
+INFO 2017-08-11 12:45:41,035 - Number of neurons: 128
+INFO 2017-08-11 12:45:41,035 - Activation: sigmoid
+INFO 2017-08-11 12:45:41,035 - Optimizer: adamax
+INFO 2017-08-11 12:45:41,035 - Dropout: 0.15
+INFO 2017-08-11 12:51:45,478 - Acc @ Testing: 52.0%
+INFO 2017-08-11 12:51:45,478 - --------------------------------------------------------
+INFO 2017-08-11 12:51:45,495 - Number of layers: 1
+INFO 2017-08-11 12:51:45,495 - Number of neurons: 64
+INFO 2017-08-11 12:51:45,495 - Activation: elu
+INFO 2017-08-11 12:51:45,495 - Optimizer: rmsprop
+INFO 2017-08-11 12:51:45,495 - Dropout: 0.2
+INFO 2017-08-11 12:53:12,226 - Acc @ Testing: 42.11%
+INFO 2017-08-11 12:53:12,227 - --------------------------------------------------------
+INFO 2017-08-11 12:53:12,242 - Number of layers: 1
+INFO 2017-08-11 12:53:12,242 - Number of neurons: 64
+INFO 2017-08-11 12:53:12,242 - Activation: elu
+INFO 2017-08-11 12:53:12,242 - Optimizer: adamax
+INFO 2017-08-11 12:53:12,242 - Dropout: 0.2
+INFO 2017-08-11 12:55:33,865 - Acc @ Testing: 50.690000000000005%
+INFO 2017-08-11 12:55:33,865 - --------------------------------------------------------
+INFO 2017-08-11 12:55:33,884 - Number of layers: 1
+INFO 2017-08-11 12:55:33,884 - Number of neurons: 128
+INFO 2017-08-11 12:55:33,884 - Activation: elu
+INFO 2017-08-11 12:55:33,884 - Optimizer: adamax
+INFO 2017-08-11 12:55:33,884 - Dropout: 0.2
+INFO 2017-08-11 13:00:03,275 - Acc @ Testing: 51.83%
+INFO 2017-08-11 13:00:03,275 - --------------------------------------------------------
+INFO 2017-08-11 13:00:03,294 - Number of layers: 4
+INFO 2017-08-11 13:00:03,294 - Number of neurons: 64
+INFO 2017-08-11 13:00:03,294 - Activation: elu
+INFO 2017-08-11 13:00:03,294 - Optimizer: rmsprop
+INFO 2017-08-11 13:00:03,294 - Dropout: 0.25
+INFO 2017-08-11 13:02:06,819 - Acc @ Testing: 44.81%
+INFO 2017-08-11 13:02:06,820 - --------------------------------------------------------
+INFO 2017-08-11 13:02:06,843 - Number of layers: 4
+INFO 2017-08-11 13:02:06,843 - Number of neurons: 64
+INFO 2017-08-11 13:02:06,843 - Activation: elu
+INFO 2017-08-11 13:02:06,843 - Optimizer: adadelta
+INFO 2017-08-11 13:02:06,843 - Dropout: 0.15
+INFO 2017-08-11 13:06:21,471 - Acc @ Testing: 48.49%
+INFO 2017-08-11 13:06:21,471 - --------------------------------------------------------
+INFO 2017-08-11 13:06:21,496 - Generations Average: [0, 49.411333333333339]%
+INFO 2017-08-11 13:06:21,496 - --------------------------------------------------------
+INFO 2017-08-11 13:06:21,496 - Parents: [{'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 768, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}]
+INFO 2017-08-11 13:06:21,496 - *************************************************
+INFO 2017-08-11 13:06:21,496 - ------ GEN 12 ------
+INFO 2017-08-11 13:06:21,496 - Number of layers: 1
+INFO 2017-08-11 13:06:21,496 - Number of neurons: 64
+INFO 2017-08-11 13:06:21,496 - Activation: sigmoid
+INFO 2017-08-11 13:06:21,497 - Optimizer: adamax
+INFO 2017-08-11 13:06:21,497 - Dropout: 0.2
+INFO 2017-08-11 13:09:35,135 - Acc @ Testing: 49.309999999999995%
+INFO 2017-08-11 13:09:35,135 - --------------------------------------------------------
+INFO 2017-08-11 13:09:35,159 - Number of layers: 1
+INFO 2017-08-11 13:09:35,159 - Number of neurons: 768
+INFO 2017-08-11 13:09:35,159 - Activation: elu
+INFO 2017-08-11 13:09:35,159 - Optimizer: adamax
+INFO 2017-08-11 13:09:35,159 - Dropout: 0.2
+INFO 2017-08-11 13:15:13,577 - Acc @ Testing: 51.66%
+INFO 2017-08-11 13:15:13,577 - --------------------------------------------------------
+INFO 2017-08-11 13:15:13,602 - Number of layers: 5
+INFO 2017-08-11 13:15:13,602 - Number of neurons: 64
+INFO 2017-08-11 13:15:13,602 - Activation: sigmoid
+INFO 2017-08-11 13:15:13,602 - Optimizer: adamax
+INFO 2017-08-11 13:15:13,602 - Dropout: 0.2
+INFO 2017-08-11 13:22:20,916 - Acc @ Testing: 45.33%
+INFO 2017-08-11 13:22:20,916 - --------------------------------------------------------
+INFO 2017-08-11 13:22:20,944 - Number of layers: 2
+INFO 2017-08-11 13:22:20,944 - Number of neurons: 64
+INFO 2017-08-11 13:22:20,944 - Activation: sigmoid
+INFO 2017-08-11 13:22:20,944 - Optimizer: adamax
+INFO 2017-08-11 13:22:20,944 - Dropout: 0.25
+INFO 2017-08-11 13:27:44,033 - Acc @ Testing: 48.77%
+INFO 2017-08-11 13:27:44,033 - --------------------------------------------------------
+INFO 2017-08-11 13:27:44,061 - Number of layers: 2
+INFO 2017-08-11 13:27:44,061 - Number of neurons: 128
+INFO 2017-08-11 13:27:44,061 - Activation: sigmoid
+INFO 2017-08-11 13:27:44,061 - Optimizer: adamax
+INFO 2017-08-11 13:27:44,061 - Dropout: 0.2
+INFO 2017-08-11 13:32:04,433 - Acc @ Testing: 52.56999999999999%
+INFO 2017-08-11 13:32:04,433 - --------------------------------------------------------
+INFO 2017-08-11 13:32:04,464 - Number of layers: 1
+INFO 2017-08-11 13:32:04,464 - Number of neurons: 64
+INFO 2017-08-11 13:32:04,464 - Activation: elu
+INFO 2017-08-11 13:32:04,464 - Optimizer: adamax
+INFO 2017-08-11 13:32:04,464 - Dropout: 0.2
+INFO 2017-08-11 13:33:30,808 - Acc @ Testing: 48.29%
+INFO 2017-08-11 13:33:30,809 - --------------------------------------------------------
+INFO 2017-08-11 13:33:30,844 - Number of layers: 1
+INFO 2017-08-11 13:33:30,844 - Number of neurons: 32
+INFO 2017-08-11 13:33:30,844 - Activation: sigmoid
+INFO 2017-08-11 13:33:30,844 - Optimizer: adamax
+INFO 2017-08-11 13:33:30,844 - Dropout: 0.2
+INFO 2017-08-11 13:36:02,337 - Acc @ Testing: 46.1%
+INFO 2017-08-11 13:36:02,337 - --------------------------------------------------------
+INFO 2017-08-11 13:36:02,365 - Number of layers: 1
+INFO 2017-08-11 13:36:02,365 - Number of neurons: 64
+INFO 2017-08-11 13:36:02,365 - Activation: sigmoid
+INFO 2017-08-11 13:36:02,365 - Optimizer: adamax
+INFO 2017-08-11 13:36:02,365 - Dropout: 0.2
+INFO 2017-08-11 13:39:01,094 - Acc @ Testing: 48.19%
+INFO 2017-08-11 13:39:01,094 - --------------------------------------------------------
+INFO 2017-08-11 13:39:01,130 - Number of layers: 1
+INFO 2017-08-11 13:39:01,130 - Number of neurons: 64
+INFO 2017-08-11 13:39:01,130 - Activation: sigmoid
+INFO 2017-08-11 13:39:01,130 - Optimizer: adamax
+INFO 2017-08-11 13:39:01,130 - Dropout: 0.2
+INFO 2017-08-11 13:42:42,276 - Acc @ Testing: 49.68%
+INFO 2017-08-11 13:42:42,276 - --------------------------------------------------------
+INFO 2017-08-11 13:42:42,308 - Number of layers: 2
+INFO 2017-08-11 13:42:42,308 - Number of neurons: 64
+INFO 2017-08-11 13:42:42,308 - Activation: sigmoid
+INFO 2017-08-11 13:42:42,308 - Optimizer: adadelta
+INFO 2017-08-11 13:42:42,308 - Dropout: 0.2
+INFO 2017-08-11 13:49:23,784 - Acc @ Testing: 48.809999999999995%
+INFO 2017-08-11 13:49:23,784 - --------------------------------------------------------
+INFO 2017-08-11 13:49:23,818 - Number of layers: 2
+INFO 2017-08-11 13:49:23,818 - Number of neurons: 128
+INFO 2017-08-11 13:49:23,818 - Activation: sigmoid
+INFO 2017-08-11 13:49:23,818 - Optimizer: adamax
+INFO 2017-08-11 13:49:23,818 - Dropout: 0.2
+INFO 2017-08-11 13:55:38,251 - Acc @ Testing: 52.83%
+INFO 2017-08-11 13:55:38,251 - --------------------------------------------------------
+INFO 2017-08-11 13:55:38,288 - Number of layers: 2
+INFO 2017-08-11 13:55:38,288 - Number of neurons: 128
+INFO 2017-08-11 13:55:38,288 - Activation: elu
+INFO 2017-08-11 13:55:38,288 - Optimizer: adamax
+INFO 2017-08-11 13:55:38,288 - Dropout: 0.25
+INFO 2017-08-11 13:59:12,507 - Acc @ Testing: 53.47%
+INFO 2017-08-11 13:59:12,507 - --------------------------------------------------------
+INFO 2017-08-11 13:59:12,548 - Number of layers: 1
+INFO 2017-08-11 13:59:12,549 - Number of neurons: 128
+INFO 2017-08-11 13:59:12,549 - Activation: elu
+INFO 2017-08-11 13:59:12,549 - Optimizer: adamax
+INFO 2017-08-11 13:59:12,549 - Dropout: 0.2
+INFO 2017-08-11 14:02:03,873 - Acc @ Testing: 51.15%
+INFO 2017-08-11 14:02:03,873 - --------------------------------------------------------
+INFO 2017-08-11 14:02:03,916 - Number of layers: 2
+INFO 2017-08-11 14:02:03,916 - Number of neurons: 64
+INFO 2017-08-11 14:02:03,916 - Activation: sigmoid
+INFO 2017-08-11 14:02:03,916 - Optimizer: adamax
+INFO 2017-08-11 14:02:03,916 - Dropout: 0.2
+INFO 2017-08-11 14:07:43,873 - Acc @ Testing: 50.11%
+INFO 2017-08-11 14:07:43,873 - --------------------------------------------------------
+INFO 2017-08-11 14:07:43,920 - Number of layers: 1
+INFO 2017-08-11 14:07:43,920 - Number of neurons: 768
+INFO 2017-08-11 14:07:43,920 - Activation: sigmoid
+INFO 2017-08-11 14:07:43,920 - Optimizer: adamax
+INFO 2017-08-11 14:07:43,920 - Dropout: 0.2
+INFO 2017-08-11 14:12:07,708 - Acc @ Testing: 50.74999999999999%
+INFO 2017-08-11 14:12:07,709 - --------------------------------------------------------
+INFO 2017-08-11 14:12:07,752 - Generations Average: [0, 49.411333333333339, 49.801333333333339]%
+INFO 2017-08-11 14:12:07,752 - --------------------------------------------------------
+INFO 2017-08-11 14:12:07,752 - Parents: [{'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 5, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}]
+INFO 2017-08-11 14:12:07,758 - *************************************************
+INFO 2017-08-11 14:12:07,758 - ------ GEN 13 ------
+INFO 2017-08-11 14:12:07,758 - Number of layers: 1
+INFO 2017-08-11 14:12:07,758 - Number of neurons: 64
+INFO 2017-08-11 14:12:07,758 - Activation: sigmoid
+INFO 2017-08-11 14:12:07,758 - Optimizer: adamax
+INFO 2017-08-11 14:12:07,759 - Dropout: 0.2
+INFO 2017-08-11 14:14:58,756 - Acc @ Testing: 48.15%
+INFO 2017-08-11 14:14:58,756 - --------------------------------------------------------
+INFO 2017-08-11 14:14:58,799 - Number of layers: 5
+INFO 2017-08-11 14:14:58,799 - Number of neurons: 768
+INFO 2017-08-11 14:14:58,799 - Activation: sigmoid
+INFO 2017-08-11 14:14:58,799 - Optimizer: adamax
+INFO 2017-08-11 14:14:58,799 - Dropout: 0.2
+INFO 2017-08-11 14:37:47,884 - Acc @ Testing: 54.2%
+INFO 2017-08-11 14:37:47,884 - --------------------------------------------------------
+INFO 2017-08-11 14:37:47,935 - Number of layers: 2
+INFO 2017-08-11 14:37:47,935 - Number of neurons: 64
+INFO 2017-08-11 14:37:47,935 - Activation: sigmoid
+INFO 2017-08-11 14:37:47,935 - Optimizer: adamax
+INFO 2017-08-11 14:37:47,935 - Dropout: 0.25
+INFO 2017-08-11 14:43:19,994 - Acc @ Testing: 49.5%
+INFO 2017-08-11 14:43:19,994 - --------------------------------------------------------
+INFO 2017-08-11 14:43:20,046 - Number of layers: 2
+INFO 2017-08-11 14:43:20,046 - Number of neurons: 128
+INFO 2017-08-11 14:43:20,046 - Activation: sigmoid
+INFO 2017-08-11 14:43:20,046 - Optimizer: adamax
+INFO 2017-08-11 14:43:20,046 - Dropout: 0.2
+INFO 2017-08-11 14:47:11,786 - Acc @ Testing: 51.480000000000004%
+INFO 2017-08-11 14:47:11,786 - --------------------------------------------------------
+INFO 2017-08-11 14:47:11,844 - Number of layers: 1
+INFO 2017-08-11 14:47:11,844 - Number of neurons: 64
+INFO 2017-08-11 14:47:11,844 - Activation: sigmoid
+INFO 2017-08-11 14:47:11,844 - Optimizer: adamax
+INFO 2017-08-11 14:47:11,844 - Dropout: 0.2
+INFO 2017-08-11 14:51:17,838 - Acc @ Testing: 49.26%
+INFO 2017-08-11 14:51:17,838 - --------------------------------------------------------
+INFO 2017-08-11 14:51:17,894 - Number of layers: 2
+INFO 2017-08-11 14:51:17,894 - Number of neurons: 128
+INFO 2017-08-11 14:51:17,894 - Activation: sigmoid
+INFO 2017-08-11 14:51:17,894 - Optimizer: adamax
+INFO 2017-08-11 14:51:17,894 - Dropout: 0.2
+INFO 2017-08-11 14:56:27,571 - Acc @ Testing: 52.339999999999996%
+INFO 2017-08-11 14:56:27,571 - --------------------------------------------------------
+INFO 2017-08-11 14:56:27,623 - Number of layers: 1
+INFO 2017-08-11 14:56:27,623 - Number of neurons: 128
+INFO 2017-08-11 14:56:27,623 - Activation: elu
+INFO 2017-08-11 14:56:27,623 - Optimizer: adamax
+INFO 2017-08-11 14:56:27,623 - Dropout: 0.2
+INFO 2017-08-11 15:00:20,757 - Acc @ Testing: 53.04%
+INFO 2017-08-11 15:00:20,757 - --------------------------------------------------------
+INFO 2017-08-11 15:00:20,819 - Number of layers: 1
+INFO 2017-08-11 15:00:20,820 - Number of neurons: 64
+INFO 2017-08-11 15:00:20,820 - Activation: sigmoid
+INFO 2017-08-11 15:00:20,820 - Optimizer: adamax
+INFO 2017-08-11 15:00:20,820 - Dropout: 0.2
+INFO 2017-08-11 15:04:22,235 - Acc @ Testing: 48.89%
+INFO 2017-08-11 15:04:22,235 - --------------------------------------------------------
+INFO 2017-08-11 15:04:22,305 - Number of layers: 2
+INFO 2017-08-11 15:04:22,306 - Number of neurons: 64
+INFO 2017-08-11 15:04:22,306 - Activation: sigmoid
+INFO 2017-08-11 15:04:22,306 - Optimizer: adamax
+INFO 2017-08-11 15:04:22,306 - Dropout: 0.2
+INFO 2017-08-11 15:09:12,376 - Acc @ Testing: 48.68%
+INFO 2017-08-11 15:09:12,376 - --------------------------------------------------------
+INFO 2017-08-11 15:09:12,441 - Number of layers: 1
+INFO 2017-08-11 15:09:12,442 - Number of neurons: 64
+INFO 2017-08-11 15:09:12,442 - Activation: sigmoid
+INFO 2017-08-11 15:09:12,442 - Optimizer: adamax
+INFO 2017-08-11 15:09:12,442 - Dropout: 0.2
+INFO 2017-08-11 15:12:17,068 - Acc @ Testing: 47.72%
+INFO 2017-08-11 15:12:17,069 - --------------------------------------------------------
+INFO 2017-08-11 15:12:17,136 - Number of layers: 2
+INFO 2017-08-11 15:12:17,136 - Number of neurons: 128
+INFO 2017-08-11 15:12:17,136 - Activation: sigmoid
+INFO 2017-08-11 15:12:17,136 - Optimizer: adamax
+INFO 2017-08-11 15:12:17,136 - Dropout: 0.2
+INFO 2017-08-11 15:17:05,183 - Acc @ Testing: 51.959999999999994%
+INFO 2017-08-11 15:17:05,183 - --------------------------------------------------------
+INFO 2017-08-11 15:17:05,249 - Number of layers: 1
+INFO 2017-08-11 15:17:05,249 - Number of neurons: 64
+INFO 2017-08-11 15:17:05,249 - Activation: elu
+INFO 2017-08-11 15:17:05,249 - Optimizer: adamax
+INFO 2017-08-11 15:17:05,249 - Dropout: 0.2
+INFO 2017-08-11 15:19:59,169 - Acc @ Testing: 50.71%
+INFO 2017-08-11 15:19:59,169 - --------------------------------------------------------
+INFO 2017-08-11 15:19:59,232 - Number of layers: 2
+INFO 2017-08-11 15:19:59,232 - Number of neurons: 128
+INFO 2017-08-11 15:19:59,232 - Activation: sigmoid
+INFO 2017-08-11 15:19:59,232 - Optimizer: adamax
+INFO 2017-08-11 15:19:59,232 - Dropout: 0.2
+INFO 2017-08-11 15:25:19,672 - Acc @ Testing: 52.1%
+INFO 2017-08-11 15:25:19,672 - --------------------------------------------------------
+INFO 2017-08-11 15:25:19,739 - Number of layers: 2
+INFO 2017-08-11 15:25:19,739 - Number of neurons: 128
+INFO 2017-08-11 15:25:19,739 - Activation: sigmoid
+INFO 2017-08-11 15:25:19,739 - Optimizer: adamax
+INFO 2017-08-11 15:25:19,739 - Dropout: 0.2
+INFO 2017-08-11 15:32:10,170 - Acc @ Testing: 53.04%
+INFO 2017-08-11 15:32:10,170 - --------------------------------------------------------
+INFO 2017-08-11 15:32:10,233 - Number of layers: 1
+INFO 2017-08-11 15:32:10,233 - Number of neurons: 64
+INFO 2017-08-11 15:32:10,233 - Activation: sigmoid
+INFO 2017-08-11 15:32:10,233 - Optimizer: adamax
+INFO 2017-08-11 15:32:10,233 - Dropout: 0.2
+INFO 2017-08-11 15:34:52,862 - Acc @ Testing: 48.16%
+INFO 2017-08-11 15:34:52,862 - --------------------------------------------------------
+INFO 2017-08-11 15:34:52,927 - Generations Average: [0, 49.411333333333339, 49.801333333333339, 50.615333333333332]%
+INFO 2017-08-11 15:34:52,928 - --------------------------------------------------------
+INFO 2017-08-11 15:34:52,928 - Parents: [{'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}]
+INFO 2017-08-11 15:34:52,928 - *************************************************
+INFO 2017-08-11 15:34:52,928 - ------ GEN 14 ------
+INFO 2017-08-11 15:34:52,928 - Number of layers: 1
+INFO 2017-08-11 15:34:52,928 - Number of neurons: 64
+INFO 2017-08-11 15:34:52,928 - Activation: sigmoid
+INFO 2017-08-11 15:34:52,928 - Optimizer: adamax
+INFO 2017-08-11 15:34:52,928 - Dropout: 0.2
+INFO 2017-08-11 15:38:40,376 - Acc @ Testing: 49.120000000000005%
+INFO 2017-08-11 15:38:40,376 - --------------------------------------------------------
+INFO 2017-08-11 15:38:40,447 - Number of layers: 2
+INFO 2017-08-11 15:38:40,447 - Number of neurons: 64
+INFO 2017-08-11 15:38:40,447 - Activation: sigmoid
+INFO 2017-08-11 15:38:40,447 - Optimizer: adamax
+INFO 2017-08-11 15:38:40,447 - Dropout: 0.25
+INFO 2017-08-11 15:45:25,525 - Acc @ Testing: 49.16%
+INFO 2017-08-11 15:45:25,525 - --------------------------------------------------------
+INFO 2017-08-11 15:45:25,593 - Number of layers: 2
+INFO 2017-08-11 15:45:25,593 - Number of neurons: 128
+INFO 2017-08-11 15:45:25,593 - Activation: sigmoid
+INFO 2017-08-11 15:45:25,593 - Optimizer: adamax
+INFO 2017-08-11 15:45:25,593 - Dropout: 0.2
+INFO 2017-08-11 15:50:23,839 - Acc @ Testing: 52.129999999999995%
+INFO 2017-08-11 15:50:23,839 - --------------------------------------------------------
+INFO 2017-08-11 15:50:23,907 - Number of layers: 2
+INFO 2017-08-11 15:50:23,908 - Number of neurons: 128
+INFO 2017-08-11 15:50:23,908 - Activation: elu
+INFO 2017-08-11 15:50:23,908 - Optimizer: adamax
+INFO 2017-08-11 15:50:23,908 - Dropout: 0.2
+INFO 2017-08-11 15:54:58,499 - Acc @ Testing: 54.190000000000005%
+INFO 2017-08-11 15:54:58,499 - --------------------------------------------------------
+INFO 2017-08-11 15:54:58,574 - Number of layers: 1
+INFO 2017-08-11 15:54:58,574 - Number of neurons: 64
+INFO 2017-08-11 15:54:58,574 - Activation: sigmoid
+INFO 2017-08-11 15:54:58,574 - Optimizer: adamax
+INFO 2017-08-11 15:54:58,574 - Dropout: 0.2
+INFO 2017-08-11 15:57:43,277 - Acc @ Testing: 47.949999999999996%
+INFO 2017-08-11 15:57:43,277 - --------------------------------------------------------
+INFO 2017-08-11 15:57:43,352 - Number of layers: 1
+INFO 2017-08-11 15:57:43,352 - Number of neurons: 64
+INFO 2017-08-11 15:57:43,352 - Activation: sigmoid
+INFO 2017-08-11 15:57:43,352 - Optimizer: adamax
+INFO 2017-08-11 15:57:43,352 - Dropout: 0.2
+INFO 2017-08-11 16:00:54,349 - Acc @ Testing: 48.91%
+INFO 2017-08-11 16:00:54,350 - --------------------------------------------------------
+INFO 2017-08-11 16:00:54,422 - Number of layers: 2
+INFO 2017-08-11 16:00:54,422 - Number of neurons: 128
+INFO 2017-08-11 16:00:54,422 - Activation: sigmoid
+INFO 2017-08-11 16:00:54,422 - Optimizer: adamax
+INFO 2017-08-11 16:00:54,422 - Dropout: 0.2
+INFO 2017-08-11 16:05:11,965 - Acc @ Testing: 52.400000000000006%
+INFO 2017-08-11 16:05:11,965 - --------------------------------------------------------
+INFO 2017-08-11 16:05:12,038 - Number of layers: 1
+INFO 2017-08-11 16:05:12,039 - Number of neurons: 64
+INFO 2017-08-11 16:05:12,039 - Activation: elu
+INFO 2017-08-11 16:05:12,039 - Optimizer: adamax
+INFO 2017-08-11 16:05:12,039 - Dropout: 0.2
+INFO 2017-08-11 16:08:23,816 - Acc @ Testing: 50.68%
+INFO 2017-08-11 16:08:23,816 - --------------------------------------------------------
+INFO 2017-08-11 16:08:23,892 - Number of layers: 1
+INFO 2017-08-11 16:08:23,892 - Number of neurons: 128
+INFO 2017-08-11 16:08:23,892 - Activation: sigmoid
+INFO 2017-08-11 16:08:23,892 - Optimizer: adamax
+INFO 2017-08-11 16:08:23,892 - Dropout: 0.2
+INFO 2017-08-11 16:12:53,527 - Acc @ Testing: 51.25999999999999%
+INFO 2017-08-11 16:12:53,527 - --------------------------------------------------------
+INFO 2017-08-11 16:12:53,604 - Number of layers: 1
+INFO 2017-08-11 16:12:53,605 - Number of neurons: 128
+INFO 2017-08-11 16:12:53,605 - Activation: sigmoid
+INFO 2017-08-11 16:12:53,605 - Optimizer: adamax
+INFO 2017-08-11 16:12:53,605 - Dropout: 0.25
+INFO 2017-08-11 16:18:29,957 - Acc @ Testing: 51.21%
+INFO 2017-08-11 16:18:29,957 - --------------------------------------------------------
+INFO 2017-08-11 16:18:30,040 - Number of layers: 1
+INFO 2017-08-11 16:18:30,040 - Number of neurons: 64
+INFO 2017-08-11 16:18:30,040 - Activation: elu
+INFO 2017-08-11 16:18:30,040 - Optimizer: adamax
+INFO 2017-08-11 16:18:30,040 - Dropout: 0.2
+INFO 2017-08-11 16:20:41,881 - Acc @ Testing: 49.4%
+INFO 2017-08-11 16:20:41,881 - --------------------------------------------------------
+INFO 2017-08-11 16:20:41,963 - Number of layers: 1
+INFO 2017-08-11 16:20:41,963 - Number of neurons: 64
+INFO 2017-08-11 16:20:41,963 - Activation: sigmoid
+INFO 2017-08-11 16:20:41,964 - Optimizer: adamax
+INFO 2017-08-11 16:20:41,964 - Dropout: 0.2
+INFO 2017-08-11 16:24:52,766 - Acc @ Testing: 49.059999999999995%
+INFO 2017-08-11 16:24:52,766 - --------------------------------------------------------
+INFO 2017-08-11 16:24:52,852 - Number of layers: 2
+INFO 2017-08-11 16:24:52,852 - Number of neurons: 128
+INFO 2017-08-11 16:24:52,852 - Activation: sigmoid
+INFO 2017-08-11 16:24:52,852 - Optimizer: adamax
+INFO 2017-08-11 16:24:52,852 - Dropout: 0.2
+INFO 2017-08-11 16:29:24,553 - Acc @ Testing: 51.4%
+INFO 2017-08-11 16:29:24,554 - --------------------------------------------------------
+INFO 2017-08-11 16:29:24,643 - Number of layers: 2
+INFO 2017-08-11 16:29:24,643 - Number of neurons: 64
+INFO 2017-08-11 16:29:24,643 - Activation: sigmoid
+INFO 2017-08-11 16:29:24,643 - Optimizer: adamax
+INFO 2017-08-11 16:29:24,643 - Dropout: 0.25
+INFO 2017-08-11 16:35:44,539 - Acc @ Testing: 49.7%
+INFO 2017-08-11 16:35:44,539 - --------------------------------------------------------
+INFO 2017-08-11 16:35:44,623 - Number of layers: 2
+INFO 2017-08-11 16:35:44,623 - Number of neurons: 64
+INFO 2017-08-11 16:35:44,623 - Activation: elu
+INFO 2017-08-11 16:35:44,623 - Optimizer: adamax
+INFO 2017-08-11 16:35:44,623 - Dropout: 0.25
+INFO 2017-08-11 16:41:02,855 - Acc @ Testing: 51.64%
+INFO 2017-08-11 16:41:02,855 - --------------------------------------------------------
+INFO 2017-08-11 16:41:02,941 - Generations Average: [0, 49.411333333333339, 49.801333333333339, 50.615333333333332, 50.547333333333327]%
+INFO 2017-08-11 16:41:02,941 - --------------------------------------------------------
+INFO 2017-08-11 16:41:02,941 - Parents: [{'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 64, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}]
+INFO 2017-08-11 16:41:02,941 - *************************************************
+INFO 2017-08-11 16:41:02,942 - ------ GEN 15 ------
+INFO 2017-08-11 16:41:02,942 - Number of layers: 2
+INFO 2017-08-11 16:41:02,942 - Number of neurons: 64
+INFO 2017-08-11 16:41:02,942 - Activation: selu
+INFO 2017-08-11 16:41:02,942 - Optimizer: adamax
+INFO 2017-08-11 16:41:02,942 - Dropout: 0.25
+INFO 2017-08-11 16:43:58,534 - Acc @ Testing: 49.980000000000004%
+INFO 2017-08-11 16:43:58,534 - --------------------------------------------------------
+INFO 2017-08-11 16:43:58,626 - Number of layers: 2
+INFO 2017-08-11 16:43:58,626 - Number of neurons: 128
+INFO 2017-08-11 16:43:58,626 - Activation: sigmoid
+INFO 2017-08-11 16:43:58,626 - Optimizer: adamax
+INFO 2017-08-11 16:43:58,626 - Dropout: 0.2
+INFO 2017-08-11 16:47:10,392 - Acc @ Testing: 48.84%
+INFO 2017-08-11 16:47:10,392 - --------------------------------------------------------
+INFO 2017-08-11 16:47:10,479 - Number of layers: 2
+INFO 2017-08-11 16:47:10,479 - Number of neurons: 128
+INFO 2017-08-11 16:47:10,479 - Activation: elu
+INFO 2017-08-11 16:47:10,479 - Optimizer: adamax
+INFO 2017-08-11 16:47:10,479 - Dropout: 0.2
+INFO 2017-08-11 16:53:05,478 - Acc @ Testing: 54.37%
+INFO 2017-08-11 16:53:05,478 - --------------------------------------------------------
+INFO 2017-08-11 16:53:05,565 - Number of layers: 1
+INFO 2017-08-11 16:53:05,565 - Number of neurons: 128
+INFO 2017-08-11 16:53:05,565 - Activation: tanh
+INFO 2017-08-11 16:53:05,565 - Optimizer: adamax
+INFO 2017-08-11 16:53:05,565 - Dropout: 0.2
+INFO 2017-08-11 16:56:07,185 - Acc @ Testing: 45.86%
+INFO 2017-08-11 16:56:07,185 - --------------------------------------------------------
+INFO 2017-08-11 16:56:07,277 - Number of layers: 1
+INFO 2017-08-11 16:56:07,277 - Number of neurons: 128
+INFO 2017-08-11 16:56:07,277 - Activation: sigmoid
+INFO 2017-08-11 16:56:07,277 - Optimizer: adamax
+INFO 2017-08-11 16:56:07,277 - Dropout: 0.25
+INFO 2017-08-11 16:59:55,587 - Acc @ Testing: 49.559999999999995%
+INFO 2017-08-11 16:59:55,587 - --------------------------------------------------------
+INFO 2017-08-11 16:59:55,679 - Number of layers: 1
+INFO 2017-08-11 16:59:55,679 - Number of neurons: 64
+INFO 2017-08-11 16:59:55,679 - Activation: elu
+INFO 2017-08-11 16:59:55,679 - Optimizer: adamax
+INFO 2017-08-11 16:59:55,679 - Dropout: 0.2
+INFO 2017-08-11 17:01:39,144 - Acc @ Testing: 48.13%
+INFO 2017-08-11 17:01:39,144 - --------------------------------------------------------
+INFO 2017-08-11 17:01:39,236 - Number of layers: 1
+INFO 2017-08-11 17:01:39,236 - Number of neurons: 64
+INFO 2017-08-11 17:01:39,236 - Activation: sigmoid
+INFO 2017-08-11 17:01:39,236 - Optimizer: sgd
+INFO 2017-08-11 17:01:39,236 - Dropout: 0.2
+INFO 2017-08-11 17:11:42,994 - Acc @ Testing: 48.5%
+INFO 2017-08-11 17:11:42,994 - --------------------------------------------------------
+INFO 2017-08-11 17:11:43,090 - Number of layers: 2
+INFO 2017-08-11 17:11:43,090 - Number of neurons: 32
+INFO 2017-08-11 17:11:43,091 - Activation: sigmoid
+INFO 2017-08-11 17:11:43,091 - Optimizer: adamax
+INFO 2017-08-11 17:11:43,091 - Dropout: 0.2
+INFO 2017-08-11 17:15:43,369 - Acc @ Testing: 43.730000000000004%
+INFO 2017-08-11 17:15:43,369 - --------------------------------------------------------
+INFO 2017-08-11 17:15:43,466 - Number of layers: 2
+INFO 2017-08-11 17:15:43,466 - Number of neurons: 64
+INFO 2017-08-11 17:15:43,466 - Activation: sigmoid
+INFO 2017-08-11 17:15:43,466 - Optimizer: adamax
+INFO 2017-08-11 17:15:43,466 - Dropout: 0.25
+INFO 2017-08-11 17:20:35,830 - Acc @ Testing: 48.33%
+INFO 2017-08-11 17:20:35,830 - --------------------------------------------------------
+INFO 2017-08-11 17:20:35,930 - Number of layers: 2
+INFO 2017-08-11 17:20:35,931 - Number of neurons: 64
+INFO 2017-08-11 17:20:35,931 - Activation: elu
+INFO 2017-08-11 17:20:35,931 - Optimizer: adadelta
+INFO 2017-08-11 17:20:35,931 - Dropout: 0.25
+INFO 2017-08-11 17:24:23,279 - Acc @ Testing: 49.9%
+INFO 2017-08-11 17:24:23,279 - --------------------------------------------------------
+INFO 2017-08-11 17:24:23,379 - Number of layers: 2
+INFO 2017-08-11 17:24:23,379 - Number of neurons: 128
+INFO 2017-08-11 17:24:23,379 - Activation: sigmoid
+INFO 2017-08-11 17:24:23,379 - Optimizer: adamax
+INFO 2017-08-11 17:24:23,379 - Dropout: 0.2
+INFO 2017-08-11 17:30:32,937 - Acc @ Testing: 53.010000000000005%
+INFO 2017-08-11 17:30:32,938 - --------------------------------------------------------
+INFO 2017-08-11 17:30:33,037 - Number of layers: 1
+INFO 2017-08-11 17:30:33,037 - Number of neurons: 1024
+INFO 2017-08-11 17:30:33,037 - Activation: sigmoid
+INFO 2017-08-11 17:30:33,037 - Optimizer: adamax
+INFO 2017-08-11 17:30:33,037 - Dropout: 0.2
+INFO 2017-08-11 17:39:36,029 - Acc @ Testing: 52.129999999999995%
+INFO 2017-08-11 17:39:36,029 - --------------------------------------------------------
+INFO 2017-08-11 17:39:36,135 - Number of layers: 1
+INFO 2017-08-11 17:39:36,135 - Number of neurons: 128
+INFO 2017-08-11 17:39:36,135 - Activation: sigmoid
+INFO 2017-08-11 17:39:36,135 - Optimizer: adamax
+INFO 2017-08-11 17:39:36,135 - Dropout: 0.2
+INFO 2017-08-11 17:44:30,817 - Acc @ Testing: 52.39%
+INFO 2017-08-11 17:44:30,817 - --------------------------------------------------------
+INFO 2017-08-11 17:44:30,921 - Number of layers: 1
+INFO 2017-08-11 17:44:30,921 - Number of neurons: 128
+INFO 2017-08-11 17:44:30,921 - Activation: sigmoid
+INFO 2017-08-11 17:44:30,921 - Optimizer: adamax
+INFO 2017-08-11 17:44:30,921 - Dropout: 0.25
+INFO 2017-08-11 17:48:48,208 - Acc @ Testing: 50.91%
+INFO 2017-08-11 17:48:48,208 - --------------------------------------------------------
+INFO 2017-08-11 17:48:48,307 - Number of layers: 1
+INFO 2017-08-11 17:48:48,307 - Number of neurons: 128
+INFO 2017-08-11 17:48:48,307 - Activation: sigmoid
+INFO 2017-08-11 17:48:48,307 - Optimizer: adamax
+INFO 2017-08-11 17:48:48,307 - Dropout: 0.2
+INFO 2017-08-11 17:52:50,518 - Acc @ Testing: 51.5%
+INFO 2017-08-11 17:52:50,518 - --------------------------------------------------------
+INFO 2017-08-11 17:52:50,630 - Generations Average: [0, 49.411333333333339, 49.801333333333339, 50.615333333333332, 50.547333333333327, 49.809333333333335]%
+INFO 2017-08-11 17:52:50,630 - --------------------------------------------------------
+INFO 2017-08-11 17:52:50,636 - Parents: [{'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 32, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 64, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 2, 'nb_neurons': 64, 'dropout': 0.25, 'activation': 'elu', 'optimizer': 'adadelta'}, {'nb_layers': 1, 'nb_neurons': 1024, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.25, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_layers': 1, 'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}]
+INFO 2017-08-11 17:52:50,636 - *************************************************
+INFO 2017-08-11 17:52:50,637 - /////////////////////////////////////////////////////
+INFO 2017-08-11 17:52:50,637 - [0, 49.411333333333339, 49.801333333333339, 50.615333333333332, 50.547333333333327, 49.809333333333335]

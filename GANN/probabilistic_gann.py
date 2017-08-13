@@ -38,12 +38,14 @@ logger = logging.getLogger()
 
 class NetworkParams():
 	"""NN params object"""
-	def __init__(self, nb_layers, nb_neurons, activation, optimizer, dropout):
-		self.params = { "nb_layers": nb_layers,
-						"nb_neurons": nb_neurons,
-						"activation": activation,
-						"optimizer": optimizer,
-						"dropout": dropout }
+	def __init__(self, nb_layers=None, nb_neurons=None, activation=None, optimizer=None, dropout=None, params = None):
+		if not params:
+			self.params = { "nb_layers": nb_layers,
+							"nb_neurons": nb_neurons,
+							"activation": activation,
+							"optimizer": optimizer,
+							"dropout": dropout }
+		else: self.params = params
 		self.acc_test = None
 
 
@@ -158,11 +160,12 @@ class Genetic():
 
 		return child
 
-	def evolve(self, population):
+	def evolve(self, population, parents = None):
 		"""Evolve individuals and create the next generation. Probabilistic Reproduction."""
-		self.train(population)
-		# Select the best individuals
-		parents = [nn for nn in population if nn.acc_test > np.random.random()]
+		if not parents: 
+			self.train(population)
+			# Select the best individuals
+			parents = [nn for nn in population if nn.acc_test > np.random.random()]
 		# Record the selected parents
 		logger.info("Parents: {0}".format(str([nn.params for nn in parents])))
 		logger.info("*************************************************")
@@ -195,7 +198,6 @@ class Genetic():
 			logger.info("Activation: {0}".format(nn.params['activation']))
 			logger.info("Optimizer: {0}".format(nn.params['optimizer']))
 			logger.info("Dropout: {0}".format(nn.params['dropout']))
-			logger.info("/////////////////////////////////////////////////////")
 			# Train Network
 			nn.acc_test = Network(self.data, nn).train()
 			# Log the result
@@ -218,10 +220,25 @@ class Genetic():
 if __name__ == "__main__":
 	gen = Genetic()
 	# Run the Genetic Algorithm and let Nets Evolve
-	pop = gen.generation()
+	parents = [{'nb_neurons': 64, 'dropout': 0.15, 'activation': 'elu', 'nb_layers': 4, 'optimizer': 'adamax'},
+						{'nb_neurons': 64, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'},
+						{'nb_neurons': 768, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 1, 'optimizer': 'adamax'},
+						{'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 1, 'optimizer': 'adamax'},
+						{'nb_neurons': 64, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'},
+						{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'sigmoid', 'nb_layers': 2, 'optimizer': 'adamax'},
+						{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 2, 'optimizer': 'adadelta'},
+						{'nb_neurons': 128, 'dropout': 0.2, 'activation': 'elu', 'nb_layers': 4, 'optimizer': 'rmsprop'}]
+	pop = gen.evolve(None,parents = [NetworkParams(params = params) for params in parents])
+
+	logger.info("Number of layers: {0}".format(gen.params['nb_layers']))
+	logger.info("Number of neurons: {0}".format(gen.params['nb_neurons']))
+	logger.info("Activation: {0}".format(gen.params['activation']))
+	logger.info("Optimizer: {0}".format(gen.params['optimizer']))
+	logger.info("Dropout: {0}".format(gen.params['dropout']))
+	logger.info("/////////////////////////////////////////////////////")
 	logger.info("Saving the accuracy result of the training")
 
-	for i in range(0,gen.n_iter):
+	for i in range(10,gen.n_iter):
 		logger.info("------ GEN {0} ------".format(i+1))
 		pop = gen.evolve(pop)
 
