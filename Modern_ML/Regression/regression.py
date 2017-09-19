@@ -6,7 +6,6 @@ import numpy as np
 import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
 
 class Regression():
@@ -71,7 +70,7 @@ class Regression():
 			# calculate corresponding z for each x,y pair
 			z = plane[0] + plane[1]*xx + plane[2]*yy
 			# plot the surface
-			ax.plot_surface(xx, yy, z, cmap=cm.coolwarm)
+			ax.plot_surface(xx, yy, z, cmap="coolwarm")
 
 		plt.show()
 
