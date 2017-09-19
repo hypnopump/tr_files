@@ -188,8 +188,8 @@ def main(input_text):
 	try:
 		from visualize import visualize_assignments
 		visualize_assignments(sudoku.steps)
-	except: pass
-		# print("Visualizing tool is badass. Sorry but it doesn't work correctly.")
+	except:
+		print("Visualizing tool is so badass. Sorry but it doesn't work correctly.")
 	
 if __name__ == '__main__':
 	input_text = "040000008000006000207840603708100260000700030009030000050000000000300125300021000"
