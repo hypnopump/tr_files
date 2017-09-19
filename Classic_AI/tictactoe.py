@@ -4,7 +4,6 @@
 
 # Import modules/dependencies
 import random
-import numpy
 from copy import deepcopy
 
 # Create TicTacToe Class (OOP)

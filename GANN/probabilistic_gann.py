@@ -11,14 +11,12 @@
 	ConvNets would perform much better, but it's not about accuracy.
 """
 
-from functools import reduce
 import keras
 from keras.callbacks import EarlyStopping
 from keras.datasets import cifar10
 from keras.models import Sequential
-from keras.optimizers import Optimizer
 from keras.utils import np_utils
-from keras.layers.core import Dense, Dropout, Activation
+from keras.layers.core import Dense, Dropout
 import logging
 import numpy as np
 from operator import add
@@ -146,8 +144,8 @@ class Genetic():
 
 	def evaluate(self, population):
 		"""Measure the fitness of an entire population. Lower is better."""
-		tests = [nn.acc_test*100 for nn in population]
-		total = reduce(add, tests, 0)
+		tests = np.array([nn.acc_test*100 for nn in population])
+		total = np.sum(tests, axis=0)
 		return total / float(self.n_nets)
 
 	

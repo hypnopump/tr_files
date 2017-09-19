@@ -6,7 +6,7 @@ import keras
 from keras.datasets import cifar10
 from keras.models import Sequential
 from keras.optimizers import SGD
-from keras.layers.core import Dense, Dropout, Activation
+from keras.layers.core import Dense, Dropout
 from keras.utils import np_utils
 from keras.callbacks import EarlyStopping
 import numpy as np

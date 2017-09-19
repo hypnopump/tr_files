@@ -3,10 +3,7 @@
 # Import the necessary modules
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.interpolate import pchip
 from random import random, randint
-from operator import add
-from functools import reduce
 
 # Create an individual here
 def individual(length, minimum, maximum):
@@ -18,13 +15,13 @@ def population(count, length, minimum, maximum):
 	
 # Measure the fitness of an individual. Lower is better.
 def fitness(individual, target):
-	total = reduce(add, individual, 0) # Use this line for sum
+	total = np.sum(np.array(individual), axis = 0)
 	return abs(target-total)
 
 # Measure the fitness of an entire population. Lower is better.
 def evaluate(population, target):
-	print(population)
-	total = reduce(add, (fitness(individual, target) for individual in population), 0)
+	evaluation = np.array([fitness(individual, target) for individual in population])
+	total = np.sum(evaluation, axis=0)
 	return total / (len(population) * 1.0)
 
 # Evolve individuals and create the next generation. Select the 20% best. Not the best approach
@@ -38,7 +35,7 @@ def evolve(population, target, minimum, maximum, count, retain, random_aditional
 		if random_aditional > random():
 			parents.append(individual)
 	# Mutate some individuals to maintain genetic diversity
-	for individuaL in parents:
+	for individual in parents:
 		if mutation >= random():
 			pos_to_mutate = randint(0, len(individual)-1)
 			# individual[pos_to_mutate] = randint(minimum, maximum)
@@ -53,27 +50,18 @@ def evolve(population, target, minimum, maximum, count, retain, random_aditional
 		if male != female:
 			male = parents[male]
 			female = parents[female]
-			# cross_point = int(len(male)/2)
 			cross_point = randint(0, len(male))
-			child = male[:cross_point]+female[cross_point:] 			# Combine male and female
+			# Combine male and female
+			child = male[:cross_point]+female[cross_point:] 			
 			children.append(child)
-	parents.extend(children)											# Extend parents list by appending children list
+	parents.extend(children)									# Extend parents list by appending children list
 	return parents 												# Return the next Generation of individuals
 
 # Plot the Fitness of each generation. Lower is better
 def plot_graph(eval_history):
-	# Data to be interpolated.
-	generations = len(eval_history)
-	y = eval_history
-	x = [ z for z in range(generations) ]
-	print(y)
-	# Create the interpolator.
-	interp = pchip(x, y)
-	# Dense x for the smooth curve. 2nd param = x limit. 3rd param = density 
-	xx = np.linspace(0, generations-1, generations*10)
+	plt.figure()
 	# Define plots.
-	plt.plot(xx, interp(xx))
-	plt.plot(x, y, 'r.')
+	plt.plot(eval_history, '-ro')
 	plt.grid(True)
 	plt.title("Graph visualization")
 	plt.xlabel("Number of Generations")
@@ -88,7 +76,7 @@ maximum = int(target) 		# Maximum value of each gen
 count = 100 				# Individuals of a population
 retain = 0.2 				# Percentage of the population that will survive
 random_aditional = 0.05		# Random survivals
-mutation = 0.05 				# Mutation rate
+mutation = 0.01 				# Mutation rate
 
 pop = population(count, length, minimum, maximum)
 evaluation = evaluate(pop, target)
@@ -99,10 +87,8 @@ while evaluation > 0:
 	evaluation = evaluate(pop, target)
 	eval_history.append(evaluation)
 
-counter = 1
-for log in eval_history:
-	print("Generation", counter, ":", log)
-	counter = counter + 1
+for i,log in enumerate(eval_history):
+	print("Generation", i+1, ":", log)
 print()
 print("Proof:", pop[0], pop[-1])
 
