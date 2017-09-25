@@ -1103,7 +1103,13 @@ INFO 2017-08-11 10:21:01,991 - Dropout: 0.2
 INFO 2017-08-11 10:23:44,884 - Acc @ Testing: 44.46%
 INFO 2017-08-11 10:23:44,884 - --------------------------------------------------------
 INFO 2017-08-11 10:23:45,210 - Generations Average: [0, 40.016666666666666, 48.863333333333337, 49.342666666666666, 47.085333333333331, 44.823999999999998, 49.49666666666667, 51.374666666666663, 50.990666666666669, 50.384666666666668, 51.123333333333328]%
-INFO 2017-08-11 10:23:45,210 - --------------------------------------------------------
+INFO 2017-08-11 10:23:32,210 - --------------------------------------------------------
+INFO 2017-08-11 12:05:32,210 - --------------------------------------------------------
+INFO 2017-08-11 12:05:32,210 - --------------------------------------------------------
+INFO 2017-08-11 12:05:32,210 - IMPORTANT: EXPERIMENT INTERRUPTED. RESTARTING WITH PREVIOUS VALUES.
+INFO 2017-08-11 12:05:32,210 - --------------------------------------------------------
+INFO 2017-08-11 12:05:32,210 - --------------------------------------------------------
+INFO 2017-08-11 12:05:32,210 - --------------------------------------------------------
 INFO 2017-08-11 12:06:01,154 - Parents: [{'nb_neurons': 64, 'nb_layers': 4, 'dropout': 0.15, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 768, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 1, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 64, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 128, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'sigmoid', 'optimizer': 'adamax'}, {'nb_neurons': 128, 'nb_layers': 2, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'adadelta'}, {'nb_neurons': 128, 'nb_layers': 4, 'dropout': 0.2, 'activation': 'elu', 'optimizer': 'rmsprop'}]
 INFO 2017-08-11 12:06:01,154 - *************************************************
 INFO 2017-08-11 12:06:01,154 - ------ GEN 11 ------
@@ -1658,19 +1664,3 @@ INFO 2017-08-11 17:52:50,636 - Parents: [{'nb_layers': 2, 'nb_neurons': 128, 'dr
 INFO 2017-08-11 17:52:50,636 - *************************************************
 INFO 2017-08-11 17:52:50,637 - /////////////////////////////////////////////////////
 INFO 2017-08-11 17:52:50,637 - [0, 49.411333333333339, 49.801333333333339, 50.615333333333332, 50.547333333333327, 49.809333333333335]
-INFO 2017-09-19 19:01:01,971 - Cifar10 data retrieved & Processed
-INFO 2017-09-19 19:01:01,973 - Parents: [{'nb_layers': 4, 'nb_neurons': 64, 'dropout': 0.15, 'optimizer': 'adamax', 'activation': 'elu'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'optimizer': 'adamax', 'activation': 'elu'}, {'nb_layers': 1, 'nb_neurons': 768, 'dropout': 0.2, 'optimizer': 'adamax', 'activation': 'elu'}, {'nb_layers': 1, 'nb_neurons': 64, 'dropout': 0.2, 'optimizer': 'adamax', 'activation': 'sigmoid'}, {'nb_layers': 2, 'nb_neurons': 64, 'dropout': 0.2, 'optimizer': 'adamax', 'activation': 'sigmoid'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'optimizer': 'adamax', 'activation': 'sigmoid'}, {'nb_layers': 2, 'nb_neurons': 128, 'dropout': 0.2, 'optimizer': 'adadelta', 'activation': 'elu'}, {'nb_layers': 4, 'nb_neurons': 128, 'dropout': 0.2, 'optimizer': 'rmsprop', 'activation': 'elu'}]
-INFO 2017-09-19 19:01:01,973 - *************************************************
-INFO 2017-09-19 19:01:01,977 - Number of layers: [1, 2, 3, 4, 5]
-INFO 2017-09-19 19:01:01,978 - Number of neurons: [32, 64, 128, 256, 512, 768, 1024]
-INFO 2017-09-19 19:01:01,978 - Activation: ['tanh', 'sigmoid', 'relu', 'elu', 'selu']
-INFO 2017-09-19 19:01:01,978 - Optimizer: ['sgd', 'adamax', 'rmsprop', 'adagrad', 'adadelta']
-INFO 2017-09-19 19:01:01,978 - Dropout: [0.15, 0.2, 0.25]
-INFO 2017-09-19 19:01:01,978 - /////////////////////////////////////////////////////
-INFO 2017-09-19 19:01:01,978 - Saving the accuracy result of the training
-INFO 2017-09-19 19:01:01,978 - ------ GEN 11 ------
-INFO 2017-09-19 19:01:01,978 - Number of layers: 4
-INFO 2017-09-19 19:01:01,978 - Number of neurons: 64
-INFO 2017-09-19 19:01:01,978 - Activation: elu
-INFO 2017-09-19 19:01:01,978 - Optimizer: adamax
-INFO 2017-09-19 19:01:01,978 - Dropout: 0.15
