@@ -9,7 +9,7 @@
 import numpy as np 
 import matplotlib.pyplot as plt
 
-def plotGraph(data, weights = None):
+def plotGraph(data, weights = np.array(None)):
 	# Plot line if weights are passed
 	if weights.any():
 		x = np.linspace(0, 20, 1000)

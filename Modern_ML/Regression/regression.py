@@ -56,7 +56,7 @@ class Regression():
 		self.plotGraph(features, [w[0], w[1], w[2]])
 
 	# Plot a graph representation of the data in 3D
-	def plotGraph(self,features,plane):
+	def plotGraph(self,features,plane = False):
 		# Declaring some parameters
 		mpl.rcParams['legend.fontsize'] = 10
 		fig = plt.figure()
