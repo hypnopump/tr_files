@@ -2,14 +2,10 @@
 # Just tunning the number of neurons
 
 # Import the necessary modules
-import random
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.interpolate import pchip
+import random
 import tensorflow as tf
-from operator import add
-from functools import reduce
-from scipy.interpolate import pchip
 
 from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data/", one_hot=True)
@@ -44,8 +40,7 @@ class Genetic():
 
 	# Measure the fitness of an entire population. Lower is better.
 	def evaluate(self, population):
-		tests = [nn.acc_test for nn in population]
-		total = reduce(add, tests, 0)
+		total = np.sum(np.array([nn.acc_test for nn in population]), axis=0)
 		return total / float(self.n_nets)
 
 	# Generate a child and then randomly replace all genes for the ones coming either from male or female	
@@ -166,17 +161,9 @@ if __name__ == "__main__":
 
 	# Plot the Fitness of each generation. Lower is better
 	def plot_graph(eval_history):
-		# Data to be interpolated.
-		x = [g for g in range(len(gen.eval_history))]
-		y = gen.eval_history
-		# Create the interpolator.
-		interp = pchip(x, y)
-		# Dense x for the smooth curve. 2nd param = x limit. 3rd param = density 
-		xx = np.linspace(0, len(gen.eval_history), gen.n_iter*10)
+		plt.figure()
 		# Define plots.
-		plt.plot(xx, interp(xx))
-		# Define plots.
-		plt.plot(x, y, 'r.')
+		plt.plot(eval_history, '-ro')
 		plt.grid(True)
 		plt.title("Graph visualization")
 		plt.xlabel("Generations")
