@@ -17,7 +17,7 @@ Reinforcement Learning used against different games to prove learning and adapta
 Tools for optimization. Evolutionary algorithms.
 
 ## GA/NN
-Combines the evolution of populations with their learning to create better individuals (learn faster, better accuracy...). FeedForward NeuralNets implemented in Keras and Tensorflow agains MNIST and Cifar10.
+Combines the evolution of populations with their learning to create better individuals (learn faster, better accuracy...). FeedForward NeuralNets implemented in Keras and Tensorflow against MNIST and Cifar10.
 
 # Installation
 ```
